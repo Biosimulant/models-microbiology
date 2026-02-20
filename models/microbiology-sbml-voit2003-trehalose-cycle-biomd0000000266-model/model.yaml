@@ -20,7 +20,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000266
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000266?filename=BIOMD0000000266_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.voit2003_trehalose_cycle_biomd0000000266_model:Voit2003TrehaloseCycleBiomd0000000266Model
   init_kwargs:
     model_path: data/BIOMD0000000266.xml

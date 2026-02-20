@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2005050001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2005050001?filename=Millard2020_Ecoli_glc_ace_kinetic_model.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.millard2020_kinetic_model_of_glucose_and_acetate_model2005050001_model:Millard2020KineticModelOfGlucoseAndAcetateModel2005050001Model
   init_kwargs:
     model_path: data/MODEL2005050001.xml

@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000856
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000856?filename=Heldt2018.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.budding_yeast_size_control_by_titration_of_nucle_biomd0000000856_model:BuddingYeastSizeControlByTitrationOfNucleBiomd0000000856Model
   init_kwargs:
     model_path: data/BIOMD0000000856.xml

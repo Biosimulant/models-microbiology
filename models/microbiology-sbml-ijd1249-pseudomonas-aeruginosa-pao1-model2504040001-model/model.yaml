@@ -19,7 +19,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2504040001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2504040001?filename=iJD1249.xlsx
   license: CC0
-bsim:
+biosim:
   entrypoint: src.ijd1249_pseudomonas_aeruginosa_pao1_model2504040001_model:Ijd1249PseudomonasAeruginosaPao1Model2504040001Model
   init_kwargs:
     model_path: data/MODEL2504040001.xml

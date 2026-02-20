@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000527
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000527?filename=BIOMD0000000527_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.kaiser2014_salmonella_persistence_after_ciproflo_biomd0000000527_model:Kaiser2014SalmonellaPersistenceAfterCiprofloBiomd0000000527Model
   init_kwargs:
     model_path: data/BIOMD0000000527.xml

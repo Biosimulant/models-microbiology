@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000217
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000217?filename=BIOMD0000000217_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.bruggeman2005_ammoniumassimilation_biomd0000000217_model:Bruggeman2005AmmoniumassimilationBiomd0000000217Model
   init_kwargs:
     model_path: data/BIOMD0000000217.xml

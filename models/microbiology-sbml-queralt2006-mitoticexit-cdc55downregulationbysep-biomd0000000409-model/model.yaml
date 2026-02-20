@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000409
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000409?filename=BIOMD0000000409_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.queralt2006_mitoticexit_cdc55downregulationbysep_biomd0000000409_model:Queralt2006MitoticexitCdc55downregulationbysepBiomd0000000409Model
   init_kwargs:
     model_path: data/BIOMD0000000409.xml

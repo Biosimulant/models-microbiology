@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1901090001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1901090001?filename=Maeda2019_RefinedActive_Kim_20190413_1.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.maeda2019_ammoniumtransportassimilation_model1901090001_model:Maeda2019AmmoniumtransportassimilationModel1901090001Model
   init_kwargs:
     model_path: data/MODEL1901090001.xml

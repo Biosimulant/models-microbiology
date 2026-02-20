@@ -25,7 +25,7 @@ upstream:
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2405080004?filename=BioModelsMetadata
     - eos24jm.csv
   license: CC0
-bsim:
+biosim:
   entrypoint: src.khan2022_qcrb_inhibition_prediction_with_machine_model2405080004_model:Khan2022QcrbInhibitionPredictionWithMachineModel2405080004Model
   init_kwargs:
     model_path: data/MODEL2405080004.xml

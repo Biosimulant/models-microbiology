@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2007200001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2007200001?filename=model5.sbml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.howell2020_compartmental_logical_model_of_mitoti_model2007200001_model:Howell2020CompartmentalLogicalModelOfMitotiModel2007200001Model
   init_kwargs:
     model_path: data/MODEL2007200001.sbml

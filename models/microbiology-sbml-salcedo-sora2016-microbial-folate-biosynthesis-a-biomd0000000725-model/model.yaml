@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000725
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000725?filename=Model.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.salcedo_sora2016_microbial_folate_biosynthesis_a_biomd0000000725_model:SalcedoSora2016MicrobialFolateBiosynthesisABiomd0000000725Model
   init_kwargs:
     model_path: data/BIOMD0000000725.xml

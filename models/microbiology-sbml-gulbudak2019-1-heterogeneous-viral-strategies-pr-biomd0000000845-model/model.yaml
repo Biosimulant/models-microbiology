@@ -20,7 +20,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000845
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000845?filename=Gulbudak2019.1.Lytic.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.gulbudak2019_1_heterogeneous_viral_strategies_pr_biomd0000000845_model:Gulbudak20191HeterogeneousViralStrategiesPrBiomd0000000845Model
   init_kwargs:
     model_path: data/BIOMD0000000845.xml

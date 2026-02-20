@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1901300001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1901300001?filename=Yeast_Ternary.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.shaw_2018_yeast_gpcr_ternary_complex_model_model1901300001_model:Shaw2018YeastGpcrTernaryComplexModelModel1901300001Model
   init_kwargs:
     model_path: data/MODEL1901300001.xml

@@ -25,7 +25,7 @@ upstream:
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2404080001?filename=BioModelsMetadata
     - eos4e40.csv
   license: CC0
-bsim:
+biosim:
   entrypoint: src.stokes2020_antibiotics_discovery_using_deep_lear_model2404080001_model:Stokes2020AntibioticsDiscoveryUsingDeepLearModel2404080001Model
   init_kwargs:
     model_path: data/MODEL2404080001.xml

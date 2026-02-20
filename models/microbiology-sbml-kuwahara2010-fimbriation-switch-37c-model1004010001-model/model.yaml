@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1004010001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1004010001?filename=MODEL1004010001_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.kuwahara2010_fimbriation_switch_37c_model1004010001_model:Kuwahara2010FimbriationSwitch37cModel1004010001Model
   init_kwargs:
     model_path: data/MODEL1004010001.xml

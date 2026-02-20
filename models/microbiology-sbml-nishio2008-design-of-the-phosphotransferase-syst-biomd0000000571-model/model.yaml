@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000571
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000571?filename=BIOMD0000000571_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.nishio2008_design_of_the_phosphotransferase_syst_biomd0000000571_model:Nishio2008DesignOfThePhosphotransferaseSystBiomd0000000571Model
   init_kwargs:
     model_path: data/BIOMD0000000571.xml

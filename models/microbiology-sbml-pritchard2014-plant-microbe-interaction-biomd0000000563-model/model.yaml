@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000563
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000563?filename=BIOMD0000000563_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.pritchard2014_plant_microbe_interaction_biomd0000000563_model:Pritchard2014PlantMicrobeInteractionBiomd0000000563Model
   init_kwargs:
     model_path: data/BIOMD0000000563.xml

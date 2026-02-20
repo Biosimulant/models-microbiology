@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1803220002
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1803220002?filename=Heldt2018_YeastSizeControl_TitrationOfNuclearSites.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.heldt2018_budding_yeast_size_control_by_titratio_model1803220002_model:Heldt2018BuddingYeastSizeControlByTitratioModel1803220002Model
   init_kwargs:
     model_path: data/MODEL1803220002.xml

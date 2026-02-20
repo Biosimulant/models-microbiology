@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000254
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000254?filename=BIOMD0000000254_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.bier2000_glycolyticoscillation_biomd0000000254_model:Bier2000GlycolyticoscillationBiomd0000000254Model
   init_kwargs:
     model_path: data/BIOMD0000000254.xml

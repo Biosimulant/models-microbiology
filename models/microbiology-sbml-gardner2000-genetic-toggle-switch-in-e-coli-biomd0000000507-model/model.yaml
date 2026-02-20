@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000507
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000507?filename=BIOMD0000000507_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.gardner2000_genetic_toggle_switch_in_e_coli_biomd0000000507_model:Gardner2000GeneticToggleSwitchInEColiBiomd0000000507Model
   init_kwargs:
     model_path: data/BIOMD0000000507.xml

@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL0072364382
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL0072364382?filename=MODEL0072364382_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.herrg_rd2008_metabolicnetwork_yeast_model0072364382_model:HerrgRd2008MetabolicnetworkYeastModel0072364382Model
   init_kwargs:
     model_path: data/MODEL0072364382.xml

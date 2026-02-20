@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1901300002
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1901300002?filename=Yeast_Hillslope.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.shaw2019_digital_biosensor_model_from_yeast_model1901300002_model:Shaw2019DigitalBiosensorModelFromYeastModel1901300002Model
   init_kwargs:
     model_path: data/MODEL1901300002.xml

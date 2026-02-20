@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2005290001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2005290001?filename=maltose_model.json
   license: CC0
-bsim:
+biosim:
   entrypoint: src.poudel2020_maltose_model_model2005290001_model:Poudel2020MaltoseModelModel2005290001Model
   init_kwargs:
     model_path: data/MODEL2005290001.xml

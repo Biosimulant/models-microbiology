@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000583
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000583?filename=BIOMD0000000583_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.leber2015_mucosal_immunity_and_gut_microbiome_in_biomd0000000583_model:Leber2015MucosalImmunityAndGutMicrobiomeInBiomd0000000583Model
   init_kwargs:
     model_path: data/BIOMD0000000583.xml

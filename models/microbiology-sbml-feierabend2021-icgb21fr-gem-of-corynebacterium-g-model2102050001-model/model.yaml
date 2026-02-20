@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2102050001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2102050001?filename=iCGB21FR.omex
   license: CC0
-bsim:
+biosim:
   entrypoint: src.feierabend2021_icgb21fr_gem_of_corynebacterium_g_model2102050001_model:Feierabend2021Icgb21frGemOfCorynebacteriumGModel2102050001Model
   init_kwargs:
     model_path: data/MODEL2102050001.xml

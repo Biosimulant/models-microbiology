@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000966
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000966?filename=Cui2008.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.cui2008_in_vitro_transcriptional_response_of_zin_biomd0000000966_model:Cui2008InVitroTranscriptionalResponseOfZinBiomd0000000966Model
   init_kwargs:
     model_path: data/BIOMD0000000966.xml

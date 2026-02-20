@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1502180000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1502180000?filename=MODEL1502180000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.takahashi2015_zinc_regulation_e_coli_model1502180000_model:Takahashi2015ZincRegulationEColiModel1502180000Model
   init_kwargs:
     model_path: data/MODEL1502180000.xml

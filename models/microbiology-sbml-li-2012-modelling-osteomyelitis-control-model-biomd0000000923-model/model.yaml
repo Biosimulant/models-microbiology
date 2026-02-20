@@ -25,7 +25,7 @@ upstream:
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000923?filename=Lio2012_Modelling
     osteomyelitis_Control Model.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.li_2012_modelling_osteomyelitis_control_model_biomd0000000923_model:Li2012ModellingOsteomyelitisControlModelBiomd0000000923Model
   init_kwargs:
     model_path: data/BIOMD0000000923.xml

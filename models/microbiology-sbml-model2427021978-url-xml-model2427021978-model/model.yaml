@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2427021978
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2427021978?filename=MODEL2427021978_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.model2427021978_url_xml_model2427021978_model:Model2427021978UrlXmlModel2427021978Model
   init_kwargs:
     model_path: data/MODEL2427021978.xml

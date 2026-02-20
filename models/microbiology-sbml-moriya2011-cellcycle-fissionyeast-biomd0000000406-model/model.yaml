@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000406
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000406?filename=BIOMD0000000406_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.moriya2011_cellcycle_fissionyeast_biomd0000000406_model:Moriya2011CellcycleFissionyeastBiomd0000000406Model
   init_kwargs:
     model_path: data/BIOMD0000000406.xml

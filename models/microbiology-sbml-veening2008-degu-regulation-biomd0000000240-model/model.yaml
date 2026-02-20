@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000240
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000240?filename=BIOMD0000000240_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.veening2008_degu_regulation_biomd0000000240_model:Veening2008DeguRegulationBiomd0000000240Model
   init_kwargs:
     model_path: data/BIOMD0000000240.xml

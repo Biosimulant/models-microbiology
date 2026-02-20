@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000001089
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000001089?filename=253_2019_9630_MOESM3_ESM.omex
   license: CC0
-bsim:
+biosim:
   entrypoint: src.zcan2019_leuconostoc_mesenteroides_subsp_cremori_biomd0000001089_model:Zcan2019LeuconostocMesenteroidesSubspCremoriBiomd0000001089Model
   init_kwargs:
     model_path: data/BIOMD0000001089.xml

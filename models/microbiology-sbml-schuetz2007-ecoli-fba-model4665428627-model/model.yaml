@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL4665428627
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL4665428627?filename=MODEL4665428627_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.schuetz2007_ecoli_fba_model4665428627_model:Schuetz2007EcoliFbaModel4665428627Model
   init_kwargs:
     model_path: data/MODEL4665428627.xml

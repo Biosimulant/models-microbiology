@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000296
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000296?filename=BIOMD0000000296_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.balagadd_2008_e_coli_predator_prey_biomd0000000296_model:Balagadd2008EColiPredatorPreyBiomd0000000296Model
   init_kwargs:
     model_path: data/BIOMD0000000296.xml

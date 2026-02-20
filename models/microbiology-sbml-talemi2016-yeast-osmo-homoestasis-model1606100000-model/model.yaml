@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1606100000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1606100000?filename=MODEL1606100000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.talemi2016_yeast_osmo_homoestasis_model1606100000_model:Talemi2016YeastOsmoHomoestasisModel1606100000Model
   init_kwargs:
     model_path: data/MODEL1606100000.xml

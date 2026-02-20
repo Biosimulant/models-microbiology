@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2005290002
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2005290002?filename=glucose_model.json
   license: CC0
-bsim:
+biosim:
   entrypoint: src.poudel2020_glucose_model_model2005290002_model:Poudel2020GlucoseModelModel2005290002Model
   init_kwargs:
     model_path: data/MODEL2005290002.xml

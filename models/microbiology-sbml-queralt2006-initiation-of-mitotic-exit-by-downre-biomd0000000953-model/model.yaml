@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000953
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000953?filename=queralt2006_final.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.queralt2006_initiation_of_mitotic_exit_by_downre_biomd0000000953_model:Queralt2006InitiationOfMitoticExitByDownreBiomd0000000953Model
   init_kwargs:
     model_path: data/BIOMD0000000953.xml

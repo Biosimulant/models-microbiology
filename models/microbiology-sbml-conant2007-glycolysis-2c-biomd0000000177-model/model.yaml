@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000177
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000177?filename=BIOMD0000000177_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.conant2007_glycolysis_2c_biomd0000000177_model:Conant2007Glycolysis2cBiomd0000000177Model
   init_kwargs:
     model_path: data/BIOMD0000000177.xml

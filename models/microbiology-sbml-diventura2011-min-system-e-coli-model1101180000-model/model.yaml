@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1101180000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1101180000?filename=MODEL1101180000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.diventura2011_min_system_e_coli_model1101180000_model:Diventura2011MinSystemEColiModel1101180000Model
   init_kwargs:
     model_path: data/MODEL1101180000.xml

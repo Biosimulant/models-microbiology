@@ -18,7 +18,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1601140000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1601140000?filename=MODEL1601140000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.robinson2016_nitric_oxide_stress_in_enterohemorr_model1601140000_model:Robinson2016NitricOxideStressInEnterohemorrModel1601140000Model
   init_kwargs:
     model_path: data/MODEL1601140000.xml

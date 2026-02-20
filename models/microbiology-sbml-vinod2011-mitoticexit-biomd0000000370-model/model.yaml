@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000370
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000370?filename=BIOMD0000000370_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.vinod2011_mitoticexit_biomd0000000370_model:Vinod2011MitoticexitBiomd0000000370Model
   init_kwargs:
     model_path: data/BIOMD0000000370.xml

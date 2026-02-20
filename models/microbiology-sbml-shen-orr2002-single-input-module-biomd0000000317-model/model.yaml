@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000317
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000317?filename=BIOMD0000000317_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.shen_orr2002_single_input_module_biomd0000000317_model:ShenOrr2002SingleInputModuleBiomd0000000317Model
   init_kwargs:
     model_path: data/BIOMD0000000317.xml

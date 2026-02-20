@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL3883569319
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL3883569319?filename=MODEL3883569319_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.aho2010_refrec_s_cerevisiae_model3883569319_model:Aho2010RefrecSCerevisiaeModel3883569319Model
   init_kwargs:
     model_path: data/MODEL3883569319.xml

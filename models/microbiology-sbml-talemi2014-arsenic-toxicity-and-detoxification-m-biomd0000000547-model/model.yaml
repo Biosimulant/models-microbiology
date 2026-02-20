@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000547
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000547?filename=BIOMD0000000547_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.talemi2014_arsenic_toxicity_and_detoxification_m_biomd0000000547_model:Talemi2014ArsenicToxicityAndDetoxificationMBiomd0000000547Model
   init_kwargs:
     model_path: data/BIOMD0000000547.xml

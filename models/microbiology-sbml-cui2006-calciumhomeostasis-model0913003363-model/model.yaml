@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL0913003363
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL0913003363?filename=MODEL0913003363_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.cui2006_calciumhomeostasis_model0913003363_model:Cui2006CalciumhomeostasisModel0913003363Model
   init_kwargs:
     model_path: data/MODEL0913003363.xml

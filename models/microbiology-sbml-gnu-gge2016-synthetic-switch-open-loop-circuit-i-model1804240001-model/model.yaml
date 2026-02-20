@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1804240001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1804240001?filename=Open_loop.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.gnu_gge2016_synthetic_switch_open_loop_circuit_i_model1804240001_model:GnuGge2016SyntheticSwitchOpenLoopCircuitIModel1804240001Model
   init_kwargs:
     model_path: data/MODEL1804240001.xml
