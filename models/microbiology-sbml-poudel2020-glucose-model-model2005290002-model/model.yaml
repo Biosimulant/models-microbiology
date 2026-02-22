@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Microbiology: Poudel2020GlucoseModelModel2005290002Model'
-description: Staphylococcus aureus TCH1516 constrained COBRA model showing growth
-  in RPMI + 10% LB.
+description: "Staphylococcus aureus TCH1516 constrained COBRA model showing growth in RPMI + 10% LB. It can be used to explore microbiology poudel2020 glucose model2005290002 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - microbiology

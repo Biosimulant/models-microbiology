@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Microbiology: Kaiser2014SalmonellaPersistenceAfterCiprofloBiomd0000000527Model'
-description: 'Kaiser2014 - Salmonella persistence after ciprofloxacin treatment The
-  model describes the bacterial tolerance to antibiotics. Using a mouse model for
-  Salmonella diarrhea , the authors have found that '
+description: "Kaiser2014 - Salmonella persistence after ciprofloxacin treatment The model describes the bacterial tolerance to antibiotics. Using a mouse model for Salmonella diarrhea , the authors have found that."
 standard: other
 tags:
 - microbiology

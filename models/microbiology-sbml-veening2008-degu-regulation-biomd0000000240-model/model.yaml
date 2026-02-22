@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Microbiology: Veening2008DeguRegulationBiomd0000000240Model'
-description: 'This a model from the article: Transient heterogeneity in extracellular
-  protease production by Bacillus subtilis. Veening JW, Igoshin OA, Eijlander RT,
-  Nijland R, Hamoen LW, Kuipers OP Mol. Syst. Biol'
+description: "This a model from the article: Transient heterogeneity in extracellular protease production by Bacillus subtilis. Veening JW, Igoshin OA, Eijlander RT, Nijland R, Hamoen LW, Kuipers OP Mol."
 standard: other
 tags:
 - microbiology

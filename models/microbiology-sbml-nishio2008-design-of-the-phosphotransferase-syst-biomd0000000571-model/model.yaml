@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Microbiology: Nishio2008DesignOfThePhosphotransferaseSystBiomd0000000571Model'
-description: 'Nishio2008 - Design of the phosphotransferasesystem for enhanced glucose
-  uptake in E. coli. This model is described in the article: Computer-aided rational
-  design of the phosphotransferase system for '
+description: "Nishio2008 - Design of the phosphotransferasesystem for enhanced glucose uptake in E. It can be used to explore microbiology nishio2008 design of the phosphotransferase dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - microbiology

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Microbiology: Howell2020CompartmentalLogicalModelOfMitotiModel2007200001Model'
-description: This model represents the main aspects of regulation of mitotic exit
-  in budding yeast, including the MEN and FEAR network. As a compartmental model,
-  it represents spatial aspects of regulation alongsi
+description: "This model represents the main aspects of regulation of mitotic exit in budding yeast, including the MEN and FEAR network. As a compartmental model, it represents spatial aspects of regulation alongsi."
 standard: other
 tags:
 - microbiology

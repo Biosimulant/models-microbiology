@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Microbiology: Pritchard2014PlantMicrobeInteractionBiomd0000000563Model'
-description: 'Pritchard2014 - plant-microbeinteraction Thismodel is an abstraction
-  of a generic interaction between microbes,and a plant host. The reactions are generally
-  intended to berepresentative of processes, '
+description: "Pritchard2014 - plant-microbeinteraction Thismodel is an abstraction of a generic interaction between microbes,and a plant host. The reactions are generally intended to berepresentative of processes,."
 standard: other
 tags:
 - microbiology

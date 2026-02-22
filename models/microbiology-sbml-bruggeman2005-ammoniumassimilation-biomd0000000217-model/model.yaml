@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Microbiology: Bruggeman2005AmmoniumassimilationBiomd0000000217Model'
-description: 'This a model from the article: The multifarious short-term regulation
-  of ammonium assimilation of Escherichia coli: dissection using an in silico replica.
-  Bruggeman FJ, Boogerd FC, Westerhoff HV. FEBS'
+description: "This a model from the article: The multifarious short-term regulation of ammonium assimilation of Escherichia coli: dissection using an in silico replica. It can be used to explore microbiology bruggeman2005 ammoniumassimilation BioModels0000000217 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - microbiology

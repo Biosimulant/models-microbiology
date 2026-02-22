@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Microbiology: Voit2003TrehaloseCycleBiomd0000000266Model'
-description: 'Voit2003 - Trehalose Cycle This model is described in the article: Biochemical
-  and genomic regulation of the trehalose cycle in yeast: review of observations and
-  canonical model analysis. Voit EO. J. '
+description: "Voit2003 - Trehalose Cycle This model is described in the article: Biochemical and genomic regulation of the trehalose cycle in yeast: review of observations and canonical model analysis. It can be used to explore microbiology voit2003 trehalose cycle BioModels0000000266 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - microbiology

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Microbiology: Sheppard2018ToxicActivityOfK1KillerYeastPModel1804230001Model'
-description: 'This is a deterministic model built using COPASI. It simulates the toxin
-  activity of K1 toxin produced by Saccharomyces cerevisiae from inoculation through
-  to toxin-induced cell death of a population '
+description: "This is a deterministic model built using COPASI. It simulates the toxin activity of K1 toxin produced by Saccharomyces cerevisiae from inoculation through to toxin-induced cell death of a population."
 standard: other
 tags:
 - microbiology

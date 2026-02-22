@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'Microbiology: Ijd1249PseudomonasAeruginosaPao1Model2504040001Model'
-description: Faithful wrapper of upstream SBML model.
+description: "Microbiology Ijd1249Pseudomonas Aeruginosa Pao1Model2504040001Model represents microbiology ijd1249 pseudomonas aeruginosa pao1 model2504040001 mechanisms from biomodels_ebi reference biomodels_ebi:MODEL2504040. When you run it, you can inspect state and compare temporal behavior between baseline and adjusted inputs."
 standard: other
 tags:
 - microbiology

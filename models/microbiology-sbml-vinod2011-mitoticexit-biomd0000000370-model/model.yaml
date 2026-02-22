@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Microbiology: Vinod2011MitoticexitBiomd0000000370Model'
-description: 'This model is from the article: Computational modelling of mitotic exit
-  in budding yeast: the role of separase and Cdc14 endocycles Vinod PK, Freire P,
-  Rattani A, Ciliberto A, Uhlmann F, Novak B. J R '
+description: "This model is from the article: Computational modelling of mitotic exit in budding yeast: the role of separase and Cdc14 endocycles Vinod PK, Freire P, Rattani A, Ciliberto A, Uhlmann F, Novak B. It can be used to explore microbiology vinod2011 mitoticexit BioModels0000000370 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - microbiology

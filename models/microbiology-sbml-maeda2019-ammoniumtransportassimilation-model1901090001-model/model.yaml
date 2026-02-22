@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Microbiology: Maeda2019AmmoniumtransportassimilationModel1901090001Model'
-description: The E. coli ammonium transport and assimilation network. This SBML model
-  simulates Kim's experiment with glucose as a carbon source and external NH4+ = 4
-  microM for wild type (the refined active trans
+description: "The E. It can be used to explore microbiology maeda2019 ammoniumtransportassimil model1901090001 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - microbiology

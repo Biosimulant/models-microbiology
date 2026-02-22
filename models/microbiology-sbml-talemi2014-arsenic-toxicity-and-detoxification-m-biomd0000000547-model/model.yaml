@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Microbiology: Talemi2014ArsenicToxicityAndDetoxificationMBiomd0000000547Model'
-description: 'Talemi2014 - Arsenic toxicity anddetoxification mechanisms in yeast
-  The model implements arsenite (AsIII)transport regulation, its distribution within
-  main cellular AsIIIpools and detoxification. The '
+description: "Talemi2014 - Arsenic toxicity anddetoxification mechanisms in yeast The model implements arsenite (AsIII)transport regulation, its distribution within main cellular AsIIIpools and detoxification. It can be used to explore microbiology talemi2014 arsenic toxicity and detoxification dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - microbiology

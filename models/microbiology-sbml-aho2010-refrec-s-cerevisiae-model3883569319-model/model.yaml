@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Microbiology: Aho2010RefrecSCerevisiaeModel3883569319Model'
-description: 'This model is described in the article: Reconstruction and Validation
-  of RefRec: A Global Model for the Yeast Molecular Interaction Network Aho T, Almusa
-  H, Matilainen J, Larjo A, Ruusuvuori P, Aho K-'
+description: "This model is described in the article: Reconstruction and Validation of RefRec: A Global Model for the Yeast Molecular Interaction Network Aho T, Almusa H, Matilainen J, Larjo A, Ruusuvuori P, Aho K-. It can be used to explore microbiology aho2010 refrec s cerevisiae model3883569319 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - microbiology

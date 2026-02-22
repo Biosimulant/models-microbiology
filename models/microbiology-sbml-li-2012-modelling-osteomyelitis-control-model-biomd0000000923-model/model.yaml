@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Microbiology: Li2012ModellingOsteomyelitisControlModelBiomd0000000923Model'
-description: BackgroundThis work focuses on the computational modelling of osteomyelitis,
-  a bone pathology caused by bacteria infection (mostly Staphylococcus aureus). The
-  infection alters the RANK/RANKL/OPG signa
+description: "BackgroundThis work focuses on the computational modelling of osteomyelitis, a bone pathology caused by bacteria infection (mostly Staphylococcus aureus). It can be used to explore microbiology li 2012 modelling osteomyelitis control dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - microbiology

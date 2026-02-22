@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Microbiology: Heldt2018BuddingYeastSizeControlByTitratioModel1803220002Model'
-description: This model is decribed in the article:Dilution and titration of cell-cycle
-  regulators may control cell size in budding yeastFrank S. Heldt, Reece Lunstone,
-  John J. Tyson, Bela NovakPLoS Comput Biol, O
+description: "This model is decribed in the article:Dilution and titration of cell-cycle regulators may control cell size in budding yeastFrank S. It can be used to explore microbiology heldt2018 budding yeast size control dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - microbiology

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Microbiology: Queralt2006MitoticexitCdc55downregulationbysepBiomd0000000409Model'
-description: 'This model is from the article: Downregulation of PP2A(Cdc55) phosphatase
-  by separase initiates mitotic exit in budding yeast. Queralt E, Lehane C, Novak
-  B, Uhlmann F. Cell. 2006 May 19;125(4):719-32.'
+description: "This model is from the article: Downregulation of PP2A(Cdc55) phosphatase by separase initiates mitotic exit in budding yeast. Queralt E, Lehane C, Novak B, Uhlmann F."
 standard: other
 tags:
 - microbiology

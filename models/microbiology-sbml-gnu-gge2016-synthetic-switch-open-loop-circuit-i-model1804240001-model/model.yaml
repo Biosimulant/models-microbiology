@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Microbiology: GnuGge2016SyntheticSwitchOpenLoopCircuitIModel1804240001Model'
-description: This model was used to describe the behaviour of the synthetic open loop
-  circuit in yeast, published in [1]. The accompanying script will simulate the model
-  as used in main Figure 2c. Additional scali
+description: "This model was used to describe the behaviour of the synthetic open loop circuit in yeast, published in [1]. The accompanying script will simulate the model as used in main Figure 2c."
 standard: other
 tags:
 - microbiology

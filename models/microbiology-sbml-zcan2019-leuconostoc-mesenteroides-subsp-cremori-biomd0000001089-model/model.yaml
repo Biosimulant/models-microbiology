@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Microbiology: Zcan2019LeuconostocMesenteroidesSubspCremoriBiomd0000001089Model'
-description: "FROG and miniFROG reports have been compiled for iLM.c559, which is\
-  \ a GSM of the bacterium Leuconostoc mesenteroides subsp. cremoris. The model can\
-  \ be found in the \xD6zcan et al, 2019 paper cited here."
+description: "FROG and miniFROG reports have been compiled for iLM.c559, which is a GSM of the bacterium Leuconostoc mesenteroides subsp. It can be used to explore microbiology zcan2019 leuconostoc mesenteroides subsp cremori dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - microbiology

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Microbiology: HerrgRd2008MetabolicnetworkYeastModel0072364382Model'
-description: This is a reconstruction of the biochemical network of the yeast Saccharomyces
-  cerevisiae carried out at a jamboree organized in April 2007 in the Manchester Centre
-  for Integrative Systems Biology. It
+description: "This is a reconstruction of the biochemical network of the yeast Saccharomyces cerevisiae carried out at a jamboree organized in April 2007 in the Manchester Centre for Integrative Systems Biology. It can be used to explore microbiology herrg rd2008 metabolicnetwork yeast model0072364382 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - microbiology

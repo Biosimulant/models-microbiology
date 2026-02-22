@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Microbiology: Talemi2016YeastOsmoHomoestasisModel1606100000Model'
-description: 'Talemi2016 - Yeast osmo-homoestasis This model is described in the article:
-  Systems Level Analysis of the Yeast Osmo-Stat. Talemi SR, Tiger CF, Andersson M,
-  Babazadeh R, Welkenhuysen N, Klipp E, Hohma'
+description: "Talemi2016 - Yeast osmo-homoestasis This model is described in the article: Systems Level Analysis of the Yeast Osmo-Stat. Talemi SR, Tiger CF, Andersson M, Babazadeh R, Welkenhuysen N, Klipp E, Hohma."
 standard: other
 tags:
 - microbiology

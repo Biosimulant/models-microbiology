@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'Microbiology: Shaw2019DigitalBiosensorModelFromYeastModel1901300002Model'
-description: SBML model exported from PottersWheel on 2018-06-29 21:50:11.
+description: "SBML model exported from PottersWheel on 2018-06-29 21:50:11. It can be used to explore microbiology shaw2019 digital biosensor from yeast dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - microbiology

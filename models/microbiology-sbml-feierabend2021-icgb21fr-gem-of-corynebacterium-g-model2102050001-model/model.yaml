@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Microbiology: Feierabend2021Icgb21frGemOfCorynebacteriumGModel2102050001Model'
-description: "The bacterium Corynebacterium glutamicum can produce \u029F-glutamic\
-  \ acid under certain growth conditions. \u029F-glutamic acid is used as a flavor\
-  \ enhancer, food supplement, or primary chemical raw material. I"
+description: "The bacterium Corynebacterium glutamicum can produce \u029f-glutamic acid under certain growth conditions. \u029f-glutamic acid is used as a flavor enhancer, food supplement, or primary chemical raw material."
 standard: other
 tags:
 - microbiology

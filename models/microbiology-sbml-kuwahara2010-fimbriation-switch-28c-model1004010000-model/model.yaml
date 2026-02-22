@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Microbiology: Kuwahara2010FimbriationSwitch28cModel1004010000Model'
-description: "This the detailed model for 28\xB0C from the article: Temperature Control\
-  \ of Fimbriation Circuit Switch in Uropathogenic Escherichia coli : Quantitative\
-  \ Analysis via Automated Model Abstraction. Hiroyuki"
+description: "This the detailed model for 28\u00b0C from the article: Temperature Control of Fimbriation Circuit Switch in Uropathogenic Escherichia coli : Quantitative Analysis via Automated Model Abstraction. It can be used to explore microbiology kuwahara2010 fimbriation switch 28c model1004010000 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - microbiology

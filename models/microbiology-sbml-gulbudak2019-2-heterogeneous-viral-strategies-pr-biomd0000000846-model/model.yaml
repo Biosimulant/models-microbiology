@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Microbiology: Gulbudak20192HeterogeneousViralStrategiesPrBiomd0000000846Model'
-description: This is a mathematical model describing describing the population dynamics
-  of microbes infected by chronically infecting viruses.
+description: "This is a mathematical model describing describing the population dynamics of microbes infected by chronically infecting viruses. It can be used to explore microbiology gulbudak2019 2 heterogeneous viral strategies dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - microbiology

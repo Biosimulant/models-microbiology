@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Microbiology: Shaw2018YeastGpcrTernaryComplexModelModel1901300001Model'
-description: SBML model exported from PottersWheel on 2019-01-17 12:49:15. This model
-  was created via Matlab and automatically converted to SBML.
+description: "SBML model exported from PottersWheel on 2019-01-17 12:49:15. This model was created via Matlab and automatically converted to SBML."
 standard: other
 tags:
 - microbiology

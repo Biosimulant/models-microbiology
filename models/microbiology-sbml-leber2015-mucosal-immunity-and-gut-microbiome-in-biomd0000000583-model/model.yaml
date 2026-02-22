@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Microbiology: Leber2015MucosalImmunityAndGutMicrobiomeInBiomd0000000583Model'
-description: 'Leber2015 - Mucosal immunity and gutmicrobiome interaction during C.
-  difficile infection This model is described in the article: Systems Modeling of
-  Interactions between Mucosal Immunity and the Gut M'
+description: "Leber2015 - Mucosal immunity and gutmicrobiome interaction during C. difficile infection This model is described in the article: Systems Modeling of Interactions between Mucosal Immunity and the Gut M."
 standard: other
 tags:
 - microbiology

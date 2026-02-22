@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Microbiology: Konstantinidis2021PersistenceOfMutantsInAMModel2106100001Model'
-description: This agent-based model is based on an adaptive laboratory evolution (ALE)
-  experiment scenario of two mutually cross feeding strains of bacteria and yeast.
-  The bacterial strain secretes vitamins for wh
+description: "This agent-based model is based on an adaptive laboratory evolution (ALE) experiment scenario of two mutually cross feeding strains of bacteria and yeast. It can be used to explore microbiology konstantinidis2021 persistence of mutants in dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - microbiology

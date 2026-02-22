@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Microbiology: Schuetz2007EcoliFbaModel4665428627Model'
-description: 'This is a stoichiometric map from the supplement of the publication:
-  Systematic evaluation of objective functions for predicting intracellular fluxes
-  in Escherichia coli Robert Schuetz, Lars Kuepfer a'
+description: "This is a stoichiometric map from the supplement of the publication: Systematic evaluation of objective functions for predicting intracellular fluxes in Escherichia coli Robert Schuetz, Lars Kuepfer a. It can be used to explore microbiology schuetz2007 ecoli fba model4665428627 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - microbiology

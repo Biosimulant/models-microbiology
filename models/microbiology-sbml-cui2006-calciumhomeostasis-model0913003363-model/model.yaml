@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Microbiology: Cui2006CalciumhomeostasisModel0913003363Model'
-description: 'This a model from the article: Mathematical modeling of calcium homeostasis
-  in yeast cells. Cui J, Kaandorp JA. Cell Calcium 2006 Apr;39(4):337-48 16445978
-  , Abstract: In this study, based on currentl'
+description: "This a model from the article: Mathematical modeling of calcium homeostasis in yeast cells. It can be used to explore microbiology cui2006 calciumhomeostasis model0913003363 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - microbiology

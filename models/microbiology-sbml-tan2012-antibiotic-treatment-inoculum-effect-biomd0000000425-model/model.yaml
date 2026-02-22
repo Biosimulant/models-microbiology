@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Microbiology: Tan2012AntibioticTreatmentInoculumEffectBiomd0000000425Model'
-description: "Tan2012 - Antibiotic Treatment, Inoculum Effect The efficacy of many\
-  \ antibiotics decreases with increasing bacterial density, a phenomenon called the\
-  \ \u2018inoculum effect\u2019 (IE). This study reveals that, f"
+description: "Tan2012 - Antibiotic Treatment, Inoculum Effect The efficacy of many antibiotics decreases with increasing bacterial density, a phenomenon called the \u2018inoculum effect\u2019 (IE). It can be used to explore microbiology tan2012 antibiotic treatment inoculum effect dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - microbiology

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Microbiology: Smith2016CombinationTherapyToPreventBacteriModel1812040005Model'
-description: Secondary bacterial infections (SBIs) exacerbate influenza-associated
-  disease and mortality. Antimicrobial agents can reduce the severity of SBIs, but
-  many have limited efficacy or cause adverse effec
+description: "Secondary bacterial infections (SBIs) exacerbate influenza-associated disease and mortality. Antimicrobial agents can reduce the severity of SBIs, but many have limited efficacy or cause adverse effec."
 standard: other
 tags:
 - microbiology

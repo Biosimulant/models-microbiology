@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Microbiology: Diventura2011MinSystemEColiModel1101180000Model'
-description: 'This is an SBML version with MesoRD annotations of the model described
-  in: Self-organized partitioning of dynamically localized proteins in bacterial cell
-  division. Barbara Di Ventura and Victor Sourj'
+description: "This is an SBML version with MesoRD annotations of the model described in: Self-organized partitioning of dynamically localized proteins in bacterial cell division. It can be used to explore microbiology diventura2011 min system e coli dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - microbiology

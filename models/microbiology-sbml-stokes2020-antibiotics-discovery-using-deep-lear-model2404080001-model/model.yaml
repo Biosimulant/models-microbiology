@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Microbiology: Stokes2020AntibioticsDiscoveryUsingDeepLearModel2404080001Model'
-description: Based on a simple E.coli growth inhibition assay, the authors trained
-  a model capable of identifying antibiotic potential in compounds structurally divergent
-  from conventional antibiotic drugs. One of
+description: "Based on a simple E.coli growth inhibition assay, the authors trained a model capable of identifying antibiotic potential in compounds structurally divergent from conventional antibiotic drugs. It can be used to explore microbiology stokes2020 antibiotics discovery using deep dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - microbiology

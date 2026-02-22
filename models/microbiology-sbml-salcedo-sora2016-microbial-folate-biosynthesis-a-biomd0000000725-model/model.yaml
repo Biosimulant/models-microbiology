@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Microbiology: SalcedoSora2016MicrobialFolateBiosynthesisABiomd0000000725Model'
-description: 'Salcedo-Sora2016 - Microbial folate biosynthesis and utilisation This
-  model is described in the article: A mathematical model of microbial folate biosynthesis
-  and utilisation: implications for antifol'
+description: "Salcedo-Sora2016 - Microbial folate biosynthesis and utilisation This model is described in the article: A mathematical model of microbial folate biosynthesis and utilisation: implications for antifol. It can be used to explore microbiology salcedo sora2016 microbial folate biosynthesis dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - microbiology

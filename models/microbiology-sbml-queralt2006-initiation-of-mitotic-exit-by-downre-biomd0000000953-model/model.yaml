@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'Microbiology: Queralt2006InitiationOfMitoticExitByDownreBiomd0000000953Model'
-description: Mathematical model of mitotic exit in budding yeast.
+description: "Mathematical model of mitotic exit in budding yeast. It can be used to explore microbiology queralt2006 initiation of mitotic exit dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - microbiology

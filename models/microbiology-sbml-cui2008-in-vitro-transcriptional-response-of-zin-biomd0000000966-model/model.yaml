@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Microbiology: Cui2008InVitroTranscriptionalResponseOfZinBiomd0000000966Model'
-description: 'BACKGROUND: The zinc homeostasis system in Escherichia coli is one of
-  the most intensively studied prokaryotic zinc homeostasis systems. Its underlying
-  regulatory machine consists of repression on zin'
+description: "BACKGROUND: The zinc homeostasis system in Escherichia coli is one of the most intensively studied prokaryotic zinc homeostasis systems. Its underlying regulatory machine consists of repression on zin."
 standard: other
 tags:
 - microbiology

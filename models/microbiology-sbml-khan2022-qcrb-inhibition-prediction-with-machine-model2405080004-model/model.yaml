@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Microbiology: Khan2022QcrbInhibitionPredictionWithMachineModel2405080004Model'
-description: The cytochrome bcc complex (QcrB) is a subunit of the mycobacterial cyt-bcc-aa3
-  oxidoreductase, and it has been suggested as a good M.tb target due to the bacteria's
-  dependence on oxidative phosphoryl
+description: "The cytochrome bcc complex (QcrB) is a subunit of the mycobacterial cyt-bcc-aa3 oxidoreductase, and it has been suggested as a good M.tb target due to the bacteria's dependence on oxidative phosphoryl. It can be used to explore microbiology khan2022 qcrb inhibition prediction with dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - microbiology

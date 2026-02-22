@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Microbiology: Gulbudak20191HeterogeneousViralStrategiesPrBiomd0000000845Model'
-description: This is a mathematical model describing describing the population dynamics
-  of microbes infected by lytic viruses.
+description: "This is a mathematical model describing describing the population dynamics of microbes infected by lytic viruses. It can be used to explore microbiology gulbudak2019 1 heterogeneous viral strategies dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - microbiology

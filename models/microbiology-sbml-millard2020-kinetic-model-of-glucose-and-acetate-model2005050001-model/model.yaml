@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Microbiology: Millard2020KineticModelOfGlucoseAndAcetateModel2005050001Model'
-description: 'Calibrated kinetic model of glucose and acetate metabolisms of Escherichia
-  coli, as detailed in Millard et al., 2020 (DOI: 10.1101/2020.08.18.255356).'
+description: "Calibrated kinetic model of glucose and acetate metabolisms of Escherichia coli, as detailed in Millard et al., 2020 (DOI: 10.1101/2020.08.18.255356). It can be used to explore microbiology millard2020 kinetic of glucose and dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - microbiology

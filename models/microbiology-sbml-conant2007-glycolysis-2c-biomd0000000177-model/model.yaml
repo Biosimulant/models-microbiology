@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Microbiology: Conant2007Glycolysis2cBiomd0000000177Model'
-description: 'This a model from the article: Increased glycolytic flux as an outcome
-  of whole-genome duplication in yeast. Conant GC, Wolfe KH Mol. Syst. Biol. [2007
-  ; Volume: 3 (Issue: )]: 129 17667951 , Abstract:'
+description: "This a model from the article: Increased glycolytic flux as an outcome of whole-genome duplication in yeast. It can be used to explore microbiology conant2007 glycolysis 2c BioModels0000000177 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - microbiology

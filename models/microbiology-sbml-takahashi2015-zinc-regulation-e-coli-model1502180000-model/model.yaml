@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Microbiology: Takahashi2015ZincRegulationEColiModel1502180000Model'
-description: 'This a model from the article: The dynamic balance of import and export
-  of zinc in Escherichia coli suggests a heterogeneous population response to stress
-  Takahashi H, Oshima T, Doherty N, Clayton SR,'
+description: "This a model from the article: The dynamic balance of import and export of zinc in Escherichia coli suggests a heterogeneous population response to stress Takahashi H, Oshima T, Doherty N, Clayton SR,. It can be used to explore microbiology takahashi2015 zinc regulation e coli dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - microbiology

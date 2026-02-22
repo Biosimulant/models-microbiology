@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Microbiology: Bier2000GlycolyticoscillationBiomd0000000254Model'
-description: 'This a model from the article: How yeast cells synchronize their glycolytic
-  oscillations: a perturbation analytic treatment Bier M, Bakker BM, Westerhoff HV.
-  Biophys. J 2000 Mar;78(3):1087-93. 1069229'
+description: "This a model from the article: How yeast cells synchronize their glycolytic oscillations: a perturbation analytic treatment Bier M, Bakker BM, Westerhoff HV. It can be used to explore microbiology bier2000 glycolyticoscillation BioModels0000000254 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:
 - microbiology
