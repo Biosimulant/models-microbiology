@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Microbiology: BuddingYeastSizeControlByTitrationOfNucleBiomd0000000856Model'
+title: "Budding yeast size control by titration of nuclear sites"
 description: "This model is decribed in the article:Dilution and titration of cell-cycle regulators may control cell size in budding yeastFrank S. It can be used to explore microbiology budding yeast size control by dynamics and compare simulation behavior across conditions."
 standard: other
 tags:

@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Microbiology: Poudel2020MaltoseModelModel2005290001Model'
+title: "Poudel2020 - maltose_model"
 description: "Staphylococcus aureus TCH1516 constrained COBRA model showing growth in RPMI + 10% LB with maltose. It can be used to explore microbiology poudel2020 maltose model2005290001 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:

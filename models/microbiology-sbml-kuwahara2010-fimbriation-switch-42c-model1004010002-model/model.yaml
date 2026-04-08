@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Microbiology: Kuwahara2010FimbriationSwitch42cModel1004010002Model'
+title: "Kuwahara2010_Fimbriation_Switch_42C"
 description: "This the detailed model for 42\u00b0C from the article: Temperature Control of Fimbriation Circuit Switch in Uropathogenic Escherichia coli : Quantitative Analysis via Automated Model Abstraction. It can be used to explore microbiology kuwahara2010 fimbriation switch 42c model1004010002 dynamics and compare simulation behavior across conditions."
 standard: other
 tags:

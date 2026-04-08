@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Microbiology: Balagadd2008EColiPredatorPreyBiomd0000000296Model'
+title: "Balagaddé2008_E_coli_Predator_Prey"
 description: "This is the reduced model described in the article: A synthetic Escherichia coli predator\u2013prey ecosystem Balagadd\u00e9 FK, Song H, Ozaki J, Collins CH, Barnet M, Arnold FH, Quake SR, You L. It can be used to explore microbiology balagadd 2008 e coli predator dynamics and compare simulation behavior across conditions."
 standard: other
 tags:

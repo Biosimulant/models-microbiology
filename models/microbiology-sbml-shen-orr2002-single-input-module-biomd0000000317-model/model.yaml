@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Microbiology: ShenOrr2002SingleInputModuleBiomd0000000317Model'
+title: "Shen-Orr2002_Single_Input_Module"
 description: "This is the single input module, SIM, described in the article: Network motifs in the transcriptional regulation network of Escherichia coli Shai S. Shen-Orr, Ron Milo, Shmoolik Mangan, Uri Alon, Nat."
 standard: other
 tags:
