@@ -11,14 +11,13 @@ This a model from the article: How yeast cells synchronize their glycolytic osci
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/microbiology-sbml-bier2000-glycolyticoscillation-biomd0000000254-model
     alias: model
-    manifest_path: models/microbiology-sbml-bier2000-glycolyticoscillation-biomd0000000254-model/model.yaml
 ```
 
 ## Tags

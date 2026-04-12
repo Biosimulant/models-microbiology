@@ -11,14 +11,13 @@ This is the single input module, SIM, described in the article: Network motifs i
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/microbiology-sbml-shen-orr2002-single-input-module-biomd0000000317-model
     alias: model
-    manifest_path: models/microbiology-sbml-shen-orr2002-single-input-module-biomd0000000317-model/model.yaml
 ```
 
 ## Tags

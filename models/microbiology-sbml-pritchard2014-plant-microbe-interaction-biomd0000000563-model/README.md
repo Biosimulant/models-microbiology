@@ -11,14 +11,13 @@ Pritchard2014 - plant-microbeinteraction Thismodel is an abstraction of a generi
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/microbiology-sbml-pritchard2014-plant-microbe-interaction-biomd0000000563-model
     alias: model
-    manifest_path: models/microbiology-sbml-pritchard2014-plant-microbe-interaction-biomd0000000563-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ This a model from the article: Increased glycolytic flux as an outcome of whole-
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/microbiology-sbml-conant2007-wgd-glycolysis-2a3ab-biomd0000000176-model
     alias: model
-    manifest_path: models/microbiology-sbml-conant2007-wgd-glycolysis-2a3ab-biomd0000000176-model/model.yaml
 ```
 
 ## Tags

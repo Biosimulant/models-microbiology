@@ -11,14 +11,13 @@ This agent-based model is based on an adaptive laboratory evolution (ALE) experi
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/microbiology-sbml-konstantinidis2021-persistence-of-mutants-in-a-m-model2106100001-model
     alias: model
-    manifest_path: models/microbiology-sbml-konstantinidis2021-persistence-of-mutants-in-a-m-model2106100001-model/model.yaml
 ```
 
 ## Tags

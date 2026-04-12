@@ -11,14 +11,13 @@ A deterministic model built in COPASI simulating the toxic activity of the K28 t
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/microbiology-sbml-sheppard2018-toxic-activity-of-k28-killer-yeast-model1804230002-model
     alias: model
-    manifest_path: models/microbiology-sbml-sheppard2018-toxic-activity-of-k28-killer-yeast-model1804230002-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ BackgroundThis work focuses on the computational modelling of osteomyelitis, a b
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/microbiology-sbml-li-2012-modelling-osteomyelitis-control-model-biomd0000000923-model
     alias: model
-    manifest_path: models/microbiology-sbml-li-2012-modelling-osteomyelitis-control-model-biomd0000000923-model/model.yaml
 ```
 
 ## Tags

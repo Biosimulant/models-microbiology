@@ -11,14 +11,13 @@ Tan2012 - Antibiotic Treatment, Inoculum Effect The efficacy of many antibiotics
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/microbiology-sbml-tan2012-antibiotic-treatment-inoculum-effect-biomd0000000425-model
     alias: model
-    manifest_path: models/microbiology-sbml-tan2012-antibiotic-treatment-inoculum-effect-biomd0000000425-model/model.yaml
 ```
 
 ## Tags

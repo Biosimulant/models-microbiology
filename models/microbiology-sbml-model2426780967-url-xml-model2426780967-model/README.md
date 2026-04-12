@@ -11,14 +11,13 @@ Increased glycolytic flux as an outcome of whole-genome duplication in yeast. GC
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/microbiology-sbml-model2426780967-url-xml-model2426780967-model
     alias: model
-    manifest_path: models/microbiology-sbml-model2426780967-url-xml-model2426780967-model/model.yaml
 ```
 
 ## Tags

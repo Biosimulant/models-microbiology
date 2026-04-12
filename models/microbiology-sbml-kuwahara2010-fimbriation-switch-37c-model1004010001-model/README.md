@@ -11,14 +11,13 @@ This the detailed model for 37°C from the article: Temperature Control of Fimbr
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/microbiology-sbml-kuwahara2010-fimbriation-switch-37c-model1004010001-model
     alias: model
-    manifest_path: models/microbiology-sbml-kuwahara2010-fimbriation-switch-37c-model1004010001-model/model.yaml
 ```
 
 ## Tags

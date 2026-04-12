@@ -11,14 +11,13 @@ The E. coli ammonium transport and assimilation network. This SBML model simulat
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/microbiology-sbml-maeda2019-ammoniumtransportassimilation-model1901090001-model
     alias: model
-    manifest_path: models/microbiology-sbml-maeda2019-ammoniumtransportassimilation-model1901090001-model/model.yaml
 ```
 
 ## Tags

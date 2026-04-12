@@ -11,14 +11,13 @@ This is a reconstruction of the biochemical network of the yeast Saccharomyces c
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/microbiology-sbml-herrg-rd2008-metabolicnetwork-yeast-model0072364382-model
     alias: model
-    manifest_path: models/microbiology-sbml-herrg-rd2008-metabolicnetwork-yeast-model0072364382-model/model.yaml
 ```
 
 ## Tags

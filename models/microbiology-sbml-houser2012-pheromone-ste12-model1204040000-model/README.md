@@ -11,14 +11,13 @@ This model is from the article: Positive roles for negative regulators in the ma
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/microbiology-sbml-houser2012-pheromone-ste12-model1204040000-model
     alias: model
-    manifest_path: models/microbiology-sbml-houser2012-pheromone-ste12-model1204040000-model/model.yaml
 ```
 
 ## Tags

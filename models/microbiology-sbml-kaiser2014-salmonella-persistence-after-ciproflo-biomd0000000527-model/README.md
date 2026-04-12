@@ -11,14 +11,13 @@ Kaiser2014 - Salmonella persistence after ciprofloxacin treatment The model desc
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/microbiology-sbml-kaiser2014-salmonella-persistence-after-ciproflo-biomd0000000527-model
     alias: model
-    manifest_path: models/microbiology-sbml-kaiser2014-salmonella-persistence-after-ciproflo-biomd0000000527-model/model.yaml
 ```
 
 ## Tags

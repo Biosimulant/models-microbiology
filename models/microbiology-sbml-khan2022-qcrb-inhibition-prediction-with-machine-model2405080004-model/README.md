@@ -11,14 +11,13 @@ The cytochrome bcc complex (QcrB) is a subunit of the mycobacterial cyt-bcc-aa3 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/microbiology-sbml-khan2022-qcrb-inhibition-prediction-with-machine-model2405080004-model
     alias: model
-    manifest_path: models/microbiology-sbml-khan2022-qcrb-inhibition-prediction-with-machine-model2405080004-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ Talemi2016 - Yeast osmo-homoestasis This model is described in the article: Syst
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/microbiology-sbml-talemi2016-yeast-osmo-homoestasis-model1606100000-model
     alias: model
-    manifest_path: models/microbiology-sbml-talemi2016-yeast-osmo-homoestasis-model1606100000-model/model.yaml
 ```
 
 ## Tags

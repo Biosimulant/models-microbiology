@@ -11,14 +11,13 @@ This model is decribed in the article:Dilution and titration of cell-cycle regul
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/microbiology-sbml-budding-yeast-size-control-by-titration-of-nucle-biomd0000000856-model
     alias: model
-    manifest_path: models/microbiology-sbml-budding-yeast-size-control-by-titration-of-nucle-biomd0000000856-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ FROG and miniFROG reports have been compiled for iLM.c559, which is a GSM of the
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/microbiology-sbml-zcan2019-leuconostoc-mesenteroides-subsp-cremori-biomd0000001089-model
     alias: model
-    manifest_path: models/microbiology-sbml-zcan2019-leuconostoc-mesenteroides-subsp-cremori-biomd0000001089-model/model.yaml
 ```
 
 ## Tags

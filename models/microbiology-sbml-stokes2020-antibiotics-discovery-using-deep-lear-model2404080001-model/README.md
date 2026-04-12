@@ -11,14 +11,13 @@ Based on a simple E.coli growth inhibition assay, the authors trained a model ca
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/microbiology-sbml-stokes2020-antibiotics-discovery-using-deep-lear-model2404080001-model
     alias: model
-    manifest_path: models/microbiology-sbml-stokes2020-antibiotics-discovery-using-deep-lear-model2404080001-model/model.yaml
 ```
 
 ## Tags

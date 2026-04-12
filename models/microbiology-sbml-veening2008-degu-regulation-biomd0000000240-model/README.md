@@ -11,14 +11,13 @@ This a model from the article: Transient heterogeneity in extracellular protease
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/microbiology-sbml-veening2008-degu-regulation-biomd0000000240-model
     alias: model
-    manifest_path: models/microbiology-sbml-veening2008-degu-regulation-biomd0000000240-model/model.yaml
 ```
 
 ## Tags

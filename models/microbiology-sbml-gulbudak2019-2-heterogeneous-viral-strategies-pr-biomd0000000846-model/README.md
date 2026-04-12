@@ -11,14 +11,13 @@ This is a mathematical model describing describing the population dynamics of mi
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/microbiology-sbml-gulbudak2019-2-heterogeneous-viral-strategies-pr-biomd0000000846-model
     alias: model
-    manifest_path: models/microbiology-sbml-gulbudak2019-2-heterogeneous-viral-strategies-pr-biomd0000000846-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ Leber2015 - Mucosal immunity and gutmicrobiome interaction during C. difficile i
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/microbiology-sbml-leber2015-mucosal-immunity-and-gut-microbiome-in-biomd0000000583-model
     alias: model
-    manifest_path: models/microbiology-sbml-leber2015-mucosal-immunity-and-gut-microbiome-in-biomd0000000583-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ SBML model exported from PottersWheel on 2019-01-17 12:49:15. This model was cre
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/microbiology-sbml-shaw-2018-yeast-gpcr-ternary-complex-model-model1901300001-model
     alias: model
-    manifest_path: models/microbiology-sbml-shaw-2018-yeast-gpcr-ternary-complex-model-model1901300001-model/model.yaml
 ```
 
 ## Tags

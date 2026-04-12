@@ -11,14 +11,13 @@ This model is from the article: Overexpression limits of fission yeast cell-cycl
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/microbiology-sbml-moriya2011-cellcycle-fissionyeast-biomd0000000406-model
     alias: model
-    manifest_path: models/microbiology-sbml-moriya2011-cellcycle-fissionyeast-biomd0000000406-model/model.yaml
 ```
 
 ## Tags

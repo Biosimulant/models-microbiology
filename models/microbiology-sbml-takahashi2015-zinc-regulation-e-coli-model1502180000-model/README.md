@@ -11,14 +11,13 @@ This a model from the article: The dynamic balance of import and export of zinc 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/microbiology-sbml-takahashi2015-zinc-regulation-e-coli-model1502180000-model
     alias: model
-    manifest_path: models/microbiology-sbml-takahashi2015-zinc-regulation-e-coli-model1502180000-model/model.yaml
 ```
 
 ## Tags

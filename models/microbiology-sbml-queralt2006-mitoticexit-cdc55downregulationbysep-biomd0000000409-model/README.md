@@ -11,14 +11,13 @@ This model is from the article: Downregulation of PP2A(Cdc55) phosphatase by sep
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/microbiology-sbml-queralt2006-mitoticexit-cdc55downregulationbysep-biomd0000000409-model
     alias: model
-    manifest_path: models/microbiology-sbml-queralt2006-mitoticexit-cdc55downregulationbysep-biomd0000000409-model/model.yaml
 ```
 
 ## Tags

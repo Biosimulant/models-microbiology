@@ -11,14 +11,13 @@ This a model from the article: Mathematical modeling of calcium homeostasis in y
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/microbiology-sbml-cui2006-calciumhomeostasis-model0913003363-model
     alias: model
-    manifest_path: models/microbiology-sbml-cui2006-calciumhomeostasis-model0913003363-model/model.yaml
 ```
 
 ## Tags
