@@ -1,0 +1,61 @@
+schema_version: '2.0'
+title: Cui2008 - in vitro transcriptional response of zinc homeostasis system in Escherichia
+  coli
+description: 'BACKGROUND: The zinc homeostasis system in Escherichia coli is one of
+  the most intensively studied prokaryotic zinc homeostasis systems. Its underlying
+  regulatory machine consists of repression on zin.'
+standard: sbml
+tags:
+- microbiology
+- sbml
+- biomodels_ebi
+- faithful
+- tellurium
+authors:
+- Biosimulant Team
+- Jiangjun Cui
+- Jaap A Kaandorp
+- Catherine M Lloyd
+upstream:
+  id: biomodels_ebi:BIOMD0000000966
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000966
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000966
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000966?filename=Cui2008.xml
+  license: CC0
+biosim:
+  entrypoint: src.cui2008_in_vitro_transcriptional_response_of_zin_biomd0000000966_model:Cui2008InVitroTranscriptionalResponseOfZinBiomd0000000966Model
+  init_kwargs:
+    model_path: data/BIOMD0000000966.xml
+    integration_step: 1.0
+  communication_step: 0.01
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: zinc_concentration
+    maps_to: Zn
+    label: Zinc Concentration
+  outputs:
+  - name: state
+    maps_to: state
+    label: Model state
+  - name: summary
+    maps_to: summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: species_labels
+    label: Observable labels
+  - name: zinc_complex
+    maps_to: Zn_2
+    label: Zn^2
+  - name: zinc_promoter_state
+    maps_to: Dw
+    label: Dw
+  - name: zinc_transcript_state
+    maps_to: Rw
+    label: Rw

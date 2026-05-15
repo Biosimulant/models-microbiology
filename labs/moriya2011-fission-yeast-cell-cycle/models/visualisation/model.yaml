@@ -1,0 +1,197 @@
+schema_version: '2.0'
+title: Moriya2011_CellCycle_FissionYeast Visualisation
+description: Question-and-answer visualisation for Moriya2011_CellCycle_FissionYeast.
+standard: other
+tags:
+- microbiology
+- visualisation
+biosim:
+  communication_step: 1.0
+  entrypoint: src.microbiology_visualisation:MicrobiologyVisualisationModel
+  init_kwargs:
+    sources:
+    - alias: moriya2011_fission_yeast_cell_cycle
+      observables:
+      - id: s4
+        label: Vdrum
+      - id: s9
+        label: Vdcyc
+      - id: s46
+        label: Sa4 degraded
+      - id: s47
+        label: Srw1
+      - id: s48
+        label: Slp1A
+      - id: s49
+        label: Puc1
+      - id: s50
+        label: IE
+      - id: s51
+        label: IIE
+      - id: s52
+        label: Rum1+
+      - id: s55
+        label: Cig2+
+      - id: s56
+        label: Cdc13
+      - id: s57
+        label: Cdc13+
+      - id: s60
+        label: PCdc13
+      - id: s61
+        label: Sa161 degraded
+      - id: s63
+        label: Cig2p
+      - id: s64
+        label: Pyp3
+      - id: s65
+        label: ISrw1
+      - id: s66
+        label: ISlp1
+      - id: s67
+        label: Cig2
+      - id: s70
+        label: ICdc10
+      - id: s71
+        label: Cdc10
+      - id: s72
+        label: Mik1
+      - id: s73
+        label: Mik1+
+      - id: s74
+        label: Sa347 degraded
+      - id: s75
+        label: Cig1
+      - id: s76
+        label: Cig1+
+      - id: s77
+        label: Sa353 degraded
+      - id: s78
+        label: Clp1+
+      - id: s79
+        label: IWee1
+      - id: s80
+        label: Wee1
+      - id: s81
+        label: Clp1
+      - id: s82
+        label: ICdc25
+      - id: s83
+        label: Cdc25
+      - id: s84
+        label: Cdc18T
+      - id: s85
+        label: Cdc18+
+      - id: s88
+        label: Sa386 degraded
+      - id: s89
+        label: PreRC
+      - id: s90
+        label: PostRC
+      - id: s91
+        label: Repldna
+      - id: s92
+        label: Irepldna
+      - id: s93
+        label: Sa370 degraded
+      - id: s94
+        label: Sa44 degraded
+      - id: s130
+        label: Vdc18
+      - id: s137
+        label: Cdc13p-Rum1
+      - id: s149
+        label: Cig2-Rum1
+      - id: s153
+        label: Cig2p-Rum1
+      - id: s157
+        label: UDNA
+      - id: s161
+        label: Cdc13-Rum1
+      - id: s166
+        label: Rum1
+      labels:
+        s4: Vdrum
+        s9: Vdcyc
+        s46: Sa4 degraded
+        s47: Srw1
+        s48: Slp1A
+        s49: Puc1
+        s50: IE
+        s51: IIE
+        s52: Rum1+
+        s55: Cig2+
+        s56: Cdc13
+        s57: Cdc13+
+        s60: PCdc13
+        s61: Sa161 degraded
+        s63: Cig2p
+        s64: Pyp3
+        s65: ISrw1
+        s66: ISlp1
+        s67: Cig2
+        s70: ICdc10
+        s71: Cdc10
+        s72: Mik1
+        s73: Mik1+
+        s74: Sa347 degraded
+        s75: Cig1
+        s76: Cig1+
+        s77: Sa353 degraded
+        s78: Clp1+
+        s79: IWee1
+        s80: Wee1
+        s81: Clp1
+        s82: ICdc25
+        s83: Cdc25
+        s84: Cdc18T
+        s85: Cdc18+
+        s88: Sa386 degraded
+        s89: PreRC
+        s90: PostRC
+        s91: Repldna
+        s92: Irepldna
+        s93: Sa370 degraded
+        s94: Sa44 degraded
+        s130: Vdc18
+        s137: Cdc13p-Rum1
+        s149: Cig2-Rum1
+        s153: Cig2p-Rum1
+        s157: UDNA
+        s161: Cdc13-Rum1
+        s166: Rum1
+      headline_outputs:
+      - port: drum_cycle_velocity_state
+        source: s4
+        label: Vdrum
+      - port: cell_cycle_velocity_state
+        source: s9
+        label: Vdcyc
+      - port: degraded_sa4_state
+        source: s46
+        label: Sa4 degraded
+      - port: srw1_regulator
+        source: s47
+        label: Srw1
+    question: Which fission yeast cell-cycle regulator changes most over the simulated
+      window?
+    scope: yeast cell-cycle state dynamics
+    caveat: The bundled SBML is the executable source of truth; labels are conservative
+      where source symbols are ambiguous.
+io:
+  inputs:
+  - name: moriya2011_fission_yeast_cell_cycle_state
+    maps_to: moriya2011_fission_yeast_cell_cycle.state
+  - name: moriya2011_fission_yeast_cell_cycle_summary
+    maps_to: moriya2011_fission_yeast_cell_cycle.summary
+  - name: moriya2011_fission_yeast_cell_cycle_species_labels
+    maps_to: moriya2011_fission_yeast_cell_cycle.species_labels
+  - name: moriya2011_fission_yeast_cell_cycle_drum_cycle_velocity_state
+    maps_to: moriya2011_fission_yeast_cell_cycle.drum_cycle_velocity_state
+  - name: moriya2011_fission_yeast_cell_cycle_cell_cycle_velocity_state
+    maps_to: moriya2011_fission_yeast_cell_cycle.cell_cycle_velocity_state
+  - name: moriya2011_fission_yeast_cell_cycle_degraded_sa4_state
+    maps_to: moriya2011_fission_yeast_cell_cycle.degraded_sa4_state
+  - name: moriya2011_fission_yeast_cell_cycle_srw1_regulator
+    maps_to: moriya2011_fission_yeast_cell_cycle.srw1_regulator
+  outputs: []

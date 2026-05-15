@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Gardner2000 - genetic toggle switch in E.coli Visualisation
+description: Question-and-answer visualisation for Gardner2000 - genetic toggle switch
+  in E.coli.
+standard: other
+tags:
+- microbiology
+- visualisation
+biosim:
+  communication_step: 1.0
+  entrypoint: src.microbiology_visualisation:MicrobiologyVisualisationModel
+  init_kwargs:
+    sources:
+    - alias: gardner2000_ecoli_toggle_switch
+      observables:
+      - id: species_1
+        label: U
+      - id: species_2
+        label: V
+      - id: species_3
+        label: IPTG
+      labels:
+        species_1: U
+        species_2: V
+        species_3: IPTG
+      headline_outputs:
+      - port: iptg_inducer
+        source: species_3
+        label: IPTG
+      - port: first_toggle_repressor
+        source: species_1
+        label: U
+      - port: second_toggle_repressor
+        source: species_2
+        label: V
+    question: Which side of the genetic toggle switch is favored in the bundled SBML
+      run?
+    scope: microbial gene-regulatory switching
+    caveat: The bundled SBML is the executable source of truth; labels are conservative
+      where source symbols are ambiguous.
+io:
+  inputs:
+  - name: gardner2000_ecoli_toggle_switch_state
+    maps_to: gardner2000_ecoli_toggle_switch.state
+  - name: gardner2000_ecoli_toggle_switch_summary
+    maps_to: gardner2000_ecoli_toggle_switch.summary
+  - name: gardner2000_ecoli_toggle_switch_species_labels
+    maps_to: gardner2000_ecoli_toggle_switch.species_labels
+  - name: gardner2000_ecoli_toggle_switch_iptg_inducer
+    maps_to: gardner2000_ecoli_toggle_switch.iptg_inducer
+  - name: gardner2000_ecoli_toggle_switch_first_toggle_repressor
+    maps_to: gardner2000_ecoli_toggle_switch.first_toggle_repressor
+  - name: gardner2000_ecoli_toggle_switch_second_toggle_repressor
+    maps_to: gardner2000_ecoli_toggle_switch.second_toggle_repressor
+  outputs: []

@@ -1,0 +1,61 @@
+schema_version: '2.0'
+title: Gulbudak2019.2 - Heterogeneous viral strategies promote coexistence in virus-microbe
+  systems (Chronic)
+description: This is a mathematical model describing describing the population dynamics
+  of microbes infected by chronically infecting viruses. It can be used to explore
+  microbiology gulbudak2019 2 heterogeneous viral strategies dynamics and compare
+  simulation behavior across conditions.
+standard: sbml
+tags:
+- microbiology
+- sbml
+- biomodels_ebi
+- faithful
+- tellurium
+authors:
+- Biosimulant Team
+- Hayriye Gulbudak
+- Joshua S Weitz
+upstream:
+  id: biomodels_ebi:BIOMD0000000846
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000846
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000846
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000846?filename=Gulbudak2019.2.Chronic.xml
+  license: CC0
+biosim:
+  entrypoint: src.gulbudak2019_2_heterogeneous_viral_strategies_pr_biomd0000000846_model:Gulbudak20192HeterogeneousViralStrategiesPrBiomd0000000846Model
+  init_kwargs:
+    model_path: data/BIOMD0000000846.xml
+    integration_step: 1.0
+  communication_step: 0.01
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: infection_rate
+    maps_to: beta
+    label: Infection Rate
+  outputs:
+  - name: state
+    maps_to: state
+    label: Model state
+  - name: summary
+    maps_to: summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: species_labels
+    label: Observable labels
+  - name: susceptible_hosts
+    maps_to: S
+    label: S
+  - name: carrier_hosts
+    maps_to: C
+    label: C
+  - name: free_chronic_virus
+    maps_to: V_C
+    label: V C

@@ -1,0 +1,51 @@
+schema_version: '2.0'
+title: Gulbudak2019.1 - Heterogeneous viral strategies promote coexistence in virus-microbe
+  systems (Lytic) Lab
+description: Curated microbiology lab for Gulbudak2019.1 - Heterogeneous viral strategies
+  promote coexistence in virus-microbe systems (Lytic). The bundled SBML is executed
+  directly through Tellurium and visualised with conservative, source-traceable labels.
+models:
+- alias: gulbudak2019_viral_strategy_l
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: gulbudak2019_viral_strategy_l.state
+  to:
+  - visualisation.gulbudak2019_viral_strategy_l_state
+- from: gulbudak2019_viral_strategy_l.summary
+  to:
+  - visualisation.gulbudak2019_viral_strategy_l_summary
+- from: gulbudak2019_viral_strategy_l.species_labels
+  to:
+  - visualisation.gulbudak2019_viral_strategy_l_species_labels
+- from: gulbudak2019_viral_strategy_l.susceptible_hosts
+  to:
+  - visualisation.gulbudak2019_viral_strategy_l_susceptible_hosts
+- from: gulbudak2019_viral_strategy_l.infected_hosts
+  to:
+  - visualisation.gulbudak2019_viral_strategy_l_infected_hosts
+- from: gulbudak2019_viral_strategy_l.free_lytic_virus
+  to:
+  - visualisation.gulbudak2019_viral_strategy_l_free_lytic_virus
+runtime:
+  duration: 10.0
+  communication_step: 0.01
+  initial_inputs: {}
+io:
+  inputs:
+  - name: infection_rate
+    maps_to: gulbudak2019_viral_strategy_l.infection_rate
+  outputs:
+  - name: state
+    maps_to: gulbudak2019_viral_strategy_l.state
+  - name: summary
+    maps_to: gulbudak2019_viral_strategy_l.summary
+  - name: species_labels
+    maps_to: gulbudak2019_viral_strategy_l.species_labels
+  - name: susceptible_hosts
+    maps_to: gulbudak2019_viral_strategy_l.susceptible_hosts
+  - name: infected_hosts
+    maps_to: gulbudak2019_viral_strategy_l.infected_hosts
+  - name: free_lytic_virus
+    maps_to: gulbudak2019_viral_strategy_l.free_lytic_virus

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "0f1e8ad6-7854-41cb-a567-2896735111a4",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "081eea11-0e06-4a31-86c7-a628406fdb9a",
+  "created_at": "2026-05-15T15:55:10.912027276+00:00",
+  "last_synced_at": "2026-05-15T18:46:31.839592+00:00",
+  "hub_manifest_hash": "a7a9e0ab4dc1a65908c0695774d3d1d0704ef78bbe4b6fdb416e51154ae2f03d",
+  "package_name": "maeda2019-ammoniumtransportassimilation-lab"
+}

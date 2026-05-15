@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "d426979f-e722-48b0-8659-1d588f7c03a2",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "6a3a0198-22e9-4bdf-9eb3-f8bdeaa9996e",
+  "created_at": "2026-05-15T15:55:11.231356106+00:00",
+  "last_synced_at": "2026-05-15T18:54:27.531287+00:00",
+  "hub_manifest_hash": "8e02c7f73fe1a821dd9405ac74b7e15adf6a6dfc799b88029c670e0100688fc2",
+  "package_name": "vinod2011-mitoticexit-lab"
+}

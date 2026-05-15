@@ -1,0 +1,40 @@
+schema_version: '2.0'
+title: Kaiser2014 - Salmonella persistence after ciprofloxacin treatment Lab
+description: Curated microbiology lab for Kaiser2014 - Salmonella persistence after
+  ciprofloxacin treatment. The bundled SBML is executed directly through Tellurium
+  and visualised with conservative, source-traceable labels.
+models:
+- alias: kaiser2014_salmonella_persistence
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: kaiser2014_salmonella_persistence.state
+  to:
+  - visualisation.kaiser2014_salmonella_persistence_state
+- from: kaiser2014_salmonella_persistence.summary
+  to:
+  - visualisation.kaiser2014_salmonella_persistence_summary
+- from: kaiser2014_salmonella_persistence.species_labels
+  to:
+  - visualisation.kaiser2014_salmonella_persistence_species_labels
+- from: kaiser2014_salmonella_persistence.persistent_salmonella_load
+  to:
+  - visualisation.kaiser2014_salmonella_persistence_persistent_salmonella_load
+runtime:
+  duration: 10.0
+  communication_step: 0.01
+  initial_inputs: {}
+io:
+  inputs:
+  - name: initial_persistent_salmonella_load
+    maps_to: kaiser2014_salmonella_persistence.initial_persistent_salmonella_load
+  outputs:
+  - name: state
+    maps_to: kaiser2014_salmonella_persistence.state
+  - name: summary
+    maps_to: kaiser2014_salmonella_persistence.summary
+  - name: species_labels
+    maps_to: kaiser2014_salmonella_persistence.species_labels
+  - name: persistent_salmonella_load
+    maps_to: kaiser2014_salmonella_persistence.persistent_salmonella_load

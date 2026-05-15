@@ -1,0 +1,51 @@
+schema_version: '2.0'
+title: Cui2008 - in vitro transcriptional response of zinc homeostasis system in Escherichia
+  coli Lab
+description: Curated microbiology lab for Cui2008 - in vitro transcriptional response
+  of zinc homeostasis system in Escherichia coli. The bundled SBML is executed directly
+  through Tellurium and visualised with conservative, source-traceable labels.
+models:
+- alias: cui2008_ecoli_zinc_transcription
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: cui2008_ecoli_zinc_transcription.state
+  to:
+  - visualisation.cui2008_ecoli_zinc_transcription_state
+- from: cui2008_ecoli_zinc_transcription.summary
+  to:
+  - visualisation.cui2008_ecoli_zinc_transcription_summary
+- from: cui2008_ecoli_zinc_transcription.species_labels
+  to:
+  - visualisation.cui2008_ecoli_zinc_transcription_species_labels
+- from: cui2008_ecoli_zinc_transcription.zinc_complex
+  to:
+  - visualisation.cui2008_ecoli_zinc_transcription_zinc_complex
+- from: cui2008_ecoli_zinc_transcription.zinc_promoter_state
+  to:
+  - visualisation.cui2008_ecoli_zinc_transcription_zinc_promoter_state
+- from: cui2008_ecoli_zinc_transcription.zinc_transcript_state
+  to:
+  - visualisation.cui2008_ecoli_zinc_transcription_zinc_transcript_state
+runtime:
+  duration: 10.0
+  communication_step: 0.01
+  initial_inputs: {}
+io:
+  inputs:
+  - name: zinc_concentration
+    maps_to: cui2008_ecoli_zinc_transcription.zinc_concentration
+  outputs:
+  - name: state
+    maps_to: cui2008_ecoli_zinc_transcription.state
+  - name: summary
+    maps_to: cui2008_ecoli_zinc_transcription.summary
+  - name: species_labels
+    maps_to: cui2008_ecoli_zinc_transcription.species_labels
+  - name: zinc_complex
+    maps_to: cui2008_ecoli_zinc_transcription.zinc_complex
+  - name: zinc_promoter_state
+    maps_to: cui2008_ecoli_zinc_transcription.zinc_promoter_state
+  - name: zinc_transcript_state
+    maps_to: cui2008_ecoli_zinc_transcription.zinc_transcript_state

@@ -1,0 +1,67 @@
+schema_version: '2.0'
+title: Queralt2006_MitoticExit_Cdc55DownregulationBySeparase
+description: 'This model is from the article: Downregulation of PP2A(Cdc55) phosphatase
+  by separase initiates mitotic exit in budding yeast. Queralt E, Lehane C, Novak
+  B, Uhlmann F.'
+standard: sbml
+tags:
+- microbiology
+- sbml
+- biomodels_ebi
+- faithful
+- tellurium
+authors:
+- Biosimulant Team
+- Ethel Queralt
+- Chris Lehane
+- Béla Novák
+- Frank Uhlmann
+upstream:
+  id: biomodels_ebi:BIOMD0000000409
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000409
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000409
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000409?filename=BIOMD0000000409_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.queralt2006_mitoticexit_cdc55downregulationbysep_biomd0000000409_model:Queralt2006MitoticexitCdc55downregulationbysepBiomd0000000409Model
+  init_kwargs:
+    model_path: data/BIOMD0000000409.xml
+    integration_step: 1.0
+  communication_step: 0.01
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: amino_acid_pool_level
+    maps_to: AA
+    label: Amino Acid Pool Level
+  - name: degradation_signal_level
+    maps_to: degr
+    label: Degradation Signal Level
+  outputs:
+  - name: state
+    maps_to: state
+    label: Model state
+  - name: summary
+    maps_to: summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: species_labels
+    label: Observable labels
+  - name: amino_acid_pool
+    maps_to: AA
+    label: AA
+  - name: clb2_cyclin_level
+    maps_to: Clb2
+    label: Clb2
+  - name: degradation_signal
+    maps_to: degr
+    label: Degr
+  - name: cdc20_level
+    maps_to: Cdc20
+    label: Cdc20

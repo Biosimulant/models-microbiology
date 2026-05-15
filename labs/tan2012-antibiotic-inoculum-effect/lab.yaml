@@ -1,0 +1,42 @@
+schema_version: '2.0'
+title: Tan2012 - Antibiotic Treatment, Inoculum Effect Lab
+description: Curated microbiology lab for Tan2012 - Antibiotic Treatment, Inoculum
+  Effect. The bundled SBML is executed directly through Tellurium and visualised with
+  conservative, source-traceable labels.
+models:
+- alias: tan2012_antibiotic_inoculum_effect
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: tan2012_antibiotic_inoculum_effect.state
+  to:
+  - visualisation.tan2012_antibiotic_inoculum_effect_state
+- from: tan2012_antibiotic_inoculum_effect.summary
+  to:
+  - visualisation.tan2012_antibiotic_inoculum_effect_summary
+- from: tan2012_antibiotic_inoculum_effect.species_labels
+  to:
+  - visualisation.tan2012_antibiotic_inoculum_effect_species_labels
+- from: tan2012_antibiotic_inoculum_effect.ribosome_concentration
+  to:
+  - visualisation.tan2012_antibiotic_inoculum_effect_ribosome_concentration
+runtime:
+  duration: 10.0
+  communication_step: 0.01
+  initial_inputs: {}
+io:
+  inputs:
+  - name: antibiotic_killing_rate
+    maps_to: tan2012_antibiotic_inoculum_effect.antibiotic_killing_rate
+  - name: initial_ribosome_concentration
+    maps_to: tan2012_antibiotic_inoculum_effect.initial_ribosome_concentration
+  outputs:
+  - name: state
+    maps_to: tan2012_antibiotic_inoculum_effect.state
+  - name: summary
+    maps_to: tan2012_antibiotic_inoculum_effect.summary
+  - name: species_labels
+    maps_to: tan2012_antibiotic_inoculum_effect.species_labels
+  - name: ribosome_concentration
+    maps_to: tan2012_antibiotic_inoculum_effect.ribosome_concentration

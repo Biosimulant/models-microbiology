@@ -1,0 +1,65 @@
+schema_version: '2.0'
+title: Queralt2006 - Initiation of mitotic exit by downregulation of PP2A in budding
+  yeast
+description: Mathematical model of mitotic exit in budding yeast. It can be used to
+  explore microbiology queralt2006 initiation of mitotic exit dynamics and compare
+  simulation behavior across conditions.
+standard: sbml
+tags:
+- microbiology
+- sbml
+- biomodels_ebi
+- faithful
+- tellurium
+authors:
+- Biosimulant Team
+- Ethel Queralt
+- Chris Lehane
+- Béla Novák
+- Frank Uhlmann
+upstream:
+  id: biomodels_ebi:BIOMD0000000953
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000953
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000953
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000953?filename=queralt2006_final.xml
+  license: CC0
+biosim:
+  entrypoint: src.queralt2006_initiation_of_mitotic_exit_by_downre_biomd0000000953_model:Queralt2006InitiationOfMitoticExitByDownreBiomd0000000953Model
+  init_kwargs:
+    model_path: data/BIOMD0000000953.xml
+    integration_step: 1.0
+  communication_step: 0.01
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: total_pp2a
+    maps_to: pp2a_total
+    label: Total PP2A
+  outputs:
+  - name: state
+    maps_to: state
+    label: Model state
+  - name: summary
+    maps_to: summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: species_labels
+    label: Observable labels
+  - name: clb2_cyclin_level
+    maps_to: clb2
+    label: Clb2
+  - name: cdc20_level
+    maps_to: cdc20
+    label: Cdc20
+  - name: cdh1_level
+    maps_to: cdh1
+    label: Cdh1
+  - name: securin_total
+    maps_to: securin_total
+    label: Securin total

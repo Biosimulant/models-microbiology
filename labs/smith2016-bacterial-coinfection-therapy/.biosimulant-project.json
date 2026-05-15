@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "b036edce-0e6f-4e41-9708-7faa0df07c44",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "0d4655ed-34cc-479c-98d5-3b6afaf69121",
+  "created_at": "2026-05-15T15:55:11.138860789+00:00",
+  "last_synced_at": "2026-05-15T18:50:29.423555+00:00",
+  "hub_manifest_hash": "c1ae279125df87dd2bc5167af41d72cb89f253495347fefd67965732035a7725",
+  "package_name": "smith2016-combination-therapy-to-prevent-bacterial-coinfection-d"
+}

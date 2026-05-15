@@ -1,0 +1,67 @@
+schema_version: '2.0'
+title: Bruggeman2005_AmmoniumAssimilation
+description: 'This a model from the article: The multifarious short-term regulation
+  of ammonium assimilation of Escherichia coli: dissection using an in silico replica.
+  It can be used to explore microbiology bruggeman2005 ammoniumassimilation BioModels0000000217
+  dynamics and compare simulation behavior across conditions.'
+standard: sbml
+tags:
+- microbiology
+- sbml
+- biomodels_ebi
+- faithful
+- tellurium
+authors:
+- Biosimulant Team
+- Frank J Bruggeman
+- Fred C. Boogerd
+- Hans V Westerhoff
+upstream:
+  id: biomodels_ebi:BIOMD0000000217
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000217
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000217
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000217?filename=BIOMD0000000217_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.bruggeman2005_ammoniumassimilation_biomd0000000217_model:Bruggeman2005AmmoniumassimilationBiomd0000000217Model
+  init_kwargs:
+    model_path: data/BIOMD0000000217.xml
+    integration_step: 1.0
+  communication_step: 0.01
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: external_ammonium
+    maps_to: NH4
+    label: External Ammonium
+  - name: alpha_ketoglutarate_pool
+    maps_to: KG
+    label: Alpha Ketoglutarate Pool
+  outputs:
+  - name: state
+    maps_to: state
+    label: Model state
+  - name: summary
+    maps_to: summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: species_labels
+    label: Observable labels
+  - name: pii_regulatory_protein
+    maps_to: PII
+    label: PII
+  - name: uridine_triphosphate
+    maps_to: UTP
+    label: UTP
+  - name: uridylylated_pii_protein
+    maps_to: PIIUMP
+    label: PIIUMP
+  - name: inorganic_pyrophosphate
+    maps_to: PPi
+    label: PPi

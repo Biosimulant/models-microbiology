@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "549a0871-12e2-4909-82f7-af25962685e2",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "d8862e12-c4de-48e0-afa1-585024b26c36",
+  "created_at": "2026-05-15T15:44:27.553997748+00:00",
+  "last_synced_at": "2026-05-15T18:50:51.101794+00:00",
+  "hub_manifest_hash": "f51f8be2df5fe52a083cd3479ebc9f9ce56e6609d2efeb1f4bbc644972255da5",
+  "package_name": "takahashi2015-zinc-regulation-e-coli-lab"
+}

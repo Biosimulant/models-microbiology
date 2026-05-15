@@ -1,0 +1,52 @@
+schema_version: '2.0'
+title: Veening2008_DegU_Regulation Lab
+description: Curated microbiology lab for Veening2008_DegU_Regulation. The bundled
+  SBML is executed directly through Tellurium and visualised with conservative, source-traceable
+  labels.
+models:
+- alias: veening2008_bsubtilis_degu_regulation
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: veening2008_bsubtilis_degu_regulation.state
+  to:
+  - visualisation.veening2008_bsubtilis_degu_regulation_state
+- from: veening2008_bsubtilis_degu_regulation.summary
+  to:
+  - visualisation.veening2008_bsubtilis_degu_regulation_summary
+- from: veening2008_bsubtilis_degu_regulation.species_labels
+  to:
+  - visualisation.veening2008_bsubtilis_degu_regulation_species_labels
+- from: veening2008_bsubtilis_degu_regulation.apre_extracellular_protease
+  to:
+  - visualisation.veening2008_bsubtilis_degu_regulation_apre_extracellular_protease
+- from: veening2008_bsubtilis_degu_regulation.degu_response_regulator
+  to:
+  - visualisation.veening2008_bsubtilis_degu_regulation_degu_response_regulator
+- from: veening2008_bsubtilis_degu_regulation.phosphorylated_degu_response_regulator
+  to:
+  - visualisation.veening2008_bsubtilis_degu_regulation_phosphorylated_degu_response_regulator
+runtime:
+  duration: 10.0
+  communication_step: 0.01
+  initial_inputs: {}
+io:
+  inputs:
+  - name: maximum_degu_activation_rate
+    maps_to: veening2008_bsubtilis_degu_regulation.maximum_degu_activation_rate
+  - name: initial_degu_response_regulator
+    maps_to: veening2008_bsubtilis_degu_regulation.initial_degu_response_regulator
+  outputs:
+  - name: state
+    maps_to: veening2008_bsubtilis_degu_regulation.state
+  - name: summary
+    maps_to: veening2008_bsubtilis_degu_regulation.summary
+  - name: species_labels
+    maps_to: veening2008_bsubtilis_degu_regulation.species_labels
+  - name: apre_extracellular_protease
+    maps_to: veening2008_bsubtilis_degu_regulation.apre_extracellular_protease
+  - name: degu_response_regulator
+    maps_to: veening2008_bsubtilis_degu_regulation.degu_response_regulator
+  - name: phosphorylated_degu_response_regulator
+    maps_to: veening2008_bsubtilis_degu_regulation.phosphorylated_degu_response_regulator

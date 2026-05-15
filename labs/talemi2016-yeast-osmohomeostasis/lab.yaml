@@ -1,0 +1,57 @@
+schema_version: '2.0'
+title: Talemi2016 - Yeast osmo-homoestasis Lab
+description: Curated microbiology lab for Talemi2016 - Yeast osmo-homoestasis. The
+  bundled SBML is executed directly through Tellurium and visualised with conservative,
+  source-traceable labels.
+models:
+- alias: talemi2016_yeast_osmohomeostasis
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: talemi2016_yeast_osmohomeostasis.state
+  to:
+  - visualisation.talemi2016_yeast_osmohomeostasis_state
+- from: talemi2016_yeast_osmohomeostasis.summary
+  to:
+  - visualisation.talemi2016_yeast_osmohomeostasis_summary
+- from: talemi2016_yeast_osmohomeostasis.species_labels
+  to:
+  - visualisation.talemi2016_yeast_osmohomeostasis_species_labels
+- from: talemi2016_yeast_osmohomeostasis.intracellular_glycerol
+  to:
+  - visualisation.talemi2016_yeast_osmohomeostasis_intracellular_glycerol
+- from: talemi2016_yeast_osmohomeostasis.osmotic_signal
+  to:
+  - visualisation.talemi2016_yeast_osmohomeostasis_osmotic_signal
+- from: talemi2016_yeast_osmohomeostasis.phosphorylated_hog1_mapk
+  to:
+  - visualisation.talemi2016_yeast_osmohomeostasis_phosphorylated_hog1_mapk
+- from: talemi2016_yeast_osmohomeostasis.phosphorylated_slt2_mapk
+  to:
+  - visualisation.talemi2016_yeast_osmohomeostasis_phosphorylated_slt2_mapk
+runtime:
+  duration: 10.0
+  communication_step: 0.01
+  initial_inputs: {}
+io:
+  inputs:
+  - name: external_osmolarity
+    maps_to: talemi2016_yeast_osmohomeostasis.external_osmolarity
+  - name: hog_pathway_signal
+    maps_to: talemi2016_yeast_osmohomeostasis.hog_pathway_signal
+  outputs:
+  - name: state
+    maps_to: talemi2016_yeast_osmohomeostasis.state
+  - name: summary
+    maps_to: talemi2016_yeast_osmohomeostasis.summary
+  - name: species_labels
+    maps_to: talemi2016_yeast_osmohomeostasis.species_labels
+  - name: intracellular_glycerol
+    maps_to: talemi2016_yeast_osmohomeostasis.intracellular_glycerol
+  - name: osmotic_signal
+    maps_to: talemi2016_yeast_osmohomeostasis.osmotic_signal
+  - name: phosphorylated_hog1_mapk
+    maps_to: talemi2016_yeast_osmohomeostasis.phosphorylated_hog1_mapk
+  - name: phosphorylated_slt2_mapk
+    maps_to: talemi2016_yeast_osmohomeostasis.phosphorylated_slt2_mapk

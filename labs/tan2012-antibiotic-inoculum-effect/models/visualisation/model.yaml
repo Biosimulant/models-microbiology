@@ -1,0 +1,39 @@
+schema_version: '2.0'
+title: Tan2012 - Antibiotic Treatment, Inoculum Effect Visualisation
+description: Question-and-answer visualisation for Tan2012 - Antibiotic Treatment,
+  Inoculum Effect.
+standard: other
+tags:
+- microbiology
+- visualisation
+biosim:
+  communication_step: 1.0
+  entrypoint: src.microbiology_visualisation:MicrobiologyVisualisationModel
+  init_kwargs:
+    sources:
+    - alias: tan2012_antibiotic_inoculum_effect
+      observables:
+      - id: c
+        label: Ribosome concentration
+      labels:
+        c: Ribosome concentration
+      headline_outputs:
+      - port: ribosome_concentration
+        source: c
+        label: Ribosome concentration
+    question: How does the modeled bacterial concentration change during antibiotic
+      exposure?
+    scope: microbiology model dynamics
+    caveat: The bundled SBML is the executable source of truth; labels are conservative
+      where source symbols are ambiguous.
+io:
+  inputs:
+  - name: tan2012_antibiotic_inoculum_effect_state
+    maps_to: tan2012_antibiotic_inoculum_effect.state
+  - name: tan2012_antibiotic_inoculum_effect_summary
+    maps_to: tan2012_antibiotic_inoculum_effect.summary
+  - name: tan2012_antibiotic_inoculum_effect_species_labels
+    maps_to: tan2012_antibiotic_inoculum_effect.species_labels
+  - name: tan2012_antibiotic_inoculum_effect_ribosome_concentration
+    maps_to: tan2012_antibiotic_inoculum_effect.ribosome_concentration
+  outputs: []

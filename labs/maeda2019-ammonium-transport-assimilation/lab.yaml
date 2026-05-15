@@ -1,0 +1,57 @@
+schema_version: '2.0'
+title: Maeda2019_AmmoniumTransportAssimilation Lab
+description: Curated microbiology lab for Maeda2019_AmmoniumTransportAssimilation.
+  The bundled SBML is executed directly through Tellurium and visualised with conservative,
+  source-traceable labels.
+models:
+- alias: maeda2019_ammonium_transport_assimilation
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: maeda2019_ammonium_transport_assimilation.state
+  to:
+  - visualisation.maeda2019_ammonium_transport_assimilation_state
+- from: maeda2019_ammonium_transport_assimilation.summary
+  to:
+  - visualisation.maeda2019_ammonium_transport_assimilation_summary
+- from: maeda2019_ammonium_transport_assimilation.species_labels
+  to:
+  - visualisation.maeda2019_ammonium_transport_assimilation_species_labels
+- from: maeda2019_ammonium_transport_assimilation.adp
+  to:
+  - visualisation.maeda2019_ammonium_transport_assimilation_adp
+- from: maeda2019_ammonium_transport_assimilation.atp
+  to:
+  - visualisation.maeda2019_ammonium_transport_assimilation_atp
+- from: maeda2019_ammonium_transport_assimilation.glutamine
+  to:
+  - visualisation.maeda2019_ammonium_transport_assimilation_glutamine
+- from: maeda2019_ammonium_transport_assimilation.glutamate
+  to:
+  - visualisation.maeda2019_ammonium_transport_assimilation_glutamate
+runtime:
+  duration: 10.0
+  communication_step: 0.01
+  initial_inputs: {}
+io:
+  inputs:
+  - name: external_ammonium
+    maps_to: maeda2019_ammonium_transport_assimilation.external_ammonium
+  - name: external_ph
+    maps_to: maeda2019_ammonium_transport_assimilation.external_ph
+  outputs:
+  - name: state
+    maps_to: maeda2019_ammonium_transport_assimilation.state
+  - name: summary
+    maps_to: maeda2019_ammonium_transport_assimilation.summary
+  - name: species_labels
+    maps_to: maeda2019_ammonium_transport_assimilation.species_labels
+  - name: adp
+    maps_to: maeda2019_ammonium_transport_assimilation.adp
+  - name: atp
+    maps_to: maeda2019_ammonium_transport_assimilation.atp
+  - name: glutamine
+    maps_to: maeda2019_ammonium_transport_assimilation.glutamine
+  - name: glutamate
+    maps_to: maeda2019_ammonium_transport_assimilation.glutamate

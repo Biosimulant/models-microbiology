@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "33d641a8-3d92-4626-877b-16e9c4d870e1",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "ea588594-4a16-4d47-9345-91888df407a7",
+  "created_at": "2026-05-15T15:55:11.026745843+00:00",
+  "last_synced_at": "2026-05-15T18:48:51.414341+00:00",
+  "hub_manifest_hash": "d6fadcd9fe1ed1f4c856f05d87974f27abe3980c8b89a04845c0b961c5683f6e",
+  "package_name": "queralt2006-initiation-of-mitotic-exit-by-downregulation-of-pp2a"
+}

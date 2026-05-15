@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Voit2003 - Trehalose Cycle Lab
+description: Curated microbiology lab for Voit2003 - Trehalose Cycle. The bundled
+  SBML is executed directly through Tellurium and visualised with conservative, source-traceable
+  labels.
+models:
+- alias: voit2003_yeast_trehalose_cycle
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: voit2003_yeast_trehalose_cycle.state
+  to:
+  - visualisation.voit2003_yeast_trehalose_cycle_state
+- from: voit2003_yeast_trehalose_cycle.summary
+  to:
+  - visualisation.voit2003_yeast_trehalose_cycle_summary
+- from: voit2003_yeast_trehalose_cycle.species_labels
+  to:
+  - visualisation.voit2003_yeast_trehalose_cycle_species_labels
+- from: voit2003_yeast_trehalose_cycle.glucose
+  to:
+  - visualisation.voit2003_yeast_trehalose_cycle_glucose
+- from: voit2003_yeast_trehalose_cycle.glucose_pool_2
+  to:
+  - visualisation.voit2003_yeast_trehalose_cycle_glucose_pool_2
+- from: voit2003_yeast_trehalose_cycle.glucose_6_phosphate
+  to:
+  - visualisation.voit2003_yeast_trehalose_cycle_glucose_6_phosphate
+- from: voit2003_yeast_trehalose_cycle.glucose_1_phosphate
+  to:
+  - visualisation.voit2003_yeast_trehalose_cycle_glucose_1_phosphate
+runtime:
+  duration: 10.0
+  communication_step: 0.01
+  initial_inputs: {}
+io:
+  inputs:
+  - name: heat_shock
+    maps_to: voit2003_yeast_trehalose_cycle.heat_shock
+  outputs:
+  - name: state
+    maps_to: voit2003_yeast_trehalose_cycle.state
+  - name: summary
+    maps_to: voit2003_yeast_trehalose_cycle.summary
+  - name: species_labels
+    maps_to: voit2003_yeast_trehalose_cycle.species_labels
+  - name: glucose
+    maps_to: voit2003_yeast_trehalose_cycle.glucose
+  - name: glucose_pool_2
+    maps_to: voit2003_yeast_trehalose_cycle.glucose_pool_2
+  - name: glucose_6_phosphate
+    maps_to: voit2003_yeast_trehalose_cycle.glucose_6_phosphate
+  - name: glucose_1_phosphate
+    maps_to: voit2003_yeast_trehalose_cycle.glucose_1_phosphate

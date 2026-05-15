@@ -1,0 +1,59 @@
+schema_version: '2.0'
+title: Talemi2014 - Arsenic toxicity and detoxification mechanisms in yeast Lab
+description: Curated microbiology lab for Talemi2014 - Arsenic toxicity and detoxification
+  mechanisms in yeast. The bundled SBML is executed directly through Tellurium and
+  visualised with conservative, source-traceable labels.
+models:
+- alias: talemi2014_yeast_arsenic_detoxification
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: talemi2014_yeast_arsenic_detoxification.state
+  to:
+  - visualisation.talemi2014_yeast_arsenic_detoxification_state
+- from: talemi2014_yeast_arsenic_detoxification.summary
+  to:
+  - visualisation.talemi2014_yeast_arsenic_detoxification_summary
+- from: talemi2014_yeast_arsenic_detoxification.species_labels
+  to:
+  - visualisation.talemi2014_yeast_arsenic_detoxification_species_labels
+- from: talemi2014_yeast_arsenic_detoxification.extracellular_arsenite
+  to:
+  - visualisation.talemi2014_yeast_arsenic_detoxification_extracellular_arsenite
+- from: talemi2014_yeast_arsenic_detoxification.ycf1_transporter
+  to:
+  - visualisation.talemi2014_yeast_arsenic_detoxification_ycf1_transporter
+- from: talemi2014_yeast_arsenic_detoxification.phosphorylated_hog1
+  to:
+  - visualisation.talemi2014_yeast_arsenic_detoxification_phosphorylated_hog1
+- from: talemi2014_yeast_arsenic_detoxification.hog1_mapk
+  to:
+  - visualisation.talemi2014_yeast_arsenic_detoxification_hog1_mapk
+runtime:
+  duration: 10.0
+  communication_step: 0.01
+  initial_inputs: {}
+io:
+  inputs:
+  - name: arsenite_shock_level
+    maps_to: talemi2014_yeast_arsenic_detoxification.arsenite_shock_level
+  - name: arsenite_shock_start_time
+    maps_to: talemi2014_yeast_arsenic_detoxification.arsenite_shock_start_time
+  - name: extracellular_arsenite_initial
+    maps_to: talemi2014_yeast_arsenic_detoxification.extracellular_arsenite_initial
+  outputs:
+  - name: state
+    maps_to: talemi2014_yeast_arsenic_detoxification.state
+  - name: summary
+    maps_to: talemi2014_yeast_arsenic_detoxification.summary
+  - name: species_labels
+    maps_to: talemi2014_yeast_arsenic_detoxification.species_labels
+  - name: extracellular_arsenite
+    maps_to: talemi2014_yeast_arsenic_detoxification.extracellular_arsenite
+  - name: ycf1_transporter
+    maps_to: talemi2014_yeast_arsenic_detoxification.ycf1_transporter
+  - name: phosphorylated_hog1
+    maps_to: talemi2014_yeast_arsenic_detoxification.phosphorylated_hog1
+  - name: hog1_mapk
+    maps_to: talemi2014_yeast_arsenic_detoxification.hog1_mapk

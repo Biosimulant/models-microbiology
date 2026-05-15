@@ -1,0 +1,67 @@
+schema_version: '2.0'
+title: Smith2016-Combination therapy to prevent bacterial coinfection during influenza.
+  Visualisation
+description: Question-and-answer visualisation for Smith2016-Combination therapy to
+  prevent bacterial coinfection during influenza..
+standard: other
+tags:
+- microbiology
+- visualisation
+biosim:
+  communication_step: 1.0
+  entrypoint: src.microbiology_visualisation:MicrobiologyVisualisationModel
+  init_kwargs:
+    sources:
+    - alias: smith2016_bacterial_coinfection_therapy
+      observables:
+      - id: T
+        label: T
+      - id: I1
+        label: I1
+      - id: I2
+        label: I2
+      - id: V
+        label: V
+      - id: P
+        label: P
+      labels:
+        T: T
+        I1: I1
+        I2: I2
+        V: V
+        P: P
+      headline_outputs:
+      - port: target_cells
+        source: T
+        label: T
+      - port: infected_cells_type_1
+        source: I1
+        label: I1
+      - port: infected_cells_type_2
+        source: I2
+        label: I2
+      - port: viral_load
+        source: V
+        label: V
+    question: How do infection and bacterial-complication states change under the
+      bundled therapy model?
+    scope: microbial population and host-interaction dynamics
+    caveat: The bundled SBML is the executable source of truth; labels are conservative
+      where source symbols are ambiguous.
+io:
+  inputs:
+  - name: smith2016_bacterial_coinfection_therapy_state
+    maps_to: smith2016_bacterial_coinfection_therapy.state
+  - name: smith2016_bacterial_coinfection_therapy_summary
+    maps_to: smith2016_bacterial_coinfection_therapy.summary
+  - name: smith2016_bacterial_coinfection_therapy_species_labels
+    maps_to: smith2016_bacterial_coinfection_therapy.species_labels
+  - name: smith2016_bacterial_coinfection_therapy_target_cells
+    maps_to: smith2016_bacterial_coinfection_therapy.target_cells
+  - name: smith2016_bacterial_coinfection_therapy_infected_cells_type_1
+    maps_to: smith2016_bacterial_coinfection_therapy.infected_cells_type_1
+  - name: smith2016_bacterial_coinfection_therapy_infected_cells_type_2
+    maps_to: smith2016_bacterial_coinfection_therapy.infected_cells_type_2
+  - name: smith2016_bacterial_coinfection_therapy_viral_load
+    maps_to: smith2016_bacterial_coinfection_therapy.viral_load
+  outputs: []

@@ -1,0 +1,95 @@
+schema_version: '2.0'
+title: Houser2012_pheromone_Ste12 Visualisation
+description: Question-and-answer visualisation for Houser2012_pheromone_Ste12.
+standard: other
+tags:
+- microbiology
+- visualisation
+biosim:
+  communication_step: 1.0
+  entrypoint: src.microbiology_visualisation:MicrobiologyVisualisationModel
+  init_kwargs:
+    sources:
+    - alias: houser2012_yeast_pheromone_ste12
+      observables:
+      - id: T1
+        label: T1
+      - id: TS
+        label: TS
+      - id: TSD1
+        label: TSD1
+      - id: Ste12B
+        label: Ste12B
+      - id: T1B
+        label: T1B
+      - id: S_2
+        label: S 2
+      - id: SD1
+        label: SD1
+      - id: SD2
+        label: SD2
+      - id: SD1D2
+        label: SD1D2
+      - id: Dig2
+        label: Dig2
+      - id: Fus3
+        label: Fus3
+      - id: FUS1
+        label: FUS1
+      - id: Ste12
+        label: Ste12
+      - id: Dig1
+        label: Dig1
+      - id: Fus1
+        label: Fus1
+      labels:
+        T1: T1
+        TS: TS
+        TSD1: TSD1
+        Ste12B: Ste12B
+        T1B: T1B
+        S_2: S 2
+        SD1: SD1
+        SD2: SD2
+        SD1D2: SD1D2
+        Dig2: Dig2
+        Fus3: Fus3
+        FUS1: FUS1
+        Ste12: Ste12
+        Dig1: Dig1
+        Fus1: Fus1
+      headline_outputs:
+      - port: bound_ste12_transcription_factor
+        source: Ste12B
+        label: Ste12B
+      - port: pheromone_state_one
+        source: T1
+        label: T1
+      - port: pheromone_ste12_complex
+        source: TS
+        label: TS
+      - port: pheromone_ste12_dig1_complex
+        source: TSD1
+        label: TSD1
+    question: Which Ste12 pheromone-response state changes most over the simulated
+      window?
+    scope: microbiology model dynamics
+    caveat: The bundled SBML is the executable source of truth; labels are conservative
+      where source symbols are ambiguous.
+io:
+  inputs:
+  - name: houser2012_yeast_pheromone_ste12_state
+    maps_to: houser2012_yeast_pheromone_ste12.state
+  - name: houser2012_yeast_pheromone_ste12_summary
+    maps_to: houser2012_yeast_pheromone_ste12.summary
+  - name: houser2012_yeast_pheromone_ste12_species_labels
+    maps_to: houser2012_yeast_pheromone_ste12.species_labels
+  - name: houser2012_yeast_pheromone_ste12_bound_ste12_transcription_factor
+    maps_to: houser2012_yeast_pheromone_ste12.bound_ste12_transcription_factor
+  - name: houser2012_yeast_pheromone_ste12_pheromone_state_one
+    maps_to: houser2012_yeast_pheromone_ste12.pheromone_state_one
+  - name: houser2012_yeast_pheromone_ste12_pheromone_ste12_complex
+    maps_to: houser2012_yeast_pheromone_ste12.pheromone_ste12_complex
+  - name: houser2012_yeast_pheromone_ste12_pheromone_ste12_dig1_complex
+    maps_to: houser2012_yeast_pheromone_ste12.pheromone_ste12_dig1_complex
+  outputs: []

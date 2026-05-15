@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "28c2b0ad-6cf9-4bbd-9c24-dd7429036a0a",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "7927f02e-86fd-40e7-90b2-c94b6466f9e3",
+  "created_at": "2026-05-15T15:44:27.054012041+00:00",
+  "last_synced_at": "2026-05-15T18:37:49.302129+00:00",
+  "hub_manifest_hash": "6e2a17bf8ecbb0cb1896a6217c97803b152dc02fa2f8a7dc8f9927c104aeecaa",
+  "package_name": "balagadd-2008-e-coli-predator-prey-lab"
+}

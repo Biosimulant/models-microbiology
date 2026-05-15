@@ -1,0 +1,65 @@
+schema_version: '2.0'
+title: Pritchard2014 - plant-microbe interaction
+description: Pritchard2014 - plant-microbeinteraction Thismodel is an abstraction
+  of a generic interaction between microbes,and a plant host. The reactions are generally
+  intended to berepresentative of processes,.
+standard: sbml
+tags:
+- microbiology
+- sbml
+- biomodels_ebi
+- faithful
+- tellurium
+authors:
+- Biosimulant Team
+- Leighton Pritchard
+- Paul R J Birch
+upstream:
+  id: biomodels_ebi:BIOMD0000000563
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000563
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000563
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000563?filename=BIOMD0000000563_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.pritchard2014_plant_microbe_interaction_biomd0000000563_model:Pritchard2014PlantMicrobeInteractionBiomd0000000563Model
+  init_kwargs:
+    model_path: data/BIOMD0000000563.xml
+    integration_step: 1.0
+  communication_step: 0.01
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_pamp_signal
+    maps_to: PAMP
+    label: Initial PAMP Signal
+  - name: initial_pathogen_load
+    maps_to: Path
+    label: Initial Pathogen Load
+  outputs:
+  - name: state
+    maps_to: state
+    label: Model state
+  - name: summary
+    maps_to: summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: species_labels
+    label: Observable labels
+  - name: pamp_signal
+    maps_to: PAMP
+    label: PAMP
+  - name: receptor_state
+    maps_to: R
+    label: R
+  - name: callose
+    maps_to: Callose
+    label: Callose
+  - name: pathogen_load
+    maps_to: Path
+    label: Path

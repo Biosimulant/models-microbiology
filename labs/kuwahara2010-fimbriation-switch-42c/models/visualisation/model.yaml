@@ -1,0 +1,142 @@
+schema_version: '2.0'
+title: Kuwahara2010_Fimbriation_Switch_42C Visualisation
+description: Question-and-answer visualisation for Kuwahara2010_Fimbriation_Switch_42C.
+standard: other
+tags:
+- microbiology
+- visualisation
+biosim:
+  communication_step: 1.0
+  entrypoint: src.microbiology_visualisation:MicrobiologyVisualisationModel
+  init_kwargs:
+    sources:
+    - alias: kuwahara2010_fimbriation_switch_42c
+      observables:
+      - id: FimE
+        label: FimE
+      - id: FimB
+        label: FimB
+      - id: Lrp
+        label: Lrp
+      - id: IHF
+        label: IHF
+      - id: HNS
+        label: HNS
+      - id: RNAP
+        label: RNAP
+      - id: switch
+        label: Switch
+      - id: PfimE
+        label: PfimE
+      - id: PfimB
+        label: PfimB
+      - id: s4
+        label: Model state s4
+      - id: PfimB_RNAP
+        label: PfimB RNAP
+      - id: PfimE_HNS
+        label: PfimE HNS
+      - id: Prom
+        label: Prom
+      - id: s6
+        label: Model state s6
+      - id: s25
+        label: Model state s25
+      - id: s22
+        label: Model state s22
+      - id: s21
+        label: Model state s21
+      - id: s23
+        label: Model state s23
+      - id: s19
+        label: Model state s19
+      - id: s8
+        label: Model state s8
+      - id: PfimE_RNAP
+        label: PfimE RNAP
+      - id: PfimB_HNS
+        label: PfimB HNS
+      - id: s17
+        label: Model state s17
+      - id: s20
+        label: Model state s20
+      - id: s7
+        label: Model state s7
+      - id: s5
+        label: Model state s5
+      - id: s2
+        label: Model state s2
+      - id: s26
+        label: Model state s26
+      - id: s3
+        label: Model state s3
+      - id: s18
+        label: Model state s18
+      - id: s24
+        label: Model state s24
+      labels:
+        FimE: FimE
+        FimB: FimB
+        Lrp: Lrp
+        IHF: IHF
+        HNS: HNS
+        RNAP: RNAP
+        switch: Switch
+        PfimE: PfimE
+        PfimB: PfimB
+        s4: Model state s4
+        PfimB_RNAP: PfimB RNAP
+        PfimE_HNS: PfimE HNS
+        Prom: Prom
+        s6: Model state s6
+        s25: Model state s25
+        s22: Model state s22
+        s21: Model state s21
+        s23: Model state s23
+        s19: Model state s19
+        s8: Model state s8
+        PfimE_RNAP: PfimE RNAP
+        PfimB_HNS: PfimB HNS
+        s17: Model state s17
+        s20: Model state s20
+        s7: Model state s7
+        s5: Model state s5
+        s2: Model state s2
+        s26: Model state s26
+        s3: Model state s3
+        s18: Model state s18
+        s24: Model state s24
+      headline_outputs:
+      - port: fime_site_recombinase
+        source: FimE
+        label: FimE
+      - port: fimb_site_recombinase
+        source: FimB
+        label: FimB
+      - port: leucine_responsive_regulatory_protein
+        source: Lrp
+        label: Lrp
+      - port: integration_host_factor
+        source: IHF
+        label: IHF
+    question: Which fimbriation-switch state changes most at this modeled temperature?
+    scope: microbial gene-regulatory switching
+    caveat: The bundled SBML is the executable source of truth; labels are conservative
+      where source symbols are ambiguous.
+io:
+  inputs:
+  - name: kuwahara2010_fimbriation_switch_42c_state
+    maps_to: kuwahara2010_fimbriation_switch_42c.state
+  - name: kuwahara2010_fimbriation_switch_42c_summary
+    maps_to: kuwahara2010_fimbriation_switch_42c.summary
+  - name: kuwahara2010_fimbriation_switch_42c_species_labels
+    maps_to: kuwahara2010_fimbriation_switch_42c.species_labels
+  - name: kuwahara2010_fimbriation_switch_42c_fime_site_recombinase
+    maps_to: kuwahara2010_fimbriation_switch_42c.fime_site_recombinase
+  - name: kuwahara2010_fimbriation_switch_42c_fimb_site_recombinase
+    maps_to: kuwahara2010_fimbriation_switch_42c.fimb_site_recombinase
+  - name: kuwahara2010_fimbriation_switch_42c_leucine_responsive_regulatory_protein
+    maps_to: kuwahara2010_fimbriation_switch_42c.leucine_responsive_regulatory_protein
+  - name: kuwahara2010_fimbriation_switch_42c_integration_host_factor
+    maps_to: kuwahara2010_fimbriation_switch_42c.integration_host_factor
+  outputs: []

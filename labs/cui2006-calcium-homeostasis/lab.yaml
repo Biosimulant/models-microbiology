@@ -1,0 +1,57 @@
+schema_version: '2.0'
+title: Cui2006_CalciumHomeostasis Lab
+description: Curated microbiology lab for Cui2006_CalciumHomeostasis. The bundled
+  SBML is executed directly through Tellurium and visualised with conservative, source-traceable
+  labels.
+models:
+- alias: cui2006_calcium_homeostasis
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: cui2006_calcium_homeostasis.state
+  to:
+  - visualisation.cui2006_calcium_homeostasis_state
+- from: cui2006_calcium_homeostasis.summary
+  to:
+  - visualisation.cui2006_calcium_homeostasis_summary
+- from: cui2006_calcium_homeostasis.species_labels
+  to:
+  - visualisation.cui2006_calcium_homeostasis_species_labels
+- from: cui2006_calcium_homeostasis.calcium_homeostasis_variable_one
+  to:
+  - visualisation.cui2006_calcium_homeostasis_calcium_homeostasis_variable_one
+- from: cui2006_calcium_homeostasis.calcium_homeostasis_variable_two
+  to:
+  - visualisation.cui2006_calcium_homeostasis_calcium_homeostasis_variable_two
+- from: cui2006_calcium_homeostasis.calcium_homeostasis_variable_three
+  to:
+  - visualisation.cui2006_calcium_homeostasis_calcium_homeostasis_variable_three
+- from: cui2006_calcium_homeostasis.calcium_homeostasis_variable_four
+  to:
+  - visualisation.cui2006_calcium_homeostasis_calcium_homeostasis_variable_four
+runtime:
+  duration: 10.0
+  communication_step: 0.01
+  initial_inputs: {}
+io:
+  inputs:
+  - name: external_calcium
+    maps_to: cui2006_calcium_homeostasis.external_calcium
+  - name: total_calmodulin
+    maps_to: cui2006_calcium_homeostasis.total_calmodulin
+  outputs:
+  - name: state
+    maps_to: cui2006_calcium_homeostasis.state
+  - name: summary
+    maps_to: cui2006_calcium_homeostasis.summary
+  - name: species_labels
+    maps_to: cui2006_calcium_homeostasis.species_labels
+  - name: calcium_homeostasis_variable_one
+    maps_to: cui2006_calcium_homeostasis.calcium_homeostasis_variable_one
+  - name: calcium_homeostasis_variable_two
+    maps_to: cui2006_calcium_homeostasis.calcium_homeostasis_variable_two
+  - name: calcium_homeostasis_variable_three
+    maps_to: cui2006_calcium_homeostasis.calcium_homeostasis_variable_three
+  - name: calcium_homeostasis_variable_four
+    maps_to: cui2006_calcium_homeostasis.calcium_homeostasis_variable_four

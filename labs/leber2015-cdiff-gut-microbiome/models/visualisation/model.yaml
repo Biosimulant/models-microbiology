@@ -1,0 +1,116 @@
+schema_version: '2.0'
+title: Leber2015 - Mucosal immunity and gut microbiome interaction during C. difficile
+  infection Visualisation
+description: Question-and-answer visualisation for Leber2015 - Mucosal immunity and
+  gut microbiome interaction during C. difficile infection.
+standard: other
+tags:
+- microbiology
+- visualisation
+biosim:
+  communication_step: 1.0
+  entrypoint: src.microbiology_visualisation:MicrobiologyVisualisationModel
+  init_kwargs:
+    sources:
+    - alias: leber2015_cdiff_gut_microbiome
+      observables:
+      - id: Cdiff
+        label: Cdiff
+      - id: Commensal_Beneficial
+        label: Commensal Beneficial
+      - id: Commensal_Dead
+        label: Commensal Dead
+      - id: tDC_LP
+        label: TDC LP
+      - id: tDC_MLN
+        label: TDC MLN
+      - id: Commensal_Harmful
+        label: Commensal Harmful
+      - id: N_Lum
+        label: N Lum
+      - id: E
+        label: E
+      - id: E_d
+        label: E d
+      - id: iDC_E
+        label: IDC E
+      - id: E_i
+        label: E i
+      - id: M_LP
+        label: M LP
+      - id: eDC_LP
+        label: EDC LP
+      - id: M0
+        label: M0
+      - id: N_LP
+        label: N LP
+      - id: Th17_LP
+        label: Th17 LP
+      - id: Th1_LP
+        label: Th1 LP
+      - id: iTreg_LP
+        label: ITreg LP
+      - id: eDC_MLN
+        label: EDC MLN
+      - id: iTreg_MLN
+        label: ITreg MLN
+      - id: nT
+        label: NT
+      - id: Th17_MLN
+        label: Th17 MLN
+      - id: Th1_MLN
+        label: Th1 MLN
+      labels:
+        Cdiff: Cdiff
+        Commensal_Beneficial: Commensal Beneficial
+        Commensal_Dead: Commensal Dead
+        tDC_LP: TDC LP
+        tDC_MLN: TDC MLN
+        Commensal_Harmful: Commensal Harmful
+        N_Lum: N Lum
+        E: E
+        E_d: E d
+        iDC_E: IDC E
+        E_i: E i
+        M_LP: M LP
+        eDC_LP: EDC LP
+        M0: M0
+        N_LP: N LP
+        Th17_LP: Th17 LP
+        Th1_LP: Th1 LP
+        iTreg_LP: ITreg LP
+        eDC_MLN: EDC MLN
+        iTreg_MLN: ITreg MLN
+        nT: NT
+        Th17_MLN: Th17 MLN
+        Th1_MLN: Th1 MLN
+      headline_outputs:
+      - port: clostridioides_difficile
+        source: Cdiff
+        label: Cdiff
+      - port: beneficial_commensals
+        source: Commensal_Beneficial
+        label: Commensal Beneficial
+      - port: harmful_commensals
+        source: Commensal_Harmful
+        label: Commensal Harmful
+    question: How do C. difficile and commensal microbiome states compare in the bundled
+      run?
+    scope: microbial population and host-interaction dynamics
+    caveat: The bundled SBML is the executable source of truth; labels are conservative
+      where source symbols are ambiguous.
+io:
+  inputs:
+  - name: leber2015_cdiff_gut_microbiome_state
+    maps_to: leber2015_cdiff_gut_microbiome.state
+  - name: leber2015_cdiff_gut_microbiome_summary
+    maps_to: leber2015_cdiff_gut_microbiome.summary
+  - name: leber2015_cdiff_gut_microbiome_species_labels
+    maps_to: leber2015_cdiff_gut_microbiome.species_labels
+  - name: leber2015_cdiff_gut_microbiome_clostridioides_difficile
+    maps_to: leber2015_cdiff_gut_microbiome.clostridioides_difficile
+  - name: leber2015_cdiff_gut_microbiome_beneficial_commensals
+    maps_to: leber2015_cdiff_gut_microbiome.beneficial_commensals
+  - name: leber2015_cdiff_gut_microbiome_harmful_commensals
+    maps_to: leber2015_cdiff_gut_microbiome.harmful_commensals
+  outputs: []

@@ -1,0 +1,57 @@
+schema_version: '2.0'
+title: Salcedo-Sora2016 - Microbial folate biosynthesis and utilisation Lab
+description: Curated microbiology lab for Salcedo-Sora2016 - Microbial folate biosynthesis
+  and utilisation. The bundled SBML is executed directly through Tellurium and visualised
+  with conservative, source-traceable labels.
+models:
+- alias: salcedosora2016_microbial_folate_biosynthesis
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: salcedosora2016_microbial_folate_biosynthesis.state
+  to:
+  - visualisation.salcedosora2016_microbial_folate_biosynthesis_state
+- from: salcedosora2016_microbial_folate_biosynthesis.summary
+  to:
+  - visualisation.salcedosora2016_microbial_folate_biosynthesis_summary
+- from: salcedosora2016_microbial_folate_biosynthesis.species_labels
+  to:
+  - visualisation.salcedosora2016_microbial_folate_biosynthesis_species_labels
+- from: salcedosora2016_microbial_folate_biosynthesis.deoxy_arabino_heptulosonate_phosphate
+  to:
+  - visualisation.salcedosora2016_microbial_folate_biosynthesis_deoxy_arabino_heptulosonate_phosphate
+- from: salcedosora2016_microbial_folate_biosynthesis.phosphoenolpyruvate
+  to:
+  - visualisation.salcedosora2016_microbial_folate_biosynthesis_phosphoenolpyruvate
+- from: salcedosora2016_microbial_folate_biosynthesis.phosphate
+  to:
+  - visualisation.salcedosora2016_microbial_folate_biosynthesis_phosphate
+- from: salcedosora2016_microbial_folate_biosynthesis.dehydroquinate
+  to:
+  - visualisation.salcedosora2016_microbial_folate_biosynthesis_dehydroquinate
+runtime:
+  duration: 2.0
+  communication_step: 0.01
+  initial_inputs: {}
+io:
+  inputs:
+  - name: phosphoenolpyruvate_pool
+    maps_to: salcedosora2016_microbial_folate_biosynthesis.phosphoenolpyruvate_pool
+  - name: glutamine_pool
+    maps_to: salcedosora2016_microbial_folate_biosynthesis.glutamine_pool
+  outputs:
+  - name: state
+    maps_to: salcedosora2016_microbial_folate_biosynthesis.state
+  - name: summary
+    maps_to: salcedosora2016_microbial_folate_biosynthesis.summary
+  - name: species_labels
+    maps_to: salcedosora2016_microbial_folate_biosynthesis.species_labels
+  - name: deoxy_arabino_heptulosonate_phosphate
+    maps_to: salcedosora2016_microbial_folate_biosynthesis.deoxy_arabino_heptulosonate_phosphate
+  - name: phosphoenolpyruvate
+    maps_to: salcedosora2016_microbial_folate_biosynthesis.phosphoenolpyruvate
+  - name: phosphate
+    maps_to: salcedosora2016_microbial_folate_biosynthesis.phosphate
+  - name: dehydroquinate
+    maps_to: salcedosora2016_microbial_folate_biosynthesis.dehydroquinate

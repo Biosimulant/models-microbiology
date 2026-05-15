@@ -1,0 +1,71 @@
+schema_version: '2.0'
+title: Balagaddé2008_E_coli_Predator_Prey Visualisation
+description: Question-and-answer visualisation for Balagaddé2008_E_coli_Predator_Prey.
+standard: other
+tags:
+- microbiology
+- visualisation
+biosim:
+  communication_step: 1.0
+  entrypoint: src.microbiology_visualisation:MicrobiologyVisualisationModel
+  init_kwargs:
+    sources:
+    - alias: balagadde2008_ecoli_predator_prey
+      observables:
+      - id: IPTG
+        label: IPTG
+      - id: C1
+        label: C1
+      - id: C2
+        label: C2
+      - id: A1
+        label: A1
+      - id: A2
+        label: A2
+      - id: sink
+        label: Sink
+      - id: source
+        label: Source
+      labels:
+        IPTG: IPTG
+        C1: C1
+        C2: C2
+        A1: A1
+        A2: A2
+        sink: Sink
+        source: Source
+      headline_outputs:
+      - port: cell_population_1
+        source: C1
+        label: C1
+      - port: cell_population_2
+        source: C2
+        label: C2
+      - port: quorum_signal_1
+        source: A1
+        label: A1
+      - port: quorum_signal_2
+        source: A2
+        label: A2
+    question: Do the engineered E. coli populations show predator-prey coexistence
+      in the bundled SBML run?
+    scope: microbial population and host-interaction dynamics
+    caveat: The bundled SBML is the executable source of truth; labels are conservative
+      where source symbols are ambiguous.
+io:
+  inputs:
+  - name: balagadde2008_ecoli_predator_prey_state
+    maps_to: balagadde2008_ecoli_predator_prey.state
+  - name: balagadde2008_ecoli_predator_prey_summary
+    maps_to: balagadde2008_ecoli_predator_prey.summary
+  - name: balagadde2008_ecoli_predator_prey_species_labels
+    maps_to: balagadde2008_ecoli_predator_prey.species_labels
+  - name: balagadde2008_ecoli_predator_prey_cell_population_1
+    maps_to: balagadde2008_ecoli_predator_prey.cell_population_1
+  - name: balagadde2008_ecoli_predator_prey_cell_population_2
+    maps_to: balagadde2008_ecoli_predator_prey.cell_population_2
+  - name: balagadde2008_ecoli_predator_prey_quorum_signal_1
+    maps_to: balagadde2008_ecoli_predator_prey.quorum_signal_1
+  - name: balagadde2008_ecoli_predator_prey_quorum_signal_2
+    maps_to: balagadde2008_ecoli_predator_prey.quorum_signal_2
+  outputs: []

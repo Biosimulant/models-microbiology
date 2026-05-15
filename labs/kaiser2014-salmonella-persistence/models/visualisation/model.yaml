@@ -1,0 +1,38 @@
+schema_version: '2.0'
+title: Kaiser2014 - Salmonella persistence after ciprofloxacin treatment Visualisation
+description: Question-and-answer visualisation for Kaiser2014 - Salmonella persistence
+  after ciprofloxacin treatment.
+standard: other
+tags:
+- microbiology
+- visualisation
+biosim:
+  communication_step: 1.0
+  entrypoint: src.microbiology_visualisation:MicrobiologyVisualisationModel
+  init_kwargs:
+    sources:
+    - alias: kaiser2014_salmonella_persistence
+      observables:
+      - id: L
+        label: L
+      labels:
+        L: L
+      headline_outputs:
+      - port: persistent_salmonella_load
+        source: L
+        label: L
+    question: How does the Salmonella persistence state evolve after the modeled perturbation?
+    scope: microbiology model dynamics
+    caveat: The bundled SBML is the executable source of truth; labels are conservative
+      where source symbols are ambiguous.
+io:
+  inputs:
+  - name: kaiser2014_salmonella_persistence_state
+    maps_to: kaiser2014_salmonella_persistence.state
+  - name: kaiser2014_salmonella_persistence_summary
+    maps_to: kaiser2014_salmonella_persistence.summary
+  - name: kaiser2014_salmonella_persistence_species_labels
+    maps_to: kaiser2014_salmonella_persistence.species_labels
+  - name: kaiser2014_salmonella_persistence_persistent_salmonella_load
+    maps_to: kaiser2014_salmonella_persistence.persistent_salmonella_load
+  outputs: []

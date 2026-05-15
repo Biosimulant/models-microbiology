@@ -1,0 +1,104 @@
+schema_version: '2.0'
+title: Shaw 2018 - Yeast GPCR Ternary Complex Model Visualisation
+description: Question-and-answer visualisation for Shaw 2018 - Yeast GPCR Ternary
+  Complex Model.
+standard: other
+tags:
+- microbiology
+- visualisation
+biosim:
+  communication_step: 1.0
+  entrypoint: src.microbiology_visualisation:MicrobiologyVisualisationModel
+  init_kwargs:
+    sources:
+    - alias: shaw2018_yeast_gpcr_ternary_complex
+      observables:
+      - id: R
+        label: R
+      - id: LR
+        label: LR
+      - id: Rstar
+        label: Rstar
+      - id: LRstar
+        label: LRstar
+      - id: RG
+        label: RG
+      - id: LRG
+        label: LRG
+      - id: RstarG
+        label: RstarG
+      - id: LRstarG
+        label: LRstarG
+      - id: G
+        label: G
+      - id: aGDP
+        label: AGDP
+      - id: bg
+        label: Bg
+      - id: aGTP
+        label: AGTP
+      - id: bgstar
+        label: Bgstar
+      - id: Ste5
+        label: Ste5
+      - id: bgstarSte5
+        label: BgstarSte5
+      - id: bgSte5
+        label: BgSte5
+      - id: L
+        label: L
+      - id: observable
+        label: Observable
+      labels:
+        R: R
+        LR: LR
+        Rstar: Rstar
+        LRstar: LRstar
+        RG: RG
+        LRG: LRG
+        RstarG: RstarG
+        LRstarG: LRstarG
+        G: G
+        aGDP: AGDP
+        bg: Bg
+        aGTP: AGTP
+        bgstar: Bgstar
+        Ste5: Ste5
+        bgstarSte5: BgstarSte5
+        bgSte5: BgSte5
+        L: L
+        observable: Observable
+      headline_outputs:
+      - port: receptor_state
+        source: R
+        label: R
+      - port: ligand_bound_receptor
+        source: LR
+        label: LR
+      - port: active_receptor
+        source: Rstar
+        label: Rstar
+      - port: active_ligand_bound_receptor
+        source: LRstar
+        label: LRstar
+    question: Which yeast GPCR complex dominates the simulated response?
+    scope: microbiology model dynamics
+    caveat: The bundled SBML is the executable source of truth; labels are conservative
+      where source symbols are ambiguous.
+io:
+  inputs:
+  - name: shaw2018_yeast_gpcr_ternary_complex_state
+    maps_to: shaw2018_yeast_gpcr_ternary_complex.state
+  - name: shaw2018_yeast_gpcr_ternary_complex_summary
+    maps_to: shaw2018_yeast_gpcr_ternary_complex.summary
+  - name: shaw2018_yeast_gpcr_ternary_complex_species_labels
+    maps_to: shaw2018_yeast_gpcr_ternary_complex.species_labels
+  - name: shaw2018_yeast_gpcr_ternary_complex_receptor_state
+    maps_to: shaw2018_yeast_gpcr_ternary_complex.receptor_state
+  - name: shaw2018_yeast_gpcr_ternary_complex_ligand_bound_receptor
+    maps_to: shaw2018_yeast_gpcr_ternary_complex.ligand_bound_receptor
+  - name: shaw2018_yeast_gpcr_ternary_complex_active_receptor
+    maps_to: shaw2018_yeast_gpcr_ternary_complex.active_receptor
+  - name: shaw2018_yeast_gpcr_ternary_complex_active_ligand_bound_receptor
+    maps_to: shaw2018_yeast_gpcr_ternary_complex.active_ligand_bound_receptor
+  outputs: []

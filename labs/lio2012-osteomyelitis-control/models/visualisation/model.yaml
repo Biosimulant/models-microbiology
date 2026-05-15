@@ -1,0 +1,63 @@
+schema_version: '2.0'
+title: Liò2012_Modelling osteomyelitis_Control Model Visualisation
+description: Question-and-answer visualisation for Liò2012_Modelling osteomyelitis_Control
+  Model.
+standard: other
+tags:
+- microbiology
+- visualisation
+biosim:
+  communication_step: 1.0
+  entrypoint: src.microbiology_visualisation:MicrobiologyVisualisationModel
+  init_kwargs:
+    sources:
+    - alias: lio2012_osteomyelitis_control
+      observables:
+      - id: Bone_Density__z
+        label: Bone Density (z)
+      - id: Osteoblasts__O_b
+        label: Osteoblasts (O b)
+      - id: Osteoclasts__O_c
+        label: Osteoclasts (O c)
+      - id: B
+        label: B
+      labels:
+        Bone_Density__z: Bone Density (z)
+        Osteoblasts__O_b: Osteoblasts (O b)
+        Osteoclasts__O_c: Osteoclasts (O c)
+        B: B
+      headline_outputs:
+      - port: bacterial_burden
+        source: B
+        label: B
+      - port: bone_density
+        source: Bone_Density__z
+        label: Bone Density (z)
+      - port: osteoblasts
+        source: Osteoblasts__O_b
+        label: Osteoblasts (O b)
+      - port: osteoclasts
+        source: Osteoclasts__O_c
+        label: Osteoclasts (O c)
+    question: How do bacteria and bone-remodeling states change in the osteomyelitis
+      control model?
+    scope: microbiology model dynamics
+    caveat: The bundled SBML is the executable source of truth; labels are conservative
+      where source symbols are ambiguous.
+io:
+  inputs:
+  - name: lio2012_osteomyelitis_control_state
+    maps_to: lio2012_osteomyelitis_control.state
+  - name: lio2012_osteomyelitis_control_summary
+    maps_to: lio2012_osteomyelitis_control.summary
+  - name: lio2012_osteomyelitis_control_species_labels
+    maps_to: lio2012_osteomyelitis_control.species_labels
+  - name: lio2012_osteomyelitis_control_bacterial_burden
+    maps_to: lio2012_osteomyelitis_control.bacterial_burden
+  - name: lio2012_osteomyelitis_control_bone_density
+    maps_to: lio2012_osteomyelitis_control.bone_density
+  - name: lio2012_osteomyelitis_control_osteoblasts
+    maps_to: lio2012_osteomyelitis_control.osteoblasts
+  - name: lio2012_osteomyelitis_control_osteoclasts
+    maps_to: lio2012_osteomyelitis_control.osteoclasts
+  outputs: []

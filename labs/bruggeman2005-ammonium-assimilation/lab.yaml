@@ -1,0 +1,57 @@
+schema_version: '2.0'
+title: Bruggeman2005_AmmoniumAssimilation Lab
+description: Curated microbiology lab for Bruggeman2005_AmmoniumAssimilation. The
+  bundled SBML is executed directly through Tellurium and visualised with conservative,
+  source-traceable labels.
+models:
+- alias: bruggeman2005_ammonium_assimilation
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: bruggeman2005_ammonium_assimilation.state
+  to:
+  - visualisation.bruggeman2005_ammonium_assimilation_state
+- from: bruggeman2005_ammonium_assimilation.summary
+  to:
+  - visualisation.bruggeman2005_ammonium_assimilation_summary
+- from: bruggeman2005_ammonium_assimilation.species_labels
+  to:
+  - visualisation.bruggeman2005_ammonium_assimilation_species_labels
+- from: bruggeman2005_ammonium_assimilation.pii_regulatory_protein
+  to:
+  - visualisation.bruggeman2005_ammonium_assimilation_pii_regulatory_protein
+- from: bruggeman2005_ammonium_assimilation.uridine_triphosphate
+  to:
+  - visualisation.bruggeman2005_ammonium_assimilation_uridine_triphosphate
+- from: bruggeman2005_ammonium_assimilation.uridylylated_pii_protein
+  to:
+  - visualisation.bruggeman2005_ammonium_assimilation_uridylylated_pii_protein
+- from: bruggeman2005_ammonium_assimilation.inorganic_pyrophosphate
+  to:
+  - visualisation.bruggeman2005_ammonium_assimilation_inorganic_pyrophosphate
+runtime:
+  duration: 10.0
+  communication_step: 0.01
+  initial_inputs: {}
+io:
+  inputs:
+  - name: external_ammonium
+    maps_to: bruggeman2005_ammonium_assimilation.external_ammonium
+  - name: alpha_ketoglutarate_pool
+    maps_to: bruggeman2005_ammonium_assimilation.alpha_ketoglutarate_pool
+  outputs:
+  - name: state
+    maps_to: bruggeman2005_ammonium_assimilation.state
+  - name: summary
+    maps_to: bruggeman2005_ammonium_assimilation.summary
+  - name: species_labels
+    maps_to: bruggeman2005_ammonium_assimilation.species_labels
+  - name: pii_regulatory_protein
+    maps_to: bruggeman2005_ammonium_assimilation.pii_regulatory_protein
+  - name: uridine_triphosphate
+    maps_to: bruggeman2005_ammonium_assimilation.uridine_triphosphate
+  - name: uridylylated_pii_protein
+    maps_to: bruggeman2005_ammonium_assimilation.uridylylated_pii_protein
+  - name: inorganic_pyrophosphate
+    maps_to: bruggeman2005_ammonium_assimilation.inorganic_pyrophosphate

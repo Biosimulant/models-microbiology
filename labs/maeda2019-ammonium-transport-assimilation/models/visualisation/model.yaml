@@ -1,0 +1,116 @@
+schema_version: '2.0'
+title: Maeda2019_AmmoniumTransportAssimilation Visualisation
+description: Question-and-answer visualisation for Maeda2019_AmmoniumTransportAssimilation.
+standard: other
+tags:
+- microbiology
+- visualisation
+biosim:
+  communication_step: 1.0
+  entrypoint: src.microbiology_visualisation:MicrobiologyVisualisationModel
+  init_kwargs:
+    sources:
+    - alias: maeda2019_ammonium_transport_assimilation
+      observables:
+      - id: ADP
+        label: ADP
+      - id: ATP
+        label: ATP
+      - id: GLN
+        label: GLN
+      - id: GLU
+        label: GLU
+      - id: GS
+        label: GS
+      - id: GSAMP
+        label: GSAMP
+      - id: GlnB
+        label: GlnB
+      - id: GlnBUMP
+        label: GlnBUMP
+      - id: GlnBUMP2
+        label: GlnBUMP2
+      - id: GlnBUMP3
+        label: GlnBUMP3
+      - id: GlnK
+        label: GlnK
+      - id: GlnKUMP
+        label: GlnKUMP
+      - id: GlnKUMP2
+        label: GlnKUMP2
+      - id: GlnKUMP3
+        label: GlnKUMP3
+      - id: NADP
+        label: NADP
+      - id: NADPH
+        label: NADPH
+      - id: NHxint
+        label: NHxint
+      - id: OG
+        label: OG
+      - id: PPi
+        label: PPi
+      - id: Pi
+        label: Pi
+      - id: UMP
+        label: UMP
+      - id: UTP
+        label: UTP
+      labels:
+        ADP: ADP
+        ATP: ATP
+        GLN: GLN
+        GLU: GLU
+        GS: GS
+        GSAMP: GSAMP
+        GlnB: GlnB
+        GlnBUMP: GlnBUMP
+        GlnBUMP2: GlnBUMP2
+        GlnBUMP3: GlnBUMP3
+        GlnK: GlnK
+        GlnKUMP: GlnKUMP
+        GlnKUMP2: GlnKUMP2
+        GlnKUMP3: GlnKUMP3
+        NADP: NADP
+        NADPH: NADPH
+        NHxint: NHxint
+        OG: OG
+        PPi: PPi
+        Pi: Pi
+        UMP: UMP
+        UTP: UTP
+      headline_outputs:
+      - port: adp
+        source: ADP
+        label: ADP
+      - port: atp
+        source: ATP
+        label: ATP
+      - port: glutamine
+        source: GLN
+        label: GLN
+      - port: glutamate
+        source: GLU
+        label: GLU
+    question: How does the nitrogen assimilation network redistribute its tracked
+      molecular states?
+    scope: microbiology model dynamics
+    caveat: The bundled SBML is the executable source of truth; labels are conservative
+      where source symbols are ambiguous.
+io:
+  inputs:
+  - name: maeda2019_ammonium_transport_assimilation_state
+    maps_to: maeda2019_ammonium_transport_assimilation.state
+  - name: maeda2019_ammonium_transport_assimilation_summary
+    maps_to: maeda2019_ammonium_transport_assimilation.summary
+  - name: maeda2019_ammonium_transport_assimilation_species_labels
+    maps_to: maeda2019_ammonium_transport_assimilation.species_labels
+  - name: maeda2019_ammonium_transport_assimilation_adp
+    maps_to: maeda2019_ammonium_transport_assimilation.adp
+  - name: maeda2019_ammonium_transport_assimilation_atp
+    maps_to: maeda2019_ammonium_transport_assimilation.atp
+  - name: maeda2019_ammonium_transport_assimilation_glutamine
+    maps_to: maeda2019_ammonium_transport_assimilation.glutamine
+  - name: maeda2019_ammonium_transport_assimilation_glutamate
+    maps_to: maeda2019_ammonium_transport_assimilation.glutamate
+  outputs: []

@@ -1,0 +1,73 @@
+schema_version: '2.0'
+title: Voit2003 - Trehalose Cycle Visualisation
+description: Question-and-answer visualisation for Voit2003 - Trehalose Cycle.
+standard: other
+tags:
+- microbiology
+- visualisation
+biosim:
+  communication_step: 1.0
+  entrypoint: src.microbiology_visualisation:MicrobiologyVisualisationModel
+  init_kwargs:
+    sources:
+    - alias: voit2003_yeast_trehalose_cycle
+      observables:
+      - id: X0
+        label: Glucose
+      - id: X1
+        label: Glucose
+      - id: X2
+        label: G6P
+      - id: X3
+        label: G1P
+      - id: X4
+        label: UDPG
+      - id: X5
+        label: Glycogen
+      - id: X6
+        label: T6P
+      - id: X7
+        label: Trehalose
+      labels:
+        X0: Glucose
+        X1: Glucose
+        X2: G6P
+        X3: G1P
+        X4: UDPG
+        X5: Glycogen
+        X6: T6P
+        X7: Trehalose
+      headline_outputs:
+      - port: glucose
+        source: X0
+        label: Glucose
+      - port: glucose_pool_2
+        source: X1
+        label: Glucose
+      - port: glucose_6_phosphate
+        source: X2
+        label: G6P
+      - port: glucose_1_phosphate
+        source: X3
+        label: G1P
+    question: How does the trehalose-cycle model respond to the heat-shock control?
+    scope: metabolic pathway dynamics
+    caveat: The bundled SBML is the executable source of truth; labels are conservative
+      where source symbols are ambiguous.
+io:
+  inputs:
+  - name: voit2003_yeast_trehalose_cycle_state
+    maps_to: voit2003_yeast_trehalose_cycle.state
+  - name: voit2003_yeast_trehalose_cycle_summary
+    maps_to: voit2003_yeast_trehalose_cycle.summary
+  - name: voit2003_yeast_trehalose_cycle_species_labels
+    maps_to: voit2003_yeast_trehalose_cycle.species_labels
+  - name: voit2003_yeast_trehalose_cycle_glucose
+    maps_to: voit2003_yeast_trehalose_cycle.glucose
+  - name: voit2003_yeast_trehalose_cycle_glucose_pool_2
+    maps_to: voit2003_yeast_trehalose_cycle.glucose_pool_2
+  - name: voit2003_yeast_trehalose_cycle_glucose_6_phosphate
+    maps_to: voit2003_yeast_trehalose_cycle.glucose_6_phosphate
+  - name: voit2003_yeast_trehalose_cycle_glucose_1_phosphate
+    maps_to: voit2003_yeast_trehalose_cycle.glucose_1_phosphate
+  outputs: []

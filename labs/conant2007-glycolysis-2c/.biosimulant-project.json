@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "ee4e9286-7553-4969-9817-cc3d2515b860",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "4e5c0862-a036-4f94-9f13-5d43d61d4b09",
+  "created_at": "2026-05-15T15:44:27.111825025+00:00",
+  "last_synced_at": "2026-05-15T18:39:28.700652+00:00",
+  "hub_manifest_hash": "006d633a1be1ee185382a0c9ba4649d71ca662620d8188556e1da60f73a31237",
+  "package_name": "conant2007-glycolysis-2c-lab"
+}

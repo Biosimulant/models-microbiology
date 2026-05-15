@@ -1,0 +1,67 @@
+schema_version: '2.0'
+title: Shaw 2018 - Yeast GPCR Ternary Complex Model
+description: SBML model exported from PottersWheel on 2019-01-17 12:49:15. This model
+  was created via Matlab and automatically converted to SBML.
+standard: sbml
+tags:
+- microbiology
+- sbml
+- biomodels_ebi
+- faithful
+- tellurium
+authors:
+- Biosimulant Team
+- William M Shaw
+- Hitoshi Yamauchi
+- Jack Mead
+- Glen-Oliver F Gowers
+- David J Bell
+upstream:
+  id: biomodels_ebi:MODEL1901300001
+  source_db: biomodels_ebi
+  source_id: MODEL1901300001
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1901300001
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1901300001?filename=Yeast_Ternary.xml
+  license: CC0
+biosim:
+  entrypoint: src.shaw_2018_yeast_gpcr_ternary_complex_model_model1901300001_model:Shaw2018YeastGpcrTernaryComplexModelModel1901300001Model
+  init_kwargs:
+    model_path: data/MODEL1901300001.xml
+    integration_step: 1.0
+  communication_step: 0.01
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_ligand_level
+    maps_to: L
+    label: Initial Ligand Level
+  - name: initial_receptor_level
+    maps_to: R
+    label: Initial Receptor Level
+  outputs:
+  - name: state
+    maps_to: state
+    label: Model state
+  - name: summary
+    maps_to: summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: species_labels
+    label: Observable labels
+  - name: receptor_state
+    maps_to: R
+    label: R
+  - name: ligand_bound_receptor
+    maps_to: LR
+    label: LR
+  - name: active_receptor
+    maps_to: Rstar
+    label: Rstar
+  - name: active_ligand_bound_receptor
+    maps_to: LRstar
+    label: LRstar

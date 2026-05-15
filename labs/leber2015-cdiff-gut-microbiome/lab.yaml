@@ -1,0 +1,53 @@
+schema_version: '2.0'
+title: Leber2015 - Mucosal immunity and gut microbiome interaction during C. difficile
+  infection Lab
+description: Curated microbiology lab for Leber2015 - Mucosal immunity and gut microbiome
+  interaction during C. difficile infection. The bundled SBML is executed directly
+  through Tellurium and visualised with conservative, source-traceable labels.
+models:
+- alias: leber2015_cdiff_gut_microbiome
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: leber2015_cdiff_gut_microbiome.state
+  to:
+  - visualisation.leber2015_cdiff_gut_microbiome_state
+- from: leber2015_cdiff_gut_microbiome.summary
+  to:
+  - visualisation.leber2015_cdiff_gut_microbiome_summary
+- from: leber2015_cdiff_gut_microbiome.species_labels
+  to:
+  - visualisation.leber2015_cdiff_gut_microbiome_species_labels
+- from: leber2015_cdiff_gut_microbiome.clostridioides_difficile
+  to:
+  - visualisation.leber2015_cdiff_gut_microbiome_clostridioides_difficile
+- from: leber2015_cdiff_gut_microbiome.beneficial_commensals
+  to:
+  - visualisation.leber2015_cdiff_gut_microbiome_beneficial_commensals
+- from: leber2015_cdiff_gut_microbiome.harmful_commensals
+  to:
+  - visualisation.leber2015_cdiff_gut_microbiome_harmful_commensals
+runtime:
+  duration: 10.0
+  communication_step: 0.01
+  initial_inputs: {}
+io:
+  inputs:
+  - name: initial_clostridioides_difficile
+    maps_to: leber2015_cdiff_gut_microbiome.initial_clostridioides_difficile
+  - name: initial_beneficial_commensals
+    maps_to: leber2015_cdiff_gut_microbiome.initial_beneficial_commensals
+  outputs:
+  - name: state
+    maps_to: leber2015_cdiff_gut_microbiome.state
+  - name: summary
+    maps_to: leber2015_cdiff_gut_microbiome.summary
+  - name: species_labels
+    maps_to: leber2015_cdiff_gut_microbiome.species_labels
+  - name: clostridioides_difficile
+    maps_to: leber2015_cdiff_gut_microbiome.clostridioides_difficile
+  - name: beneficial_commensals
+    maps_to: leber2015_cdiff_gut_microbiome.beneficial_commensals
+  - name: harmful_commensals
+    maps_to: leber2015_cdiff_gut_microbiome.harmful_commensals

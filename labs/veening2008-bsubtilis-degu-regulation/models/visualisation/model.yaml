@@ -1,0 +1,62 @@
+schema_version: '2.0'
+title: Veening2008_DegU_Regulation Visualisation
+description: Question-and-answer visualisation for Veening2008_DegU_Regulation.
+standard: other
+tags:
+- microbiology
+- visualisation
+biosim:
+  communication_step: 1.0
+  entrypoint: src.microbiology_visualisation:MicrobiologyVisualisationModel
+  init_kwargs:
+    sources:
+    - alias: veening2008_bsubtilis_degu_regulation
+      observables:
+      - id: AprE
+        label: AprE
+      - id: DegU
+        label: DegU
+      - id: DegUP
+        label: DegUP
+      - id: Dim
+        label: Dim
+      - id: mAprE
+        label: MAprE
+      - id: mDegU
+        label: MDegU
+      labels:
+        AprE: AprE
+        DegU: DegU
+        DegUP: DegUP
+        Dim: Dim
+        mAprE: MAprE
+        mDegU: MDegU
+      headline_outputs:
+      - port: apre_extracellular_protease
+        source: AprE
+        label: AprE
+      - port: degu_response_regulator
+        source: DegU
+        label: DegU
+      - port: phosphorylated_degu_response_regulator
+        source: DegUP
+        label: DegUP
+    question: Which DegU regulation state changes most over the simulated window?
+    scope: microbiology model dynamics
+    caveat: The bundled SBML is the executable source of truth; labels are conservative
+      where source symbols are ambiguous.
+io:
+  inputs:
+  - name: veening2008_bsubtilis_degu_regulation_state
+    maps_to: veening2008_bsubtilis_degu_regulation.state
+  - name: veening2008_bsubtilis_degu_regulation_summary
+    maps_to: veening2008_bsubtilis_degu_regulation.summary
+  - name: veening2008_bsubtilis_degu_regulation_species_labels
+    maps_to: veening2008_bsubtilis_degu_regulation.species_labels
+  - name: veening2008_bsubtilis_degu_regulation_apre_extracellular_protease
+    maps_to: veening2008_bsubtilis_degu_regulation.apre_extracellular_protease
+  - name: veening2008_bsubtilis_degu_regulation_degu_response_regulator
+    maps_to: veening2008_bsubtilis_degu_regulation.degu_response_regulator
+  - name: veening2008_bsubtilis_degu_regulation_phosphorylated_degu_response_regulator
+    maps_to: veening2008_bsubtilis_degu_regulation.phosphorylated_degu_response_regulator
+  outputs: []

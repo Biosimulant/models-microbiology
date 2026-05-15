@@ -1,0 +1,280 @@
+schema_version: '2.0'
+title: Nishio2008 - Design of the phosphotransferase system for enhanced glucose uptake
+  in E. coli. Visualisation
+description: Question-and-answer visualisation for Nishio2008 - Design of the phosphotransferase
+  system for enhanced glucose uptake in E. coli..
+standard: other
+tags:
+- microbiology
+- visualisation
+biosim:
+  communication_step: 1.0
+  entrypoint: src.microbiology_visualisation:MicrobiologyVisualisationModel
+  init_kwargs:
+    sources:
+    - alias: nishio2008_ecoli_phosphotransferase_system
+      observables:
+      - id: CRP
+        label: CRP
+      - id: CRPsiteI_crp
+        label: CRPsiteI crp
+      - id: CRPsiteII_crp
+        label: CRPsiteII crp
+      - id: CRPsite_cyaA
+        label: CRPsite cyaA
+      - id: CRPsite_genome
+        label: CRPsite genome
+      - id: CRPsite_ptsGp1
+        label: CRPsite ptsGp1
+      - id: CRPsite_ptsGp2
+        label: CRPsite ptsGp2
+      - id: CRPsite_ptsHp0
+        label: CRPsite ptsHp0
+      - id: CRPsite_ptsHp1
+        label: CRPsite ptsHp1
+      - id: CRPsite_ptsIp0
+        label: CRPsite ptsIp0
+      - id: CRPsite_ptsIp1
+        label: CRPsite ptsIp1
+      - id: CRPsite_mlcp1
+        label: CRPsite mlcp1
+      - id: CRPsite_mlcp2
+        label: CRPsite mlcp2
+      - id: Mlc
+        label: Mlc
+      - id: Mlcsite_mlcp1
+        label: Mlcsite mlcp1
+      - id: Mlcsite_mlcp2
+        label: Mlcsite mlcp2
+      - id: Mlcsite_ptsGp1
+        label: Mlcsite ptsGp1
+      - id: Mlcsite_ptsGp2
+        label: Mlcsite ptsGp2
+      - id: Mlcsite_ptsHp0
+        label: Mlcsite ptsHp0
+      - id: Mlcsite_ptsIp0
+        label: Mlcsite ptsIp0
+      - id: CRP_cAMP
+        label: CRP cAMP
+      - id: CRP_cAMP_CRPsiteI_crp
+        label: CRP cAMP CRPsiteI crp
+      - id: CRP_cAMP_CRPsiteII_crp
+        label: CRP cAMP CRPsiteII crp
+      - id: CRP_cAMP_CRPsite_cyaA
+        label: CRP cAMP CRPsite cyaA
+      - id: CRP_cAMP_CRPsite_genome
+        label: CRP cAMP CRPsite genome
+      - id: CRP_cAMP_CRPsite_ptsGp1
+        label: CRP cAMP CRPsite ptsGp1
+      - id: CRP_cAMP_CRPsite_ptsGp2
+        label: CRP cAMP CRPsite ptsGp2
+      - id: CRP_cAMP_CRPsite_ptsHp0
+        label: CRP cAMP CRPsite ptsHp0
+      - id: CRP_cAMP_CRPsite_ptsHp1
+        label: CRP cAMP CRPsite ptsHp1
+      - id: CRP_cAMP_CRPsite_ptsIp0
+        label: CRP cAMP CRPsite ptsIp0
+      - id: CRP_cAMP_CRPsite_ptsIp1
+        label: CRP cAMP CRPsite ptsIp1
+      - id: CRP_cAMP_CRPsite_mlcp1
+        label: CRP cAMP CRPsite mlcp1
+      - id: CRP_cAMP_CRPsite_mlcp2
+        label: CRP cAMP CRPsite mlcp2
+      - id: Mlc_Mlcsite_ptsGp1
+        label: Mlc Mlcsite ptsGp1
+      - id: Mlc_Mlcsite_ptsGp2
+        label: Mlc Mlcsite ptsGp2
+      - id: Mlc_Mlcsite_ptsIp0
+        label: Mlc Mlcsite ptsIp0
+      - id: Mlc_Mlcsite_ptsHp0
+        label: Mlc Mlcsite ptsHp0
+      - id: Mlc_Mlcsite_mlcp1
+        label: Mlc Mlcsite mlcp1
+      - id: Mlc_Mlcsite_mlcp2
+        label: Mlc Mlcsite mlcp2
+      - id: IICB
+        label: IICB
+      - id: IICB_Mlc
+        label: IICB Mlc
+      - id: CYA
+        label: CYA
+      - id: IIA_P
+        label: IIA P
+      - id: IIA_P_CYA
+        label: IIA P CYA
+      - id: mRNA_cyaA
+        label: MRNA cyaA
+      - id: mRNA_crp
+        label: MRNA crp
+      - id: mRNA_ptsG
+        label: MRNA ptsG
+      - id: mRNA_ptsH
+        label: MRNA ptsH
+      - id: mRNA_ptsI
+        label: MRNA ptsI
+      - id: mRNA_crr
+        label: MRNA crr
+      - id: mRNA_mlc
+        label: MRNA mlc
+      - id: IICB_P
+        label: IICB P
+      - id: IIA
+        label: IIA
+      - id: HPr_P
+        label: HPr P
+      - id: HPr
+        label: HPr
+      - id: EI_P
+        label: EI P
+      - id: EI
+        label: EI
+      - id: cAMP
+        label: CAMP
+      - id: cyaA
+        label: CyaA
+      - id: cyaA_basal
+        label: CyaA basal
+      - id: crp
+        label: Crp
+      - id: crp_basal
+        label: Crp basal
+      - id: ptsGp1
+        label: PtsGp1
+      - id: ptsGp2
+        label: PtsGp2
+      - id: ptsHp0
+        label: PtsHp0
+      - id: ptsHp1
+        label: PtsHp1
+      - id: ptsIp0
+        label: PtsIp0
+      - id: ptsIp1
+        label: PtsIp1
+      - id: crr
+        label: Crr
+      - id: mlcp1
+        label: Mlcp1
+      - id: mlcp2
+        label: Mlcp2
+      - id: Pyr
+        label: Pyr
+      - id: PEP
+        label: PEP
+      - id: Glc6P
+        label: Glc6P
+      - id: Glucose
+        label: Glucose
+      - id: ATP
+        label: ATP
+      labels:
+        CRP: CRP
+        CRPsiteI_crp: CRPsiteI crp
+        CRPsiteII_crp: CRPsiteII crp
+        CRPsite_cyaA: CRPsite cyaA
+        CRPsite_genome: CRPsite genome
+        CRPsite_ptsGp1: CRPsite ptsGp1
+        CRPsite_ptsGp2: CRPsite ptsGp2
+        CRPsite_ptsHp0: CRPsite ptsHp0
+        CRPsite_ptsHp1: CRPsite ptsHp1
+        CRPsite_ptsIp0: CRPsite ptsIp0
+        CRPsite_ptsIp1: CRPsite ptsIp1
+        CRPsite_mlcp1: CRPsite mlcp1
+        CRPsite_mlcp2: CRPsite mlcp2
+        Mlc: Mlc
+        Mlcsite_mlcp1: Mlcsite mlcp1
+        Mlcsite_mlcp2: Mlcsite mlcp2
+        Mlcsite_ptsGp1: Mlcsite ptsGp1
+        Mlcsite_ptsGp2: Mlcsite ptsGp2
+        Mlcsite_ptsHp0: Mlcsite ptsHp0
+        Mlcsite_ptsIp0: Mlcsite ptsIp0
+        CRP_cAMP: CRP cAMP
+        CRP_cAMP_CRPsiteI_crp: CRP cAMP CRPsiteI crp
+        CRP_cAMP_CRPsiteII_crp: CRP cAMP CRPsiteII crp
+        CRP_cAMP_CRPsite_cyaA: CRP cAMP CRPsite cyaA
+        CRP_cAMP_CRPsite_genome: CRP cAMP CRPsite genome
+        CRP_cAMP_CRPsite_ptsGp1: CRP cAMP CRPsite ptsGp1
+        CRP_cAMP_CRPsite_ptsGp2: CRP cAMP CRPsite ptsGp2
+        CRP_cAMP_CRPsite_ptsHp0: CRP cAMP CRPsite ptsHp0
+        CRP_cAMP_CRPsite_ptsHp1: CRP cAMP CRPsite ptsHp1
+        CRP_cAMP_CRPsite_ptsIp0: CRP cAMP CRPsite ptsIp0
+        CRP_cAMP_CRPsite_ptsIp1: CRP cAMP CRPsite ptsIp1
+        CRP_cAMP_CRPsite_mlcp1: CRP cAMP CRPsite mlcp1
+        CRP_cAMP_CRPsite_mlcp2: CRP cAMP CRPsite mlcp2
+        Mlc_Mlcsite_ptsGp1: Mlc Mlcsite ptsGp1
+        Mlc_Mlcsite_ptsGp2: Mlc Mlcsite ptsGp2
+        Mlc_Mlcsite_ptsIp0: Mlc Mlcsite ptsIp0
+        Mlc_Mlcsite_ptsHp0: Mlc Mlcsite ptsHp0
+        Mlc_Mlcsite_mlcp1: Mlc Mlcsite mlcp1
+        Mlc_Mlcsite_mlcp2: Mlc Mlcsite mlcp2
+        IICB: IICB
+        IICB_Mlc: IICB Mlc
+        CYA: CYA
+        IIA_P: IIA P
+        IIA_P_CYA: IIA P CYA
+        mRNA_cyaA: MRNA cyaA
+        mRNA_crp: MRNA crp
+        mRNA_ptsG: MRNA ptsG
+        mRNA_ptsH: MRNA ptsH
+        mRNA_ptsI: MRNA ptsI
+        mRNA_crr: MRNA crr
+        mRNA_mlc: MRNA mlc
+        IICB_P: IICB P
+        IIA: IIA
+        HPr_P: HPr P
+        HPr: HPr
+        EI_P: EI P
+        EI: EI
+        cAMP: CAMP
+        cyaA: CyaA
+        cyaA_basal: CyaA basal
+        crp: Crp
+        crp_basal: Crp basal
+        ptsGp1: PtsGp1
+        ptsGp2: PtsGp2
+        ptsHp0: PtsHp0
+        ptsHp1: PtsHp1
+        ptsIp0: PtsIp0
+        ptsIp1: PtsIp1
+        crr: Crr
+        mlcp1: Mlcp1
+        mlcp2: Mlcp2
+        Pyr: Pyr
+        PEP: PEP
+        Glc6P: Glc6P
+        Glucose: Glucose
+        ATP: ATP
+      headline_outputs:
+      - port: camp_receptor_protein
+        source: CRP
+        label: CRP
+      - port: camp_receptor_protein_bound_site_one
+        source: CRPsiteI_crp
+        label: CRPsiteI crp
+      - port: camp_receptor_protein_bound_site_two
+        source: CRPsiteII_crp
+        label: CRPsiteII crp
+      - port: camp_receptor_protein_bound_cyaa_site
+        source: CRPsite_cyaA
+        label: CRPsite cyaA
+    question: Which phosphotransferase-system state changes most over the simulated
+      window?
+    scope: microbiology model dynamics
+    caveat: The bundled SBML is the executable source of truth; labels are conservative
+      where source symbols are ambiguous.
+io:
+  inputs:
+  - name: nishio2008_ecoli_phosphotransferase_system_state
+    maps_to: nishio2008_ecoli_phosphotransferase_system.state
+  - name: nishio2008_ecoli_phosphotransferase_system_summary
+    maps_to: nishio2008_ecoli_phosphotransferase_system.summary
+  - name: nishio2008_ecoli_phosphotransferase_system_species_labels
+    maps_to: nishio2008_ecoli_phosphotransferase_system.species_labels
+  - name: nishio2008_ecoli_phosphotransferase_system_camp_receptor_protein
+    maps_to: nishio2008_ecoli_phosphotransferase_system.camp_receptor_protein
+  - name: nishio2008_ecoli_phosphotransferase_system_camp_receptor_protein_bound_site_one
+    maps_to: nishio2008_ecoli_phosphotransferase_system.camp_receptor_protein_bound_site_one
+  - name: nishio2008_ecoli_phosphotransferase_system_camp_receptor_protein_bound_site_two
+    maps_to: nishio2008_ecoli_phosphotransferase_system.camp_receptor_protein_bound_site_two
+  - name: nishio2008_ecoli_phosphotransferase_system_camp_receptor_protein_bound_cyaa_site
+    maps_to: nishio2008_ecoli_phosphotransferase_system.camp_receptor_protein_bound_cyaa_site
+  outputs: []

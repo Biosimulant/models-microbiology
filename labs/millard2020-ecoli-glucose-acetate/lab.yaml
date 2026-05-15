@@ -1,0 +1,61 @@
+schema_version: '2.0'
+title: Millard2020 - Kinetic model of Glucose and Acetate metabolisms in E. coli Lab
+description: Curated microbiology lab for Millard2020 - Kinetic model of Glucose and
+  Acetate metabolisms in E. coli. The bundled SBML is executed directly through Tellurium
+  and visualised with conservative, source-traceable labels.
+models:
+- alias: millard2020_ecoli_glucose_acetate
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: millard2020_ecoli_glucose_acetate.state
+  to:
+  - visualisation.millard2020_ecoli_glucose_acetate_state
+- from: millard2020_ecoli_glucose_acetate.summary
+  to:
+  - visualisation.millard2020_ecoli_glucose_acetate_summary
+- from: millard2020_ecoli_glucose_acetate.species_labels
+  to:
+  - visualisation.millard2020_ecoli_glucose_acetate_species_labels
+- from: millard2020_ecoli_glucose_acetate.glucose
+  to:
+  - visualisation.millard2020_ecoli_glucose_acetate_glucose
+- from: millard2020_ecoli_glucose_acetate.acetate
+  to:
+  - visualisation.millard2020_ecoli_glucose_acetate_acetate
+- from: millard2020_ecoli_glucose_acetate.extracellular_acetate
+  to:
+  - visualisation.millard2020_ecoli_glucose_acetate_extracellular_acetate
+- from: millard2020_ecoli_glucose_acetate.input_regulator
+  to:
+  - visualisation.millard2020_ecoli_glucose_acetate_input_regulator
+runtime:
+  duration: 10.0
+  communication_step: 0.01
+  initial_inputs: {}
+io:
+  inputs:
+  - name: external_glucose
+    maps_to: millard2020_ecoli_glucose_acetate.external_glucose
+  - name: extracellular_acetate_level
+    maps_to: millard2020_ecoli_glucose_acetate.extracellular_acetate_level
+  - name: dilution_rate
+    maps_to: millard2020_ecoli_glucose_acetate.dilution_rate
+  - name: feed_rate
+    maps_to: millard2020_ecoli_glucose_acetate.feed_rate
+  outputs:
+  - name: state
+    maps_to: millard2020_ecoli_glucose_acetate.state
+  - name: summary
+    maps_to: millard2020_ecoli_glucose_acetate.summary
+  - name: species_labels
+    maps_to: millard2020_ecoli_glucose_acetate.species_labels
+  - name: glucose
+    maps_to: millard2020_ecoli_glucose_acetate.glucose
+  - name: acetate
+    maps_to: millard2020_ecoli_glucose_acetate.acetate
+  - name: extracellular_acetate
+    maps_to: millard2020_ecoli_glucose_acetate.extracellular_acetate
+  - name: input_regulator
+    maps_to: millard2020_ecoli_glucose_acetate.input_regulator

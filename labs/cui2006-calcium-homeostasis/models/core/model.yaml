@@ -1,0 +1,65 @@
+schema_version: '2.0'
+title: Cui2006_CalciumHomeostasis
+description: 'This a model from the article: Mathematical modeling of calcium homeostasis
+  in yeast cells. It can be used to explore microbiology cui2006 calciumhomeostasis
+  model0913003363 dynamics and compare simulation behavior across conditions.'
+standard: sbml
+tags:
+- microbiology
+- sbml
+- biomodels_ebi
+- faithful
+- tellurium
+authors:
+- Biosimulant Team
+- Jiangjun Cui
+- Jaap A Kaandorp
+upstream:
+  id: biomodels_ebi:MODEL0913003363
+  source_db: biomodels_ebi
+  source_id: MODEL0913003363
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL0913003363
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL0913003363?filename=MODEL0913003363_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.cui2006_calciumhomeostasis_model0913003363_model:Cui2006CalciumhomeostasisModel0913003363Model
+  init_kwargs:
+    model_path: data/MODEL0913003363.xml
+    integration_step: 1.0
+  communication_step: 0.01
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: external_calcium
+    maps_to: Caex
+    label: External Calcium
+  - name: total_calmodulin
+    maps_to: CaMtotal
+    label: Total Calmodulin
+  outputs:
+  - name: state
+    maps_to: state
+    label: Model state
+  - name: summary
+    maps_to: summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: species_labels
+    label: Observable labels
+  - name: calcium_homeostasis_variable_one
+    maps_to: m
+    label: M
+  - name: calcium_homeostasis_variable_two
+    maps_to: z
+    label: Z
+  - name: calcium_homeostasis_variable_three
+    maps_to: h
+    label: H
+  - name: calcium_homeostasis_variable_four
+    maps_to: x
+    label: X

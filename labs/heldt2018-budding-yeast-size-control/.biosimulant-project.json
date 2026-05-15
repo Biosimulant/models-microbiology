@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "c2fbd105-99f6-4315-b65a-657e6dc92147",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "ab6eb35e-445a-4fe4-8a6e-0da1632d2cd6",
+  "created_at": "2026-05-15T15:52:54.711474979+00:00",
+  "last_synced_at": "2026-05-15T18:42:31.736370+00:00",
+  "hub_manifest_hash": "48329ca52c084f0470482a5e6ecda459293fcc65c01b2fa54f99706a2006a4e7",
+  "package_name": "heldt2018-budding-yeast-size-control-by-titration-of-nuclear-sit"
+}

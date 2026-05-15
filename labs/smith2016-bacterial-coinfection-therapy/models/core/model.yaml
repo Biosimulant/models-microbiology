@@ -1,0 +1,67 @@
+schema_version: '2.0'
+title: Smith2016-Combination therapy to prevent bacterial coinfection during influenza.
+description: Secondary bacterial infections (SBIs) exacerbate influenza-associated
+  disease and mortality. Antimicrobial agents can reduce the severity of SBIs, but
+  many have limited efficacy or cause adverse effec.
+standard: sbml
+tags:
+- microbiology
+- sbml
+- biomodels_ebi
+- faithful
+- tellurium
+authors:
+- Biosimulant Team
+- Amber M Smith
+upstream:
+  id: biomodels_ebi:MODEL1812040005
+  source_db: biomodels_ebi
+  source_id: MODEL1812040005
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1812040005
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1812040005?filename=Smith2016.xml
+  license: CC0
+biosim:
+  entrypoint: src.smith2016_combination_therapy_to_prevent_bacteri_model1812040005_model:Smith2016CombinationTherapyToPreventBacteriModel1812040005Model
+  init_kwargs:
+    model_path: data/MODEL1812040005.xml
+    integration_step: 1.0
+  communication_step: 0.01
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: transmission_rate
+    maps_to: beta
+    label: Transmission Rate
+  - name: initial_viral_load
+    maps_to: V
+    label: Initial Viral Load
+  - name: initial_target_cells
+    maps_to: T
+    label: Initial Target Cells
+  outputs:
+  - name: state
+    maps_to: state
+    label: Model state
+  - name: summary
+    maps_to: summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: species_labels
+    label: Observable labels
+  - name: target_cells
+    maps_to: T
+    label: T
+  - name: infected_cells_type_1
+    maps_to: I1
+    label: I1
+  - name: infected_cells_type_2
+    maps_to: I2
+    label: I2
+  - name: viral_load
+    maps_to: V
+    label: V

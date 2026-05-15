@@ -1,0 +1,67 @@
+schema_version: '2.0'
+title: Salcedo-Sora2016 - Microbial folate biosynthesis and utilisation
+description: 'Salcedo-Sora2016 - Microbial folate biosynthesis and utilisation This
+  model is described in the article: A mathematical model of microbial folate biosynthesis
+  and utilisation: implications for antifol. It can be used to explore microbiology
+  salcedo sora2016 microbial folate biosynthesis dynamics and compare simulation behavior
+  across conditions.'
+standard: sbml
+tags:
+- microbiology
+- sbml
+- biomodels_ebi
+- faithful
+- tellurium
+authors:
+- Biosimulant Team
+- J Enrique Salcedo-Sora
+- Mark T Mc Auley
+upstream:
+  id: biomodels_ebi:BIOMD0000000725
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000725
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000725
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000725?filename=Model.xml
+  license: CC0
+biosim:
+  entrypoint: src.salcedo_sora2016_microbial_folate_biosynthesis_a_biomd0000000725_model:SalcedoSora2016MicrobialFolateBiosynthesisABiomd0000000725Model
+  init_kwargs:
+    model_path: data/BIOMD0000000725.xml
+    integration_step: 1.0
+  communication_step: 0.01
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: phosphoenolpyruvate_pool
+    maps_to: PEP
+    label: Phosphoenolpyruvate Pool
+  - name: glutamine_pool
+    maps_to: Gln
+    label: Glutamine Pool
+  outputs:
+  - name: state
+    maps_to: state
+    label: Model state
+  - name: summary
+    maps_to: summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: species_labels
+    label: Observable labels
+  - name: deoxy_arabino_heptulosonate_phosphate
+    maps_to: DAHP
+    label: DAHP
+  - name: phosphoenolpyruvate
+    maps_to: PEP
+    label: PEP
+  - name: phosphate
+    maps_to: Pi
+    label: Pi
+  - name: dehydroquinate
+    maps_to: DHQ
+    label: DHQ

@@ -1,0 +1,65 @@
+schema_version: '2.0'
+title: Veening2008_DegU_Regulation
+description: 'This a model from the article: Transient heterogeneity in extracellular
+  protease production by Bacillus subtilis. Veening JW, Igoshin OA, Eijlander RT,
+  Nijland R, Hamoen LW, Kuipers OP Mol.'
+standard: sbml
+tags:
+- microbiology
+- sbml
+- biomodels_ebi
+- faithful
+- tellurium
+authors:
+- Biosimulant Team
+- Jan-Willem Veening
+- Oleg A Igoshin
+- Robyn T Eijlander
+- Reindert Nijland
+- Leendert W Hamoen
+upstream:
+  id: biomodels_ebi:BIOMD0000000240
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000240
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000240
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000240?filename=BIOMD0000000240_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.veening2008_degu_regulation_biomd0000000240_model:Veening2008DeguRegulationBiomd0000000240Model
+  init_kwargs:
+    model_path: data/BIOMD0000000240.xml
+    integration_step: 1.0
+  communication_step: 0.01
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: maximum_degu_activation_rate
+    maps_to: Imax
+    label: Maximum DegU Activation Rate
+  - name: initial_degu_response_regulator
+    maps_to: DegU
+    label: Initial DegU Response Regulator
+  outputs:
+  - name: state
+    maps_to: state
+    label: Model state
+  - name: summary
+    maps_to: summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: species_labels
+    label: Observable labels
+  - name: apre_extracellular_protease
+    maps_to: AprE
+    label: AprE
+  - name: degu_response_regulator
+    maps_to: DegU
+    label: DegU
+  - name: phosphorylated_degu_response_regulator
+    maps_to: DegUP
+    label: DegUP

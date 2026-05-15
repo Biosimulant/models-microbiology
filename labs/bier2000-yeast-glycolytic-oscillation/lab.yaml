@@ -1,0 +1,57 @@
+schema_version: '2.0'
+title: Bier2000_GlycolyticOscillation Lab
+description: Curated microbiology lab for Bier2000_GlycolyticOscillation. The bundled
+  SBML is executed directly through Tellurium and visualised with conservative, source-traceable
+  labels.
+models:
+- alias: bier2000_yeast_glycolytic_oscillation
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: bier2000_yeast_glycolytic_oscillation.state
+  to:
+  - visualisation.bier2000_yeast_glycolytic_oscillation_state
+- from: bier2000_yeast_glycolytic_oscillation.summary
+  to:
+  - visualisation.bier2000_yeast_glycolytic_oscillation_summary
+- from: bier2000_yeast_glycolytic_oscillation.species_labels
+  to:
+  - visualisation.bier2000_yeast_glycolytic_oscillation_species_labels
+- from: bier2000_yeast_glycolytic_oscillation.glucose_pool_1
+  to:
+  - visualisation.bier2000_yeast_glycolytic_oscillation_glucose_pool_1
+- from: bier2000_yeast_glycolytic_oscillation.atp_pool_1
+  to:
+  - visualisation.bier2000_yeast_glycolytic_oscillation_atp_pool_1
+- from: bier2000_yeast_glycolytic_oscillation.glucose_pool_2
+  to:
+  - visualisation.bier2000_yeast_glycolytic_oscillation_glucose_pool_2
+- from: bier2000_yeast_glycolytic_oscillation.atp_pool_2
+  to:
+  - visualisation.bier2000_yeast_glycolytic_oscillation_atp_pool_2
+runtime:
+  duration: 10.0
+  communication_step: 0.01
+  initial_inputs: {}
+io:
+  inputs:
+  - name: initial_glucose_pool_1
+    maps_to: bier2000_yeast_glycolytic_oscillation.initial_glucose_pool_1
+  - name: initial_glucose_pool_2
+    maps_to: bier2000_yeast_glycolytic_oscillation.initial_glucose_pool_2
+  outputs:
+  - name: state
+    maps_to: bier2000_yeast_glycolytic_oscillation.state
+  - name: summary
+    maps_to: bier2000_yeast_glycolytic_oscillation.summary
+  - name: species_labels
+    maps_to: bier2000_yeast_glycolytic_oscillation.species_labels
+  - name: glucose_pool_1
+    maps_to: bier2000_yeast_glycolytic_oscillation.glucose_pool_1
+  - name: atp_pool_1
+    maps_to: bier2000_yeast_glycolytic_oscillation.atp_pool_1
+  - name: glucose_pool_2
+    maps_to: bier2000_yeast_glycolytic_oscillation.glucose_pool_2
+  - name: atp_pool_2
+    maps_to: bier2000_yeast_glycolytic_oscillation.atp_pool_2

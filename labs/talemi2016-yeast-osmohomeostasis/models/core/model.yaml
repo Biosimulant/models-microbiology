@@ -1,0 +1,68 @@
+schema_version: '2.0'
+title: Talemi2016 - Yeast osmo-homoestasis
+description: 'Talemi2016 - Yeast osmo-homoestasis This model is described in the article:
+  Systems Level Analysis of the Yeast Osmo-Stat. Talemi SR, Tiger CF, Andersson M,
+  Babazadeh R, Welkenhuysen N, Klipp E, Hohma.'
+standard: sbml
+tags:
+- microbiology
+- sbml
+- biomodels_ebi
+- faithful
+- tellurium
+authors:
+- Biosimulant Team
+- Soheil Rastgou Talemi
+- Carl-Fredrik Tiger
+- Mikael Andersson
+- Roja Babazadeh
+- Niek Welkenhuysen
+upstream:
+  id: biomodels_ebi:MODEL1606100000
+  source_db: biomodels_ebi
+  source_id: MODEL1606100000
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1606100000
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1606100000?filename=MODEL1606100000_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.talemi2016_yeast_osmo_homoestasis_model1606100000_model:Talemi2016YeastOsmoHomoestasisModel1606100000Model
+  init_kwargs:
+    model_path: data/MODEL1606100000.xml
+    integration_step: 1.0
+  communication_step: 0.01
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: external_osmolarity
+    maps_to: Osmex
+    label: External Osmolarity
+  - name: hog_pathway_signal
+    maps_to: HOGSignal
+    label: Hog Pathway Signal
+  outputs:
+  - name: state
+    maps_to: state
+    label: Model state
+  - name: summary
+    maps_to: summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: species_labels
+    label: Observable labels
+  - name: intracellular_glycerol
+    maps_to: Glyin
+    label: Glyin
+  - name: osmotic_signal
+    maps_to: Osmin
+    label: Osmin
+  - name: phosphorylated_hog1_mapk
+    maps_to: Hog1PP
+    label: Hog1PP
+  - name: phosphorylated_slt2_mapk
+    maps_to: Slt2P
+    label: Slt2P

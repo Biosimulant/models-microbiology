@@ -1,0 +1,204 @@
+schema_version: '2.0'
+title: Salcedo-Sora2016 - Microbial folate biosynthesis and utilisation Visualisation
+description: Question-and-answer visualisation for Salcedo-Sora2016 - Microbial folate
+  biosynthesis and utilisation.
+standard: other
+tags:
+- microbiology
+- visualisation
+biosim:
+  communication_step: 1.0
+  entrypoint: src.microbiology_visualisation:MicrobiologyVisualisationModel
+  init_kwargs:
+    sources:
+    - alias: salcedosora2016_microbial_folate_biosynthesis
+      observables:
+      - id: DAHP
+        label: DAHP
+      - id: PEP
+        label: PEP
+      - id: Pi
+        label: Pi
+      - id: DHQ
+        label: DHQ
+      - id: EP
+        label: EP
+      - id: DHSK
+        label: DHSK
+      - id: SK
+        label: SK
+      - id: SKP
+        label: SKP
+      - id: CVPSK
+        label: CVPSK
+      - id: CM
+        label: CM
+      - id: Gln
+        label: Gln
+      - id: Glu
+        label: Glu
+      - id: ADC
+        label: ADC
+      - id: Pyr
+        label: Pyr
+      - id: pABA
+        label: PABA
+      - id: DHNTP
+        label: DHNTP
+      - id: GTP
+        label: GTP
+      - id: AHMDHP
+        label: AHMDHP
+      - id: HAD
+        label: HAD
+      - id: PTHP
+        label: PTHP
+      - id: AHMDPP
+        label: AHMDPP
+      - id: DHP
+        label: DHP
+      - id: DHF
+        label: DHF
+      - id: THF
+        label: THF
+      - id: THFGlu
+        label: THFGlu
+      - id: Gly
+        label: Gly
+      - id: Ser
+        label: Ser
+      - id: myTHFGlu
+        label: Model state myTHFGlu
+      - id: MTHFGlu
+        label: Model state MTHFGlu
+      - id: Hcy
+        label: Hcy
+      - id: Met
+        label: Met
+      - id: dTMP
+        label: DTMP
+      - id: dUMP
+        label: DUMP
+      - id: meTHFGlu
+        label: Model state meTHFGlu
+      - id: fTHFGlu
+        label: FTHFGlu
+      - id: fmtRNA
+        label: FmtRNA
+      - id: mtRNA
+        label: MtRNA
+      - id: COTwo
+        label: COTwo
+      - id: ADP
+        label: ADP
+      - id: ATP
+        label: ATP
+      - id: NADP
+        label: NADP
+      - id: NADPH
+        label: NADPH
+      - id: AMP
+        label: AMP
+      - id: DLp
+        label: DLp
+      - id: SAmDLp
+        label: SAmDLp
+      - id: Lp
+        label: Lp
+      - id: NAD
+        label: NAD
+      - id: NADH
+        label: NADH
+      - id: Ammonia
+        label: Ammonia
+      - id: Formyl
+        label: Formyl
+      - id: ffTHFGlu
+        label: FfTHFGlu
+      labels:
+        DAHP: DAHP
+        PEP: PEP
+        Pi: Pi
+        DHQ: DHQ
+        EP: EP
+        DHSK: DHSK
+        SK: SK
+        SKP: SKP
+        CVPSK: CVPSK
+        CM: CM
+        Gln: Gln
+        Glu: Glu
+        ADC: ADC
+        Pyr: Pyr
+        pABA: PABA
+        DHNTP: DHNTP
+        GTP: GTP
+        AHMDHP: AHMDHP
+        HAD: HAD
+        PTHP: PTHP
+        AHMDPP: AHMDPP
+        DHP: DHP
+        DHF: DHF
+        THF: THF
+        THFGlu: THFGlu
+        Gly: Gly
+        Ser: Ser
+        myTHFGlu: Model state myTHFGlu
+        MTHFGlu: Model state MTHFGlu
+        Hcy: Hcy
+        Met: Met
+        dTMP: DTMP
+        dUMP: DUMP
+        meTHFGlu: Model state meTHFGlu
+        fTHFGlu: FTHFGlu
+        fmtRNA: FmtRNA
+        mtRNA: MtRNA
+        COTwo: COTwo
+        ADP: ADP
+        ATP: ATP
+        NADP: NADP
+        NADPH: NADPH
+        AMP: AMP
+        DLp: DLp
+        SAmDLp: SAmDLp
+        Lp: Lp
+        NAD: NAD
+        NADH: NADH
+        Ammonia: Ammonia
+        Formyl: Formyl
+        ffTHFGlu: FfTHFGlu
+      headline_outputs:
+      - port: deoxy_arabino_heptulosonate_phosphate
+        source: DAHP
+        label: DAHP
+      - port: phosphoenolpyruvate
+        source: PEP
+        label: PEP
+      - port: phosphate
+        source: Pi
+        label: Pi
+      - port: dehydroquinate
+        source: DHQ
+        label: DHQ
+    question: Which microbial folate-pathway state changes most over the simulated
+      window?
+    scope: metabolic pathway dynamics
+    caveat: The bundled SBML is the executable source of truth; labels are conservative
+      where source symbols are ambiguous.
+io:
+  inputs:
+  - name: salcedosora2016_microbial_folate_biosynthesis_state
+    maps_to: salcedosora2016_microbial_folate_biosynthesis.state
+  - name: salcedosora2016_microbial_folate_biosynthesis_summary
+    maps_to: salcedosora2016_microbial_folate_biosynthesis.summary
+  - name: salcedosora2016_microbial_folate_biosynthesis_species_labels
+    maps_to: salcedosora2016_microbial_folate_biosynthesis.species_labels
+  - name: salcedosora2016_microbial_folate_biosynthesis_deoxy_arabino_heptulosonate_phosphate
+    maps_to: salcedosora2016_microbial_folate_biosynthesis.deoxy_arabino_heptulosonate_phosphate
+  - name: salcedosora2016_microbial_folate_biosynthesis_phosphoenolpyruvate
+    maps_to: salcedosora2016_microbial_folate_biosynthesis.phosphoenolpyruvate
+  - name: salcedosora2016_microbial_folate_biosynthesis_phosphate
+    maps_to: salcedosora2016_microbial_folate_biosynthesis.phosphate
+  - name: salcedosora2016_microbial_folate_biosynthesis_dehydroquinate
+    maps_to: salcedosora2016_microbial_folate_biosynthesis.dehydroquinate
+  outputs: []

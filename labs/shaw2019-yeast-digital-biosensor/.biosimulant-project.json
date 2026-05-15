@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "b5168171-8ad6-4d85-af19-021bd701f28a",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "35bb3e36-aa06-4981-bc56-aa3e093403a6",
+  "created_at": "2026-05-15T15:52:54.962049121+00:00",
+  "last_synced_at": "2026-05-15T18:49:52.720817+00:00",
+  "hub_manifest_hash": "1554cc1433242458a2b51d96910f1833939816d3fb2ffb62fa2309d7285fbe9b",
+  "package_name": "shaw2019-digital-biosensor-model-from-yeast-lab"
+}

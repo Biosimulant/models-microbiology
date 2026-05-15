@@ -1,0 +1,82 @@
+schema_version: '2.0'
+title: Talemi2016 - Yeast osmo-homoestasis Visualisation
+description: Question-and-answer visualisation for Talemi2016 - Yeast osmo-homoestasis.
+standard: other
+tags:
+- microbiology
+- visualisation
+biosim:
+  communication_step: 1.0
+  entrypoint: src.microbiology_visualisation:MicrobiologyVisualisationModel
+  init_kwargs:
+    sources:
+    - alias: talemi2016_yeast_osmohomeostasis
+      observables:
+      - id: Glyin
+        label: Glyin
+      - id: Osmin
+        label: Osmin
+      - id: Hog1
+        label: Hog1
+      - id: Hog1PP
+        label: Hog1PP
+      - id: Slt2
+        label: Slt2
+      - id: Slt2P
+        label: Slt2P
+      - id: Glyex
+        label: Glyex
+      - id: Osmex
+        label: Osmex
+      - id: Fps1
+        label: Fps1
+      - id: Fps1P
+        label: Fps1P
+      - id: Sensitizer
+        label: Sensitizer
+      labels:
+        Glyin: Glyin
+        Osmin: Osmin
+        Hog1: Hog1
+        Hog1PP: Hog1PP
+        Slt2: Slt2
+        Slt2P: Slt2P
+        Glyex: Glyex
+        Osmex: Osmex
+        Fps1: Fps1
+        Fps1P: Fps1P
+        Sensitizer: Sensitizer
+      headline_outputs:
+      - port: intracellular_glycerol
+        source: Glyin
+        label: Glyin
+      - port: osmotic_signal
+        source: Osmin
+        label: Osmin
+      - port: phosphorylated_hog1_mapk
+        source: Hog1PP
+        label: Hog1PP
+      - port: phosphorylated_slt2_mapk
+        source: Slt2P
+        label: Slt2P
+    question: Which osmotic homeostasis state changes most over the simulated window?
+    scope: microbial stress response dynamics
+    caveat: The bundled SBML is the executable source of truth; labels are conservative
+      where source symbols are ambiguous.
+io:
+  inputs:
+  - name: talemi2016_yeast_osmohomeostasis_state
+    maps_to: talemi2016_yeast_osmohomeostasis.state
+  - name: talemi2016_yeast_osmohomeostasis_summary
+    maps_to: talemi2016_yeast_osmohomeostasis.summary
+  - name: talemi2016_yeast_osmohomeostasis_species_labels
+    maps_to: talemi2016_yeast_osmohomeostasis.species_labels
+  - name: talemi2016_yeast_osmohomeostasis_intracellular_glycerol
+    maps_to: talemi2016_yeast_osmohomeostasis.intracellular_glycerol
+  - name: talemi2016_yeast_osmohomeostasis_osmotic_signal
+    maps_to: talemi2016_yeast_osmohomeostasis.osmotic_signal
+  - name: talemi2016_yeast_osmohomeostasis_phosphorylated_hog1_mapk
+    maps_to: talemi2016_yeast_osmohomeostasis.phosphorylated_hog1_mapk
+  - name: talemi2016_yeast_osmohomeostasis_phosphorylated_slt2_mapk
+    maps_to: talemi2016_yeast_osmohomeostasis.phosphorylated_slt2_mapk
+  outputs: []

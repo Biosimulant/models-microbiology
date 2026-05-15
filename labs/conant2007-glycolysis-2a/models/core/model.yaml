@@ -1,0 +1,65 @@
+schema_version: '2.0'
+title: MODEL2426780967_url.xml
+description: Increased glycolytic flux as an outcome of whole-genome duplication in
+  yeast. GC Conant and KH Wolfe, Mol Syst Biol 3:129,2007 This is the original model
+  reproducing figure 2A of the article submitted.
+standard: sbml
+tags:
+- microbiology
+- sbml
+- biomodels_ebi
+- faithful
+- tellurium
+authors:
+- Biosimulant Team
+- Gavin C Conant
+- Kenneth H Wolfe
+upstream:
+  id: biomodels_ebi:MODEL2426780967
+  source_db: biomodels_ebi
+  source_id: MODEL2426780967
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL2426780967
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2426780967?filename=MODEL2426780967_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.model2426780967_url_xml_model2426780967_model:Model2426780967UrlXmlModel2426780967Model
+  init_kwargs:
+    model_path: data/MODEL2426780967.xml
+    integration_step: 1.0
+  communication_step: 0.01
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: external_glucose
+    maps_to: GLCo
+    label: External Glucose
+  - name: whole_genome_duplication_enzyme_scale
+    maps_to: WGD_E
+    label: Whole Genome Duplication Enzyme Scale
+  outputs:
+  - name: state
+    maps_to: state
+    label: Model state
+  - name: summary
+    maps_to: summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: species_labels
+    label: Observable labels
+  - name: intracellular_glucose
+    maps_to: GLCi
+    label: GLCi
+  - name: atp
+    maps_to: ATP
+    label: ATP
+  - name: glucose_6_phosphate
+    maps_to: G6P
+    label: G6P
+  - name: adp
+    maps_to: ADP
+    label: ADP

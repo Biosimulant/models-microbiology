@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "b9c7cdc5-74dd-423a-81ee-ec23088f8b88",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "b08b3b36-62c6-4796-87c5-82ee70042e81",
+  "created_at": "2026-05-15T15:55:11.214199633+00:00",
+  "last_synced_at": "2026-05-15T18:54:05.116032+00:00",
+  "hub_manifest_hash": "b8916e924af28db46dcbb7e08cd4f388cf8ac16903b0e10836f39599215fdab1",
+  "package_name": "veening2008-degu-regulation-lab"
+}

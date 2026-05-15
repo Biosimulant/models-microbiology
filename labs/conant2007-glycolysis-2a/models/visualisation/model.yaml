@@ -1,0 +1,124 @@
+schema_version: '2.0'
+title: MODEL2426780967_url.xml Visualisation
+description: Question-and-answer visualisation for MODEL2426780967_url.xml.
+standard: other
+tags:
+- microbiology
+- visualisation
+biosim:
+  communication_step: 1.0
+  entrypoint: src.microbiology_visualisation:MicrobiologyVisualisationModel
+  init_kwargs:
+    sources:
+    - alias: conant2007_glycolysis_2a
+      observables:
+      - id: GLCi
+        label: GLCi
+      - id: ATP
+        label: ATP
+      - id: G6P
+        label: G6P
+      - id: ADP
+        label: ADP
+      - id: F6P
+        label: F6P
+      - id: F16bP
+        label: F16bP
+      - id: AMP
+        label: AMP
+      - id: DHAP
+        label: DHAP
+      - id: GAP
+        label: GAP
+      - id: NAD
+        label: NAD
+      - id: BPG
+        label: BPG
+      - id: NADH
+        label: NADH
+      - id: P3G
+        label: P3G
+      - id: P2G
+        label: P2G
+      - id: PEP
+        label: PEP
+      - id: PYR
+        label: PYR
+      - id: AcAld
+        label: AcAld
+      - id: GLCo
+        label: GLCo
+      - id: CO2
+        label: CO2
+      - id: EtOH
+        label: EtOH
+      - id: Glycerol
+        label: Glycerol
+      - id: Glycogen
+        label: Glycogen
+      - id: Trehalose
+        label: Trehalose
+      - id: Succinate
+        label: Succinate
+      - id: WGD_E
+        label: WGD E
+      labels:
+        GLCi: GLCi
+        ATP: ATP
+        G6P: G6P
+        ADP: ADP
+        F6P: F6P
+        F16bP: F16bP
+        AMP: AMP
+        DHAP: DHAP
+        GAP: GAP
+        NAD: NAD
+        BPG: BPG
+        NADH: NADH
+        P3G: P3G
+        P2G: P2G
+        PEP: PEP
+        PYR: PYR
+        AcAld: AcAld
+        GLCo: GLCo
+        CO2: CO2
+        EtOH: EtOH
+        Glycerol: Glycerol
+        Glycogen: Glycogen
+        Trehalose: Trehalose
+        Succinate: Succinate
+        WGD_E: WGD E
+      headline_outputs:
+      - port: intracellular_glucose
+        source: GLCi
+        label: GLCi
+      - port: atp
+        source: ATP
+        label: ATP
+      - port: glucose_6_phosphate
+        source: G6P
+        label: G6P
+      - port: adp
+        source: ADP
+        label: ADP
+    question: Which glycolytic state changes most strongly in the bundled SBML run?
+    scope: metabolic pathway dynamics
+    caveat: The bundled SBML is the executable source of truth; labels are conservative
+      where source symbols are ambiguous.
+io:
+  inputs:
+  - name: conant2007_glycolysis_2a_state
+    maps_to: conant2007_glycolysis_2a.state
+  - name: conant2007_glycolysis_2a_summary
+    maps_to: conant2007_glycolysis_2a.summary
+  - name: conant2007_glycolysis_2a_species_labels
+    maps_to: conant2007_glycolysis_2a.species_labels
+  - name: conant2007_glycolysis_2a_intracellular_glucose
+    maps_to: conant2007_glycolysis_2a.intracellular_glucose
+  - name: conant2007_glycolysis_2a_atp
+    maps_to: conant2007_glycolysis_2a.atp
+  - name: conant2007_glycolysis_2a_glucose_6_phosphate
+    maps_to: conant2007_glycolysis_2a.glucose_6_phosphate
+  - name: conant2007_glycolysis_2a_adp
+    maps_to: conant2007_glycolysis_2a.adp
+  outputs: []

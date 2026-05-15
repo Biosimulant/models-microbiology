@@ -1,0 +1,67 @@
+schema_version: '2.0'
+title: Takahashi2015 - Zinc regulation E.coli Visualisation
+description: Question-and-answer visualisation for Takahashi2015 - Zinc regulation
+  E.coli.
+standard: other
+tags:
+- microbiology
+- visualisation
+biosim:
+  communication_step: 1.0
+  entrypoint: src.microbiology_visualisation:MicrobiologyVisualisationModel
+  init_kwargs:
+    sources:
+    - alias: takahashi2015_ecoli_zinc_regulation
+      observables:
+      - id: P1
+        label: P1
+      - id: P2
+        label: P2
+      - id: X
+        label: X
+      - id: Y
+        label: Y
+      - id: R
+        label: R
+      - id: Z
+        label: Z
+      - id: Zext
+        label: Zext
+      labels:
+        P1: P1
+        P2: P2
+        X: X
+        Y: Y
+        R: R
+        Z: Z
+        Zext: Zext
+      headline_outputs:
+      - port: extracellular_zinc
+        source: Zext
+        label: Zext
+      - port: intracellular_zinc
+        source: Z
+        label: Z
+      - port: receptor_state
+        source: R
+        label: R
+    question: How does the zinc regulation system respond across its tracked molecular
+      states?
+    scope: microbial stress response dynamics
+    caveat: The bundled SBML is the executable source of truth; labels are conservative
+      where source symbols are ambiguous.
+io:
+  inputs:
+  - name: takahashi2015_ecoli_zinc_regulation_state
+    maps_to: takahashi2015_ecoli_zinc_regulation.state
+  - name: takahashi2015_ecoli_zinc_regulation_summary
+    maps_to: takahashi2015_ecoli_zinc_regulation.summary
+  - name: takahashi2015_ecoli_zinc_regulation_species_labels
+    maps_to: takahashi2015_ecoli_zinc_regulation.species_labels
+  - name: takahashi2015_ecoli_zinc_regulation_extracellular_zinc
+    maps_to: takahashi2015_ecoli_zinc_regulation.extracellular_zinc
+  - name: takahashi2015_ecoli_zinc_regulation_intracellular_zinc
+    maps_to: takahashi2015_ecoli_zinc_regulation.intracellular_zinc
+  - name: takahashi2015_ecoli_zinc_regulation_receptor_state
+    maps_to: takahashi2015_ecoli_zinc_regulation.receptor_state
+  outputs: []

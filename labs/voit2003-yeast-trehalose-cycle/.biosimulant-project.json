@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "8aef9a0c-d6ba-4273-998e-5e530475e4d4",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "3685b848-6308-449b-8ef3-f28d501041d6",
+  "created_at": "2026-05-15T15:44:27.642609324+00:00",
+  "last_synced_at": "2026-05-15T18:54:45.585390+00:00",
+  "hub_manifest_hash": "b180c408d20205c446be313438a451c69fefbce975280577b0eace23e2b4c8a9",
+  "package_name": "voit2003-trehalose-cycle-lab"
+}

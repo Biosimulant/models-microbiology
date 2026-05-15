@@ -1,0 +1,57 @@
+schema_version: '2.0'
+title: MODEL2426780967_url.xml Lab
+description: Curated microbiology lab for MODEL2426780967_url.xml. The bundled SBML
+  is executed directly through Tellurium and visualised with conservative, source-traceable
+  labels.
+models:
+- alias: conant2007_glycolysis_2a
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: conant2007_glycolysis_2a.state
+  to:
+  - visualisation.conant2007_glycolysis_2a_state
+- from: conant2007_glycolysis_2a.summary
+  to:
+  - visualisation.conant2007_glycolysis_2a_summary
+- from: conant2007_glycolysis_2a.species_labels
+  to:
+  - visualisation.conant2007_glycolysis_2a_species_labels
+- from: conant2007_glycolysis_2a.intracellular_glucose
+  to:
+  - visualisation.conant2007_glycolysis_2a_intracellular_glucose
+- from: conant2007_glycolysis_2a.atp
+  to:
+  - visualisation.conant2007_glycolysis_2a_atp
+- from: conant2007_glycolysis_2a.glucose_6_phosphate
+  to:
+  - visualisation.conant2007_glycolysis_2a_glucose_6_phosphate
+- from: conant2007_glycolysis_2a.adp
+  to:
+  - visualisation.conant2007_glycolysis_2a_adp
+runtime:
+  duration: 10.0
+  communication_step: 0.01
+  initial_inputs: {}
+io:
+  inputs:
+  - name: external_glucose
+    maps_to: conant2007_glycolysis_2a.external_glucose
+  - name: whole_genome_duplication_enzyme_scale
+    maps_to: conant2007_glycolysis_2a.whole_genome_duplication_enzyme_scale
+  outputs:
+  - name: state
+    maps_to: conant2007_glycolysis_2a.state
+  - name: summary
+    maps_to: conant2007_glycolysis_2a.summary
+  - name: species_labels
+    maps_to: conant2007_glycolysis_2a.species_labels
+  - name: intracellular_glucose
+    maps_to: conant2007_glycolysis_2a.intracellular_glucose
+  - name: atp
+    maps_to: conant2007_glycolysis_2a.atp
+  - name: glucose_6_phosphate
+    maps_to: conant2007_glycolysis_2a.glucose_6_phosphate
+  - name: adp
+    maps_to: conant2007_glycolysis_2a.adp

@@ -1,0 +1,57 @@
+schema_version: '2.0'
+title: Liò2012_Modelling osteomyelitis_Control Model Lab
+description: Curated microbiology lab for Liò2012_Modelling osteomyelitis_Control
+  Model. The bundled SBML is executed directly through Tellurium and visualised with
+  conservative, source-traceable labels.
+models:
+- alias: lio2012_osteomyelitis_control
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: lio2012_osteomyelitis_control.state
+  to:
+  - visualisation.lio2012_osteomyelitis_control_state
+- from: lio2012_osteomyelitis_control.summary
+  to:
+  - visualisation.lio2012_osteomyelitis_control_summary
+- from: lio2012_osteomyelitis_control.species_labels
+  to:
+  - visualisation.lio2012_osteomyelitis_control_species_labels
+- from: lio2012_osteomyelitis_control.bacterial_burden
+  to:
+  - visualisation.lio2012_osteomyelitis_control_bacterial_burden
+- from: lio2012_osteomyelitis_control.bone_density
+  to:
+  - visualisation.lio2012_osteomyelitis_control_bone_density
+- from: lio2012_osteomyelitis_control.osteoblasts
+  to:
+  - visualisation.lio2012_osteomyelitis_control_osteoblasts
+- from: lio2012_osteomyelitis_control.osteoclasts
+  to:
+  - visualisation.lio2012_osteomyelitis_control_osteoclasts
+runtime:
+  duration: 10.0
+  communication_step: 0.01
+  initial_inputs: {}
+io:
+  inputs:
+  - name: treatment_start_time
+    maps_to: lio2012_osteomyelitis_control.treatment_start_time
+  - name: initial_bacterial_burden
+    maps_to: lio2012_osteomyelitis_control.initial_bacterial_burden
+  outputs:
+  - name: state
+    maps_to: lio2012_osteomyelitis_control.state
+  - name: summary
+    maps_to: lio2012_osteomyelitis_control.summary
+  - name: species_labels
+    maps_to: lio2012_osteomyelitis_control.species_labels
+  - name: bacterial_burden
+    maps_to: lio2012_osteomyelitis_control.bacterial_burden
+  - name: bone_density
+    maps_to: lio2012_osteomyelitis_control.bone_density
+  - name: osteoblasts
+    maps_to: lio2012_osteomyelitis_control.osteoblasts
+  - name: osteoclasts
+    maps_to: lio2012_osteomyelitis_control.osteoclasts

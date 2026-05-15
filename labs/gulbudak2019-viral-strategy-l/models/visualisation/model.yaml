@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Gulbudak2019.1 - Heterogeneous viral strategies promote coexistence in virus-microbe
+  systems (Lytic) Visualisation
+description: Question-and-answer visualisation for Gulbudak2019.1 - Heterogeneous
+  viral strategies promote coexistence in virus-microbe systems (Lytic).
+standard: other
+tags:
+- microbiology
+- visualisation
+biosim:
+  communication_step: 1.0
+  entrypoint: src.microbiology_visualisation:MicrobiologyVisualisationModel
+  init_kwargs:
+    sources:
+    - alias: gulbudak2019_viral_strategy_l
+      observables:
+      - id: S
+        label: S
+      - id: I
+        label: I
+      - id: V_L
+        label: V L
+      labels:
+        S: S
+        I: I
+        V_L: V L
+      headline_outputs:
+      - port: susceptible_hosts
+        source: S
+        label: S
+      - port: infected_hosts
+        source: I
+        label: I
+      - port: free_lytic_virus
+        source: V_L
+        label: V L
+    question: Do host and viral compartments remain bounded in the coexistence model?
+    scope: microbial population and host-interaction dynamics
+    caveat: The bundled SBML is the executable source of truth; labels are conservative
+      where source symbols are ambiguous.
+io:
+  inputs:
+  - name: gulbudak2019_viral_strategy_l_state
+    maps_to: gulbudak2019_viral_strategy_l.state
+  - name: gulbudak2019_viral_strategy_l_summary
+    maps_to: gulbudak2019_viral_strategy_l.summary
+  - name: gulbudak2019_viral_strategy_l_species_labels
+    maps_to: gulbudak2019_viral_strategy_l.species_labels
+  - name: gulbudak2019_viral_strategy_l_susceptible_hosts
+    maps_to: gulbudak2019_viral_strategy_l.susceptible_hosts
+  - name: gulbudak2019_viral_strategy_l_infected_hosts
+    maps_to: gulbudak2019_viral_strategy_l.infected_hosts
+  - name: gulbudak2019_viral_strategy_l_free_lytic_virus
+    maps_to: gulbudak2019_viral_strategy_l.free_lytic_virus
+  outputs: []

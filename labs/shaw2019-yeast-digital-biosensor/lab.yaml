@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Shaw2019 - Digital biosensor model from Yeast Lab
+description: Curated microbiology lab for Shaw2019 - Digital biosensor model from
+  Yeast. The bundled SBML is executed directly through Tellurium and visualised with
+  conservative, source-traceable labels.
+models:
+- alias: shaw2019_yeast_digital_biosensor
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: shaw2019_yeast_digital_biosensor.state
+  to:
+  - visualisation.shaw2019_yeast_digital_biosensor_state
+- from: shaw2019_yeast_digital_biosensor.summary
+  to:
+  - visualisation.shaw2019_yeast_digital_biosensor_summary
+- from: shaw2019_yeast_digital_biosensor.species_labels
+  to:
+  - visualisation.shaw2019_yeast_digital_biosensor_species_labels
+- from: shaw2019_yeast_digital_biosensor.receptor_state_1
+  to:
+  - visualisation.shaw2019_yeast_digital_biosensor_receptor_state_1
+- from: shaw2019_yeast_digital_biosensor.active_receptor_state_1
+  to:
+  - visualisation.shaw2019_yeast_digital_biosensor_active_receptor_state_1
+- from: shaw2019_yeast_digital_biosensor.inactive_gprotein_state_1
+  to:
+  - visualisation.shaw2019_yeast_digital_biosensor_inactive_gprotein_state_1
+- from: shaw2019_yeast_digital_biosensor.active_gprotein_state_1
+  to:
+  - visualisation.shaw2019_yeast_digital_biosensor_active_gprotein_state_1
+runtime:
+  duration: 10.0
+  communication_step: 0.01
+  initial_inputs: {}
+io:
+  inputs:
+  - name: ligand_level
+    maps_to: shaw2019_yeast_digital_biosensor.ligand_level
+  outputs:
+  - name: state
+    maps_to: shaw2019_yeast_digital_biosensor.state
+  - name: summary
+    maps_to: shaw2019_yeast_digital_biosensor.summary
+  - name: species_labels
+    maps_to: shaw2019_yeast_digital_biosensor.species_labels
+  - name: receptor_state_1
+    maps_to: shaw2019_yeast_digital_biosensor.receptor_state_1
+  - name: active_receptor_state_1
+    maps_to: shaw2019_yeast_digital_biosensor.active_receptor_state_1
+  - name: inactive_gprotein_state_1
+    maps_to: shaw2019_yeast_digital_biosensor.inactive_gprotein_state_1
+  - name: active_gprotein_state_1
+    maps_to: shaw2019_yeast_digital_biosensor.active_gprotein_state_1

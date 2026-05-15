@@ -1,0 +1,79 @@
+schema_version: '2.0'
+title: Pritchard2014 - plant-microbe interaction Visualisation
+description: Question-and-answer visualisation for Pritchard2014 - plant-microbe interaction.
+standard: other
+tags:
+- microbiology
+- visualisation
+biosim:
+  communication_step: 1.0
+  entrypoint: src.microbiology_visualisation:MicrobiologyVisualisationModel
+  init_kwargs:
+    sources:
+    - alias: pritchard2014_plant_microbe_interaction
+      observables:
+      - id: PAMP
+        label: PAMP
+      - id: R
+        label: R
+      - id: R_0
+        label: R*
+      - id: E_int
+        label: E int
+      - id: Callose
+        label: Callose
+      - id: Path
+        label: Path
+      - id: Path_bulk
+        label: Path bulk
+      - id: PRR
+        label: PRR*
+      - id: PRR_0
+        label: PRR
+      - id: E
+        label: E
+      labels:
+        PAMP: PAMP
+        R: R
+        R_0: R*
+        E_int: E int
+        Callose: Callose
+        Path: Path
+        Path_bulk: Path bulk
+        PRR: PRR*
+        PRR_0: PRR
+        E: E
+      headline_outputs:
+      - port: pamp_signal
+        source: PAMP
+        label: PAMP
+      - port: receptor_state
+        source: R
+        label: R
+      - port: callose
+        source: Callose
+        label: Callose
+      - port: pathogen_load
+        source: Path
+        label: Path
+    question: How does the plant-microbe defense pathway respond in the bundled model?
+    scope: microbial population and host-interaction dynamics
+    caveat: The bundled SBML is the executable source of truth; labels are conservative
+      where source symbols are ambiguous.
+io:
+  inputs:
+  - name: pritchard2014_plant_microbe_interaction_state
+    maps_to: pritchard2014_plant_microbe_interaction.state
+  - name: pritchard2014_plant_microbe_interaction_summary
+    maps_to: pritchard2014_plant_microbe_interaction.summary
+  - name: pritchard2014_plant_microbe_interaction_species_labels
+    maps_to: pritchard2014_plant_microbe_interaction.species_labels
+  - name: pritchard2014_plant_microbe_interaction_pamp_signal
+    maps_to: pritchard2014_plant_microbe_interaction.pamp_signal
+  - name: pritchard2014_plant_microbe_interaction_receptor_state
+    maps_to: pritchard2014_plant_microbe_interaction.receptor_state
+  - name: pritchard2014_plant_microbe_interaction_callose
+    maps_to: pritchard2014_plant_microbe_interaction.callose
+  - name: pritchard2014_plant_microbe_interaction_pathogen_load
+    maps_to: pritchard2014_plant_microbe_interaction.pathogen_load
+  outputs: []

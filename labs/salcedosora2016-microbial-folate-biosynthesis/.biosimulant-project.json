@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "5174815b-f8e8-411d-8821-79e6f13ca04e",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "f8d0db41-5c32-4da5-8909-ce391a1cea7d",
+  "created_at": "2026-05-15T15:44:27.489262973+00:00",
+  "last_synced_at": "2026-05-15T18:49:11.588759+00:00",
+  "hub_manifest_hash": "2d02f44585619f781a265574109b31303a8e67c031771c257ea49586ee85bc7b",
+  "package_name": "salcedo-sora2016-microbial-folate-biosynthesis-and-utilisation-l"
+}

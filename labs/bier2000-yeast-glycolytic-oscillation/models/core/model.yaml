@@ -1,0 +1,67 @@
+schema_version: '2.0'
+title: Bier2000_GlycolyticOscillation
+description: 'This a model from the article: How yeast cells synchronize their glycolytic
+  oscillations: a perturbation analytic treatment Bier M, Bakker BM, Westerhoff HV.
+  It can be used to explore microbiology bier2000 glycolyticoscillation BioModels0000000254
+  dynamics and compare simulation behavior across conditions.'
+standard: sbml
+tags:
+- microbiology
+- sbml
+- biomodels_ebi
+- faithful
+- tellurium
+authors:
+- Biosimulant Team
+- M Bier
+- B M Bakker
+- H V Westerhoff
+upstream:
+  id: biomodels_ebi:BIOMD0000000254
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000254
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000254
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000254?filename=BIOMD0000000254_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.bier2000_glycolyticoscillation_biomd0000000254_model:Bier2000GlycolyticoscillationBiomd0000000254Model
+  init_kwargs:
+    model_path: data/BIOMD0000000254.xml
+    integration_step: 1.0
+  communication_step: 0.01
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_glucose_pool_1
+    maps_to: G1
+    label: Initial Glucose Pool 1
+  - name: initial_glucose_pool_2
+    maps_to: G2
+    label: Initial Glucose Pool 2
+  outputs:
+  - name: state
+    maps_to: state
+    label: Model state
+  - name: summary
+    maps_to: summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: species_labels
+    label: Observable labels
+  - name: glucose_pool_1
+    maps_to: G1
+    label: Glucose 1
+  - name: atp_pool_1
+    maps_to: T1
+    label: ATP 1
+  - name: glucose_pool_2
+    maps_to: G2
+    label: Glucose 2
+  - name: atp_pool_2
+    maps_to: T2
+    label: ATP 2

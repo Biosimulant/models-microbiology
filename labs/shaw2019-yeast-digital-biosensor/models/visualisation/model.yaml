@@ -1,0 +1,122 @@
+schema_version: '2.0'
+title: Shaw2019 - Digital biosensor model from Yeast Visualisation
+description: Question-and-answer visualisation for Shaw2019 - Digital biosensor model
+  from Yeast.
+standard: other
+tags:
+- microbiology
+- visualisation
+biosim:
+  communication_step: 1.0
+  entrypoint: src.microbiology_visualisation:MicrobiologyVisualisationModel
+  init_kwargs:
+    sources:
+    - alias: shaw2019_yeast_digital_biosensor
+      observables:
+      - id: R1
+        label: R1
+      - id: Rstar1
+        label: Rstar1
+      - id: Goff1
+        label: Goff1
+      - id: Gon1
+        label: Gon1
+      - id: Effector1
+        label: Effector1
+      - id: Gon1Effector1
+        label: Gon1Effector1
+      - id: z11
+        label: Z11
+      - id: z21
+        label: Z21
+      - id: preafactor
+        label: Preafactor
+      - id: afactor
+        label: Afactor
+      - id: R2
+        label: R2
+      - id: Rstar2
+        label: Rstar2
+      - id: Goff2
+        label: Goff2
+      - id: Gon2
+        label: Gon2
+      - id: Effector2
+        label: Effector2
+      - id: Gon2Effector2
+        label: Gon2Effector2
+      - id: z12
+        label: Z12
+      - id: z22
+        label: Z22
+      - id: preGFP
+        label: PreGFP
+      - id: z32
+        label: Z32
+      - id: L
+        label: L
+      - id: Bar1
+        label: Bar1
+      - id: inactiveBar1
+        label: InactiveBar1
+      - id: GFP
+        label: GFP
+      labels:
+        R1: R1
+        Rstar1: Rstar1
+        Goff1: Goff1
+        Gon1: Gon1
+        Effector1: Effector1
+        Gon1Effector1: Gon1Effector1
+        z11: Z11
+        z21: Z21
+        preafactor: Preafactor
+        afactor: Afactor
+        R2: R2
+        Rstar2: Rstar2
+        Goff2: Goff2
+        Gon2: Gon2
+        Effector2: Effector2
+        Gon2Effector2: Gon2Effector2
+        z12: Z12
+        z22: Z22
+        preGFP: PreGFP
+        z32: Z32
+        L: L
+        Bar1: Bar1
+        inactiveBar1: InactiveBar1
+        GFP: GFP
+      headline_outputs:
+      - port: receptor_state_1
+        source: R1
+        label: R1
+      - port: active_receptor_state_1
+        source: Rstar1
+        label: Rstar1
+      - port: inactive_gprotein_state_1
+        source: Goff1
+        label: Goff1
+      - port: active_gprotein_state_1
+        source: Gon1
+        label: Gon1
+    question: Which biosensor state dominates the simulated response?
+    scope: microbiology model dynamics
+    caveat: The bundled SBML is the executable source of truth; labels are conservative
+      where source symbols are ambiguous.
+io:
+  inputs:
+  - name: shaw2019_yeast_digital_biosensor_state
+    maps_to: shaw2019_yeast_digital_biosensor.state
+  - name: shaw2019_yeast_digital_biosensor_summary
+    maps_to: shaw2019_yeast_digital_biosensor.summary
+  - name: shaw2019_yeast_digital_biosensor_species_labels
+    maps_to: shaw2019_yeast_digital_biosensor.species_labels
+  - name: shaw2019_yeast_digital_biosensor_receptor_state_1
+    maps_to: shaw2019_yeast_digital_biosensor.receptor_state_1
+  - name: shaw2019_yeast_digital_biosensor_active_receptor_state_1
+    maps_to: shaw2019_yeast_digital_biosensor.active_receptor_state_1
+  - name: shaw2019_yeast_digital_biosensor_inactive_gprotein_state_1
+    maps_to: shaw2019_yeast_digital_biosensor.inactive_gprotein_state_1
+  - name: shaw2019_yeast_digital_biosensor_active_gprotein_state_1
+    maps_to: shaw2019_yeast_digital_biosensor.active_gprotein_state_1
+  outputs: []

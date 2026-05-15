@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: MODEL2427021978_url.xml Lab
+description: Curated microbiology lab for MODEL2427021978_url.xml. The bundled SBML
+  is executed directly through Tellurium and visualised with conservative, source-traceable
+  labels.
+models:
+- alias: conant2007_glycolysis_3a
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: conant2007_glycolysis_3a.state
+  to:
+  - visualisation.conant2007_glycolysis_3a_state
+- from: conant2007_glycolysis_3a.summary
+  to:
+  - visualisation.conant2007_glycolysis_3a_summary
+- from: conant2007_glycolysis_3a.species_labels
+  to:
+  - visualisation.conant2007_glycolysis_3a_species_labels
+- from: conant2007_glycolysis_3a.intracellular_glucose
+  to:
+  - visualisation.conant2007_glycolysis_3a_intracellular_glucose
+- from: conant2007_glycolysis_3a.atp
+  to:
+  - visualisation.conant2007_glycolysis_3a_atp
+- from: conant2007_glycolysis_3a.glucose_6_phosphate
+  to:
+  - visualisation.conant2007_glycolysis_3a_glucose_6_phosphate
+- from: conant2007_glycolysis_3a.adp
+  to:
+  - visualisation.conant2007_glycolysis_3a_adp
+runtime:
+  duration: 10.0
+  communication_step: 0.01
+  initial_inputs: {}
+io:
+  inputs:
+  - name: external_glucose
+    maps_to: conant2007_glycolysis_3a.external_glucose
+  outputs:
+  - name: state
+    maps_to: conant2007_glycolysis_3a.state
+  - name: summary
+    maps_to: conant2007_glycolysis_3a.summary
+  - name: species_labels
+    maps_to: conant2007_glycolysis_3a.species_labels
+  - name: intracellular_glucose
+    maps_to: conant2007_glycolysis_3a.intracellular_glucose
+  - name: atp
+    maps_to: conant2007_glycolysis_3a.atp
+  - name: glucose_6_phosphate
+    maps_to: conant2007_glycolysis_3a.glucose_6_phosphate
+  - name: adp
+    maps_to: conant2007_glycolysis_3a.adp

@@ -1,0 +1,60 @@
+schema_version: '2.0'
+title: Tan2012 - Antibiotic Treatment, Inoculum Effect
+description: Tan2012 - Antibiotic Treatment, Inoculum Effect The efficacy of many
+  antibiotics decreases with increasing bacterial density, a phenomenon called the
+  ‘inoculum effect’ (IE). It can be used to explore microbiology tan2012 antibiotic
+  treatment inoculum effect dynamics and compare simulation behavior across conditions.
+standard: sbml
+tags:
+- microbiology
+- sbml
+- biomodels_ebi
+- faithful
+- tellurium
+authors:
+- Biosimulant Team
+- Cheemeng Tan
+- Robert Phillip Smith
+- Jaydeep K Srimani
+- Katherine A Riccione
+- Sameer Prasada
+upstream:
+  id: biomodels_ebi:BIOMD0000000425
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000425
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000425
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000425?filename=BIOMD0000000425_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.tan2012_antibiotic_treatment_inoculum_effect_biomd0000000425_model:Tan2012AntibioticTreatmentInoculumEffectBiomd0000000425Model
+  init_kwargs:
+    model_path: data/BIOMD0000000425.xml
+    integration_step: 1.0
+  communication_step: 0.01
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: antibiotic_killing_rate
+    maps_to: kd
+    label: Antibiotic Killing Rate
+  - name: initial_ribosome_concentration
+    maps_to: c
+    label: Initial Ribosome Concentration
+  outputs:
+  - name: state
+    maps_to: state
+    label: Model state
+  - name: summary
+    maps_to: summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: species_labels
+    label: Observable labels
+  - name: ribosome_concentration
+    maps_to: c
+    label: Ribosome concentration

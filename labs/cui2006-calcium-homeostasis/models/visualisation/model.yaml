@@ -1,0 +1,61 @@
+schema_version: '2.0'
+title: Cui2006_CalciumHomeostasis Visualisation
+description: Question-and-answer visualisation for Cui2006_CalciumHomeostasis.
+standard: other
+tags:
+- microbiology
+- visualisation
+biosim:
+  communication_step: 1.0
+  entrypoint: src.microbiology_visualisation:MicrobiologyVisualisationModel
+  init_kwargs:
+    sources:
+    - alias: cui2006_calcium_homeostasis
+      observables:
+      - id: m
+        label: M
+      - id: z
+        label: Z
+      - id: h
+        label: H
+      - id: x
+        label: X
+      labels:
+        m: M
+        z: Z
+        h: H
+        x: X
+      headline_outputs:
+      - port: calcium_homeostasis_variable_one
+        source: m
+        label: M
+      - port: calcium_homeostasis_variable_two
+        source: z
+        label: Z
+      - port: calcium_homeostasis_variable_three
+        source: h
+        label: H
+      - port: calcium_homeostasis_variable_four
+        source: x
+        label: X
+    question: Does the calcium homeostasis model maintain bounded rule-state dynamics?
+    scope: microbiology model dynamics
+    caveat: The bundled SBML is the executable source of truth; labels are conservative
+      where source symbols are ambiguous.
+io:
+  inputs:
+  - name: cui2006_calcium_homeostasis_state
+    maps_to: cui2006_calcium_homeostasis.state
+  - name: cui2006_calcium_homeostasis_summary
+    maps_to: cui2006_calcium_homeostasis.summary
+  - name: cui2006_calcium_homeostasis_species_labels
+    maps_to: cui2006_calcium_homeostasis.species_labels
+  - name: cui2006_calcium_homeostasis_calcium_homeostasis_variable_one
+    maps_to: cui2006_calcium_homeostasis.calcium_homeostasis_variable_one
+  - name: cui2006_calcium_homeostasis_calcium_homeostasis_variable_two
+    maps_to: cui2006_calcium_homeostasis.calcium_homeostasis_variable_two
+  - name: cui2006_calcium_homeostasis_calcium_homeostasis_variable_three
+    maps_to: cui2006_calcium_homeostasis.calcium_homeostasis_variable_three
+  - name: cui2006_calcium_homeostasis_calcium_homeostasis_variable_four
+    maps_to: cui2006_calcium_homeostasis.calcium_homeostasis_variable_four
+  outputs: []

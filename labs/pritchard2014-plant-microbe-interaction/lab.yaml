@@ -1,0 +1,57 @@
+schema_version: '2.0'
+title: Pritchard2014 - plant-microbe interaction Lab
+description: Curated microbiology lab for Pritchard2014 - plant-microbe interaction.
+  The bundled SBML is executed directly through Tellurium and visualised with conservative,
+  source-traceable labels.
+models:
+- alias: pritchard2014_plant_microbe_interaction
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: pritchard2014_plant_microbe_interaction.state
+  to:
+  - visualisation.pritchard2014_plant_microbe_interaction_state
+- from: pritchard2014_plant_microbe_interaction.summary
+  to:
+  - visualisation.pritchard2014_plant_microbe_interaction_summary
+- from: pritchard2014_plant_microbe_interaction.species_labels
+  to:
+  - visualisation.pritchard2014_plant_microbe_interaction_species_labels
+- from: pritchard2014_plant_microbe_interaction.pamp_signal
+  to:
+  - visualisation.pritchard2014_plant_microbe_interaction_pamp_signal
+- from: pritchard2014_plant_microbe_interaction.receptor_state
+  to:
+  - visualisation.pritchard2014_plant_microbe_interaction_receptor_state
+- from: pritchard2014_plant_microbe_interaction.callose
+  to:
+  - visualisation.pritchard2014_plant_microbe_interaction_callose
+- from: pritchard2014_plant_microbe_interaction.pathogen_load
+  to:
+  - visualisation.pritchard2014_plant_microbe_interaction_pathogen_load
+runtime:
+  duration: 10.0
+  communication_step: 0.01
+  initial_inputs: {}
+io:
+  inputs:
+  - name: initial_pamp_signal
+    maps_to: pritchard2014_plant_microbe_interaction.initial_pamp_signal
+  - name: initial_pathogen_load
+    maps_to: pritchard2014_plant_microbe_interaction.initial_pathogen_load
+  outputs:
+  - name: state
+    maps_to: pritchard2014_plant_microbe_interaction.state
+  - name: summary
+    maps_to: pritchard2014_plant_microbe_interaction.summary
+  - name: species_labels
+    maps_to: pritchard2014_plant_microbe_interaction.species_labels
+  - name: pamp_signal
+    maps_to: pritchard2014_plant_microbe_interaction.pamp_signal
+  - name: receptor_state
+    maps_to: pritchard2014_plant_microbe_interaction.receptor_state
+  - name: callose
+    maps_to: pritchard2014_plant_microbe_interaction.callose
+  - name: pathogen_load
+    maps_to: pritchard2014_plant_microbe_interaction.pathogen_load

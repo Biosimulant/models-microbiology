@@ -1,0 +1,57 @@
+schema_version: '2.0'
+title: Kuwahara2010_Fimbriation_Switch_28C Lab
+description: Curated microbiology lab for Kuwahara2010_Fimbriation_Switch_28C. The
+  bundled SBML is executed directly through Tellurium and visualised with conservative,
+  source-traceable labels.
+models:
+- alias: kuwahara2010_fimbriation_switch_28c
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: kuwahara2010_fimbriation_switch_28c.state
+  to:
+  - visualisation.kuwahara2010_fimbriation_switch_28c_state
+- from: kuwahara2010_fimbriation_switch_28c.summary
+  to:
+  - visualisation.kuwahara2010_fimbriation_switch_28c_summary
+- from: kuwahara2010_fimbriation_switch_28c.species_labels
+  to:
+  - visualisation.kuwahara2010_fimbriation_switch_28c_species_labels
+- from: kuwahara2010_fimbriation_switch_28c.fime_site_recombinase
+  to:
+  - visualisation.kuwahara2010_fimbriation_switch_28c_fime_site_recombinase
+- from: kuwahara2010_fimbriation_switch_28c.fimb_site_recombinase
+  to:
+  - visualisation.kuwahara2010_fimbriation_switch_28c_fimb_site_recombinase
+- from: kuwahara2010_fimbriation_switch_28c.leucine_responsive_regulatory_protein
+  to:
+  - visualisation.kuwahara2010_fimbriation_switch_28c_leucine_responsive_regulatory_protein
+- from: kuwahara2010_fimbriation_switch_28c.integration_host_factor
+  to:
+  - visualisation.kuwahara2010_fimbriation_switch_28c_integration_host_factor
+runtime:
+  duration: 2.0
+  communication_step: 0.01
+  initial_inputs: {}
+io:
+  inputs:
+  - name: initial_fime_site_recombinase
+    maps_to: kuwahara2010_fimbriation_switch_28c.initial_fime_site_recombinase
+  - name: initial_fimb_site_recombinase
+    maps_to: kuwahara2010_fimbriation_switch_28c.initial_fimb_site_recombinase
+  outputs:
+  - name: state
+    maps_to: kuwahara2010_fimbriation_switch_28c.state
+  - name: summary
+    maps_to: kuwahara2010_fimbriation_switch_28c.summary
+  - name: species_labels
+    maps_to: kuwahara2010_fimbriation_switch_28c.species_labels
+  - name: fime_site_recombinase
+    maps_to: kuwahara2010_fimbriation_switch_28c.fime_site_recombinase
+  - name: fimb_site_recombinase
+    maps_to: kuwahara2010_fimbriation_switch_28c.fimb_site_recombinase
+  - name: leucine_responsive_regulatory_protein
+    maps_to: kuwahara2010_fimbriation_switch_28c.leucine_responsive_regulatory_protein
+  - name: integration_host_factor
+    maps_to: kuwahara2010_fimbriation_switch_28c.integration_host_factor

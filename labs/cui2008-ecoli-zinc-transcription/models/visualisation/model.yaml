@@ -1,0 +1,68 @@
+schema_version: '2.0'
+title: Cui2008 - in vitro transcriptional response of zinc homeostasis system in Escherichia
+  coli Visualisation
+description: Question-and-answer visualisation for Cui2008 - in vitro transcriptional
+  response of zinc homeostasis system in Escherichia coli.
+standard: other
+tags:
+- microbiology
+- visualisation
+biosim:
+  communication_step: 1.0
+  entrypoint: src.microbiology_visualisation:MicrobiologyVisualisationModel
+  init_kwargs:
+    sources:
+    - alias: cui2008_ecoli_zinc_transcription
+      observables:
+      - id: Py
+        label: Py
+      - id: Py1
+        label: Py1
+      - id: Dw
+        label: Dw
+      - id: Rw
+        label: Rw
+      - id: Qw1
+        label: Qw1
+      - id: Qw2
+        label: Qw2
+      - id: Zn_2
+        label: Zn^2
+      labels:
+        Py: Py
+        Py1: Py1
+        Dw: Dw
+        Rw: Rw
+        Qw1: Qw1
+        Qw2: Qw2
+        Zn_2: Zn^2
+      headline_outputs:
+      - port: zinc_complex
+        source: Zn_2
+        label: Zn^2
+      - port: zinc_promoter_state
+        source: Dw
+        label: Dw
+      - port: zinc_transcript_state
+        source: Rw
+        label: Rw
+    question: How does the zinc regulation system respond across its tracked molecular
+      states?
+    scope: microbial stress response dynamics
+    caveat: The bundled SBML is the executable source of truth; labels are conservative
+      where source symbols are ambiguous.
+io:
+  inputs:
+  - name: cui2008_ecoli_zinc_transcription_state
+    maps_to: cui2008_ecoli_zinc_transcription.state
+  - name: cui2008_ecoli_zinc_transcription_summary
+    maps_to: cui2008_ecoli_zinc_transcription.summary
+  - name: cui2008_ecoli_zinc_transcription_species_labels
+    maps_to: cui2008_ecoli_zinc_transcription.species_labels
+  - name: cui2008_ecoli_zinc_transcription_zinc_complex
+    maps_to: cui2008_ecoli_zinc_transcription.zinc_complex
+  - name: cui2008_ecoli_zinc_transcription_zinc_promoter_state
+    maps_to: cui2008_ecoli_zinc_transcription.zinc_promoter_state
+  - name: cui2008_ecoli_zinc_transcription_zinc_transcript_state
+    maps_to: cui2008_ecoli_zinc_transcription.zinc_transcript_state
+  outputs: []

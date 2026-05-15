@@ -1,0 +1,57 @@
+schema_version: '2.0'
+title: Queralt2006_MitoticExit_Cdc55DownregulationBySeparase Lab
+description: Curated microbiology lab for Queralt2006_MitoticExit_Cdc55DownregulationBySeparase.
+  The bundled SBML is executed directly through Tellurium and visualised with conservative,
+  source-traceable labels.
+models:
+- alias: queralt2006_cdc55_separase_mitotic_exit
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: queralt2006_cdc55_separase_mitotic_exit.state
+  to:
+  - visualisation.queralt2006_cdc55_separase_mitotic_exit_state
+- from: queralt2006_cdc55_separase_mitotic_exit.summary
+  to:
+  - visualisation.queralt2006_cdc55_separase_mitotic_exit_summary
+- from: queralt2006_cdc55_separase_mitotic_exit.species_labels
+  to:
+  - visualisation.queralt2006_cdc55_separase_mitotic_exit_species_labels
+- from: queralt2006_cdc55_separase_mitotic_exit.amino_acid_pool
+  to:
+  - visualisation.queralt2006_cdc55_separase_mitotic_exit_amino_acid_pool
+- from: queralt2006_cdc55_separase_mitotic_exit.clb2_cyclin_level
+  to:
+  - visualisation.queralt2006_cdc55_separase_mitotic_exit_clb2_cyclin_level
+- from: queralt2006_cdc55_separase_mitotic_exit.degradation_signal
+  to:
+  - visualisation.queralt2006_cdc55_separase_mitotic_exit_degradation_signal
+- from: queralt2006_cdc55_separase_mitotic_exit.cdc20_level
+  to:
+  - visualisation.queralt2006_cdc55_separase_mitotic_exit_cdc20_level
+runtime:
+  duration: 10.0
+  communication_step: 0.01
+  initial_inputs: {}
+io:
+  inputs:
+  - name: amino_acid_pool_level
+    maps_to: queralt2006_cdc55_separase_mitotic_exit.amino_acid_pool_level
+  - name: degradation_signal_level
+    maps_to: queralt2006_cdc55_separase_mitotic_exit.degradation_signal_level
+  outputs:
+  - name: state
+    maps_to: queralt2006_cdc55_separase_mitotic_exit.state
+  - name: summary
+    maps_to: queralt2006_cdc55_separase_mitotic_exit.summary
+  - name: species_labels
+    maps_to: queralt2006_cdc55_separase_mitotic_exit.species_labels
+  - name: amino_acid_pool
+    maps_to: queralt2006_cdc55_separase_mitotic_exit.amino_acid_pool
+  - name: clb2_cyclin_level
+    maps_to: queralt2006_cdc55_separase_mitotic_exit.clb2_cyclin_level
+  - name: degradation_signal
+    maps_to: queralt2006_cdc55_separase_mitotic_exit.degradation_signal
+  - name: cdc20_level
+    maps_to: queralt2006_cdc55_separase_mitotic_exit.cdc20_level

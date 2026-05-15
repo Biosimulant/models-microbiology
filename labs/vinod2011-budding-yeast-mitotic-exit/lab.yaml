@@ -1,0 +1,57 @@
+schema_version: '2.0'
+title: Vinod2011_MitoticExit Lab
+description: Curated microbiology lab for Vinod2011_MitoticExit. The bundled SBML
+  is executed directly through Tellurium and visualised with conservative, source-traceable
+  labels.
+models:
+- alias: vinod2011_budding_yeast_mitotic_exit
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: vinod2011_budding_yeast_mitotic_exit.state
+  to:
+  - visualisation.vinod2011_budding_yeast_mitotic_exit_state
+- from: vinod2011_budding_yeast_mitotic_exit.summary
+  to:
+  - visualisation.vinod2011_budding_yeast_mitotic_exit_summary
+- from: vinod2011_budding_yeast_mitotic_exit.species_labels
+  to:
+  - visualisation.vinod2011_budding_yeast_mitotic_exit_species_labels
+- from: vinod2011_budding_yeast_mitotic_exit.total_clb2_cyclin
+  to:
+  - visualisation.vinod2011_budding_yeast_mitotic_exit_total_clb2_cyclin
+- from: vinod2011_budding_yeast_mitotic_exit.total_clb5_cyclin
+  to:
+  - visualisation.vinod2011_budding_yeast_mitotic_exit_total_clb5_cyclin
+- from: vinod2011_budding_yeast_mitotic_exit.cln_cyclin
+  to:
+  - visualisation.vinod2011_budding_yeast_mitotic_exit_cln_cyclin
+- from: vinod2011_budding_yeast_mitotic_exit.cdc20_activator
+  to:
+  - visualisation.vinod2011_budding_yeast_mitotic_exit_cdc20_activator
+runtime:
+  duration: 2.0
+  communication_step: 0.01
+  initial_inputs: {}
+io:
+  inputs:
+  - name: initial_total_clb2_cyclin
+    maps_to: vinod2011_budding_yeast_mitotic_exit.initial_total_clb2_cyclin
+  - name: initial_total_clb5_cyclin
+    maps_to: vinod2011_budding_yeast_mitotic_exit.initial_total_clb5_cyclin
+  outputs:
+  - name: state
+    maps_to: vinod2011_budding_yeast_mitotic_exit.state
+  - name: summary
+    maps_to: vinod2011_budding_yeast_mitotic_exit.summary
+  - name: species_labels
+    maps_to: vinod2011_budding_yeast_mitotic_exit.species_labels
+  - name: total_clb2_cyclin
+    maps_to: vinod2011_budding_yeast_mitotic_exit.total_clb2_cyclin
+  - name: total_clb5_cyclin
+    maps_to: vinod2011_budding_yeast_mitotic_exit.total_clb5_cyclin
+  - name: cln_cyclin
+    maps_to: vinod2011_budding_yeast_mitotic_exit.cln_cyclin
+  - name: cdc20_activator
+    maps_to: vinod2011_budding_yeast_mitotic_exit.cdc20_activator

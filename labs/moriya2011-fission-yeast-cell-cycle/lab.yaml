@@ -1,0 +1,57 @@
+schema_version: '2.0'
+title: Moriya2011_CellCycle_FissionYeast Lab
+description: Curated microbiology lab for Moriya2011_CellCycle_FissionYeast. The bundled
+  SBML is executed directly through Tellurium and visualised with conservative, source-traceable
+  labels.
+models:
+- alias: moriya2011_fission_yeast_cell_cycle
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: moriya2011_fission_yeast_cell_cycle.state
+  to:
+  - visualisation.moriya2011_fission_yeast_cell_cycle_state
+- from: moriya2011_fission_yeast_cell_cycle.summary
+  to:
+  - visualisation.moriya2011_fission_yeast_cell_cycle_summary
+- from: moriya2011_fission_yeast_cell_cycle.species_labels
+  to:
+  - visualisation.moriya2011_fission_yeast_cell_cycle_species_labels
+- from: moriya2011_fission_yeast_cell_cycle.drum_cycle_velocity_state
+  to:
+  - visualisation.moriya2011_fission_yeast_cell_cycle_drum_cycle_velocity_state
+- from: moriya2011_fission_yeast_cell_cycle.cell_cycle_velocity_state
+  to:
+  - visualisation.moriya2011_fission_yeast_cell_cycle_cell_cycle_velocity_state
+- from: moriya2011_fission_yeast_cell_cycle.degraded_sa4_state
+  to:
+  - visualisation.moriya2011_fission_yeast_cell_cycle_degraded_sa4_state
+- from: moriya2011_fission_yeast_cell_cycle.srw1_regulator
+  to:
+  - visualisation.moriya2011_fission_yeast_cell_cycle_srw1_regulator
+runtime:
+  duration: 2.0
+  communication_step: 0.01
+  initial_inputs: {}
+io:
+  inputs:
+  - name: drum_cycle_velocity_control
+    maps_to: moriya2011_fission_yeast_cell_cycle.drum_cycle_velocity_control
+  - name: cell_cycle_velocity_control
+    maps_to: moriya2011_fission_yeast_cell_cycle.cell_cycle_velocity_control
+  outputs:
+  - name: state
+    maps_to: moriya2011_fission_yeast_cell_cycle.state
+  - name: summary
+    maps_to: moriya2011_fission_yeast_cell_cycle.summary
+  - name: species_labels
+    maps_to: moriya2011_fission_yeast_cell_cycle.species_labels
+  - name: drum_cycle_velocity_state
+    maps_to: moriya2011_fission_yeast_cell_cycle.drum_cycle_velocity_state
+  - name: cell_cycle_velocity_state
+    maps_to: moriya2011_fission_yeast_cell_cycle.cell_cycle_velocity_state
+  - name: degraded_sa4_state
+    maps_to: moriya2011_fission_yeast_cell_cycle.degraded_sa4_state
+  - name: srw1_regulator
+    maps_to: moriya2011_fission_yeast_cell_cycle.srw1_regulator

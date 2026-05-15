@@ -1,0 +1,129 @@
+schema_version: '2.0'
+title: Budding yeast size control by titration of nuclear sites Visualisation
+description: Question-and-answer visualisation for Budding yeast size control by titration
+  of nuclear sites.
+standard: other
+tags:
+- microbiology
+- visualisation
+biosim:
+  communication_step: 1.0
+  entrypoint: src.microbiology_visualisation:MicrobiologyVisualisationModel
+  init_kwargs:
+    sources:
+    - alias: heldt2018_budding_yeast_size_control_biomd
+      observables:
+      - id: TM
+        label: TM
+      - id: GI
+        label: GI
+      - id: GD
+        label: GD
+      - id: GITM
+        label: GITM
+      - id: GDTM
+        label: GDTM
+      - id: CLN3
+        label: CLN3
+      - id: WHI
+        label: WHI
+      - id: WHIp
+        label: WHIp
+      - id: SBF
+        label: SBF
+      - id: WHISBF
+        label: WHISBF
+      - id: WHIn
+        label: WHIn
+      - id: WHIt
+        label: WHIt
+      - id: SBFt
+        label: SBFt
+      - id: SBFu
+        label: SBFu
+      - id: SBFp
+        label: SBFp
+      - id: CLN
+        label: CLN
+      - id: CLB
+        label: CLB
+      - id: CDHa
+        label: CDHa
+      - id: CDHi
+        label: CDHi
+      - id: CDCa
+        label: CDCa
+      - id: CDCi
+        label: CDCi
+      - id: TMt
+        label: TMt
+      - id: active_SBF
+        label: Active SBF
+      - id: CLN3WHISBF
+        label: CLN3WHISBF
+      - id: WHIpSBF
+        label: WHIpSBF
+      - id: CLN3t
+        label: CLN3t
+      labels:
+        TM: TM
+        GI: GI
+        GD: GD
+        GITM: GITM
+        GDTM: GDTM
+        CLN3: CLN3
+        WHI: WHI
+        WHIp: WHIp
+        SBF: SBF
+        WHISBF: WHISBF
+        WHIn: WHIn
+        WHIt: WHIt
+        SBFt: SBFt
+        SBFu: SBFu
+        SBFp: SBFp
+        CLN: CLN
+        CLB: CLB
+        CDHa: CDHa
+        CDHi: CDHi
+        CDCa: CDCa
+        CDCi: CDCi
+        TMt: TMt
+        active_SBF: Active SBF
+        CLN3WHISBF: CLN3WHISBF
+        WHIpSBF: WHIpSBF
+        CLN3t: CLN3t
+      headline_outputs:
+      - port: titration_module_state
+        source: TM
+        label: TM
+      - port: growth_initiation_state
+        source: GI
+        label: GI
+      - port: growth_division_state
+        source: GD
+        label: GD
+      - port: growth_initiation_titration_complex
+        source: GITM
+        label: GITM
+    question: Which budding yeast size-control state changes most over the simulated
+      window?
+    scope: yeast cell-cycle state dynamics
+    caveat: The bundled SBML is the executable source of truth; labels are conservative
+      where source symbols are ambiguous.
+io:
+  inputs:
+  - name: heldt2018_budding_yeast_size_control_biomd_state
+    maps_to: heldt2018_budding_yeast_size_control_biomd.state
+  - name: heldt2018_budding_yeast_size_control_biomd_summary
+    maps_to: heldt2018_budding_yeast_size_control_biomd.summary
+  - name: heldt2018_budding_yeast_size_control_biomd_species_labels
+    maps_to: heldt2018_budding_yeast_size_control_biomd.species_labels
+  - name: heldt2018_budding_yeast_size_control_biomd_titration_module_state
+    maps_to: heldt2018_budding_yeast_size_control_biomd.titration_module_state
+  - name: heldt2018_budding_yeast_size_control_biomd_growth_initiation_state
+    maps_to: heldt2018_budding_yeast_size_control_biomd.growth_initiation_state
+  - name: heldt2018_budding_yeast_size_control_biomd_growth_division_state
+    maps_to: heldt2018_budding_yeast_size_control_biomd.growth_division_state
+  - name: heldt2018_budding_yeast_size_control_biomd_growth_initiation_titration_complex
+    maps_to: heldt2018_budding_yeast_size_control_biomd.growth_initiation_titration_complex
+  outputs: []

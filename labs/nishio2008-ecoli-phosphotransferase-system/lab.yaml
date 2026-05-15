@@ -1,0 +1,56 @@
+schema_version: '2.0'
+title: Nishio2008 - Design of the phosphotransferase system for enhanced glucose uptake
+  in E. coli. Lab
+description: Curated microbiology lab for Nishio2008 - Design of the phosphotransferase
+  system for enhanced glucose uptake in E. coli.. The bundled SBML is executed directly
+  through Tellurium and visualised with conservative, source-traceable labels.
+models:
+- alias: nishio2008_ecoli_phosphotransferase_system
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: nishio2008_ecoli_phosphotransferase_system.state
+  to:
+  - visualisation.nishio2008_ecoli_phosphotransferase_system_state
+- from: nishio2008_ecoli_phosphotransferase_system.summary
+  to:
+  - visualisation.nishio2008_ecoli_phosphotransferase_system_summary
+- from: nishio2008_ecoli_phosphotransferase_system.species_labels
+  to:
+  - visualisation.nishio2008_ecoli_phosphotransferase_system_species_labels
+- from: nishio2008_ecoli_phosphotransferase_system.camp_receptor_protein
+  to:
+  - visualisation.nishio2008_ecoli_phosphotransferase_system_camp_receptor_protein
+- from: nishio2008_ecoli_phosphotransferase_system.camp_receptor_protein_bound_site_one
+  to:
+  - visualisation.nishio2008_ecoli_phosphotransferase_system_camp_receptor_protein_bound_site_one
+- from: nishio2008_ecoli_phosphotransferase_system.camp_receptor_protein_bound_site_two
+  to:
+  - visualisation.nishio2008_ecoli_phosphotransferase_system_camp_receptor_protein_bound_site_two
+- from: nishio2008_ecoli_phosphotransferase_system.camp_receptor_protein_bound_cyaa_site
+  to:
+  - visualisation.nishio2008_ecoli_phosphotransferase_system_camp_receptor_protein_bound_cyaa_site
+runtime:
+  duration: 2.0
+  communication_step: 0.01
+  initial_inputs: {}
+io:
+  inputs:
+  - name: glucose_concentration
+    maps_to: nishio2008_ecoli_phosphotransferase_system.glucose_concentration
+  outputs:
+  - name: state
+    maps_to: nishio2008_ecoli_phosphotransferase_system.state
+  - name: summary
+    maps_to: nishio2008_ecoli_phosphotransferase_system.summary
+  - name: species_labels
+    maps_to: nishio2008_ecoli_phosphotransferase_system.species_labels
+  - name: camp_receptor_protein
+    maps_to: nishio2008_ecoli_phosphotransferase_system.camp_receptor_protein
+  - name: camp_receptor_protein_bound_site_one
+    maps_to: nishio2008_ecoli_phosphotransferase_system.camp_receptor_protein_bound_site_one
+  - name: camp_receptor_protein_bound_site_two
+    maps_to: nishio2008_ecoli_phosphotransferase_system.camp_receptor_protein_bound_site_two
+  - name: camp_receptor_protein_bound_cyaa_site
+    maps_to: nishio2008_ecoli_phosphotransferase_system.camp_receptor_protein_bound_cyaa_site

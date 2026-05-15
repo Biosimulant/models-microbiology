@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "5850ee7b-d851-4b5c-b2d8-6e1a8de6c198",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "0dbb2756-81ec-4db8-944e-62e89c7ed724",
+  "created_at": "2026-05-15T15:55:11.171229677+00:00",
+  "last_synced_at": "2026-05-15T18:51:14.270924+00:00",
+  "hub_manifest_hash": "34d5f3615e062fc254fddf745450a2c9c634ee2ac89c55ea3745fe0aefefdf0b",
+  "package_name": "talemi2014-arsenic-toxicity-and-detoxification-mechanisms-in-yea"
+}

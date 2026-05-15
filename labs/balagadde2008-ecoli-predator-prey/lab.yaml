@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Balagaddé2008_E_coli_Predator_Prey Lab
+description: Curated microbiology lab for Balagaddé2008_E_coli_Predator_Prey. The
+  bundled SBML is executed directly through Tellurium and visualised with conservative,
+  source-traceable labels.
+models:
+- alias: balagadde2008_ecoli_predator_prey
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: balagadde2008_ecoli_predator_prey.state
+  to:
+  - visualisation.balagadde2008_ecoli_predator_prey_state
+- from: balagadde2008_ecoli_predator_prey.summary
+  to:
+  - visualisation.balagadde2008_ecoli_predator_prey_summary
+- from: balagadde2008_ecoli_predator_prey.species_labels
+  to:
+  - visualisation.balagadde2008_ecoli_predator_prey_species_labels
+- from: balagadde2008_ecoli_predator_prey.cell_population_1
+  to:
+  - visualisation.balagadde2008_ecoli_predator_prey_cell_population_1
+- from: balagadde2008_ecoli_predator_prey.cell_population_2
+  to:
+  - visualisation.balagadde2008_ecoli_predator_prey_cell_population_2
+- from: balagadde2008_ecoli_predator_prey.quorum_signal_1
+  to:
+  - visualisation.balagadde2008_ecoli_predator_prey_quorum_signal_1
+- from: balagadde2008_ecoli_predator_prey.quorum_signal_2
+  to:
+  - visualisation.balagadde2008_ecoli_predator_prey_quorum_signal_2
+runtime:
+  duration: 10.0
+  communication_step: 0.01
+  initial_inputs: {}
+io:
+  inputs:
+  - name: iptg_inducer_level
+    maps_to: balagadde2008_ecoli_predator_prey.iptg_inducer_level
+  outputs:
+  - name: state
+    maps_to: balagadde2008_ecoli_predator_prey.state
+  - name: summary
+    maps_to: balagadde2008_ecoli_predator_prey.summary
+  - name: species_labels
+    maps_to: balagadde2008_ecoli_predator_prey.species_labels
+  - name: cell_population_1
+    maps_to: balagadde2008_ecoli_predator_prey.cell_population_1
+  - name: cell_population_2
+    maps_to: balagadde2008_ecoli_predator_prey.cell_population_2
+  - name: quorum_signal_1
+    maps_to: balagadde2008_ecoli_predator_prey.quorum_signal_1
+  - name: quorum_signal_2
+    maps_to: balagadde2008_ecoli_predator_prey.quorum_signal_2

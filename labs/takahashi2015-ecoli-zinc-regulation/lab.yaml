@@ -1,0 +1,50 @@
+schema_version: '2.0'
+title: Takahashi2015 - Zinc regulation E.coli Lab
+description: Curated microbiology lab for Takahashi2015 - Zinc regulation E.coli.
+  The bundled SBML is executed directly through Tellurium and visualised with conservative,
+  source-traceable labels.
+models:
+- alias: takahashi2015_ecoli_zinc_regulation
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: takahashi2015_ecoli_zinc_regulation.state
+  to:
+  - visualisation.takahashi2015_ecoli_zinc_regulation_state
+- from: takahashi2015_ecoli_zinc_regulation.summary
+  to:
+  - visualisation.takahashi2015_ecoli_zinc_regulation_summary
+- from: takahashi2015_ecoli_zinc_regulation.species_labels
+  to:
+  - visualisation.takahashi2015_ecoli_zinc_regulation_species_labels
+- from: takahashi2015_ecoli_zinc_regulation.extracellular_zinc
+  to:
+  - visualisation.takahashi2015_ecoli_zinc_regulation_extracellular_zinc
+- from: takahashi2015_ecoli_zinc_regulation.intracellular_zinc
+  to:
+  - visualisation.takahashi2015_ecoli_zinc_regulation_intracellular_zinc
+- from: takahashi2015_ecoli_zinc_regulation.receptor_state
+  to:
+  - visualisation.takahashi2015_ecoli_zinc_regulation_receptor_state
+runtime:
+  duration: 10.0
+  communication_step: 0.01
+  initial_inputs: {}
+io:
+  inputs:
+  - name: external_zinc
+    maps_to: takahashi2015_ecoli_zinc_regulation.external_zinc
+  outputs:
+  - name: state
+    maps_to: takahashi2015_ecoli_zinc_regulation.state
+  - name: summary
+    maps_to: takahashi2015_ecoli_zinc_regulation.summary
+  - name: species_labels
+    maps_to: takahashi2015_ecoli_zinc_regulation.species_labels
+  - name: extracellular_zinc
+    maps_to: takahashi2015_ecoli_zinc_regulation.extracellular_zinc
+  - name: intracellular_zinc
+    maps_to: takahashi2015_ecoli_zinc_regulation.intracellular_zinc
+  - name: receptor_state
+    maps_to: takahashi2015_ecoli_zinc_regulation.receptor_state

@@ -1,0 +1,57 @@
+schema_version: '2.0'
+title: Houser2012_pheromone_Ste12 Lab
+description: Curated microbiology lab for Houser2012_pheromone_Ste12. The bundled
+  SBML is executed directly through Tellurium and visualised with conservative, source-traceable
+  labels.
+models:
+- alias: houser2012_yeast_pheromone_ste12
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: houser2012_yeast_pheromone_ste12.state
+  to:
+  - visualisation.houser2012_yeast_pheromone_ste12_state
+- from: houser2012_yeast_pheromone_ste12.summary
+  to:
+  - visualisation.houser2012_yeast_pheromone_ste12_summary
+- from: houser2012_yeast_pheromone_ste12.species_labels
+  to:
+  - visualisation.houser2012_yeast_pheromone_ste12_species_labels
+- from: houser2012_yeast_pheromone_ste12.bound_ste12_transcription_factor
+  to:
+  - visualisation.houser2012_yeast_pheromone_ste12_bound_ste12_transcription_factor
+- from: houser2012_yeast_pheromone_ste12.pheromone_state_one
+  to:
+  - visualisation.houser2012_yeast_pheromone_ste12_pheromone_state_one
+- from: houser2012_yeast_pheromone_ste12.pheromone_ste12_complex
+  to:
+  - visualisation.houser2012_yeast_pheromone_ste12_pheromone_ste12_complex
+- from: houser2012_yeast_pheromone_ste12.pheromone_ste12_dig1_complex
+  to:
+  - visualisation.houser2012_yeast_pheromone_ste12_pheromone_ste12_dig1_complex
+runtime:
+  duration: 10.0
+  communication_step: 0.01
+  initial_inputs: {}
+io:
+  inputs:
+  - name: pheromone_input_signal
+    maps_to: houser2012_yeast_pheromone_ste12.pheromone_input_signal
+  - name: initial_dig1_level
+    maps_to: houser2012_yeast_pheromone_ste12.initial_dig1_level
+  outputs:
+  - name: state
+    maps_to: houser2012_yeast_pheromone_ste12.state
+  - name: summary
+    maps_to: houser2012_yeast_pheromone_ste12.summary
+  - name: species_labels
+    maps_to: houser2012_yeast_pheromone_ste12.species_labels
+  - name: bound_ste12_transcription_factor
+    maps_to: houser2012_yeast_pheromone_ste12.bound_ste12_transcription_factor
+  - name: pheromone_state_one
+    maps_to: houser2012_yeast_pheromone_ste12.pheromone_state_one
+  - name: pheromone_ste12_complex
+    maps_to: houser2012_yeast_pheromone_ste12.pheromone_ste12_complex
+  - name: pheromone_ste12_dig1_complex
+    maps_to: houser2012_yeast_pheromone_ste12.pheromone_ste12_dig1_complex

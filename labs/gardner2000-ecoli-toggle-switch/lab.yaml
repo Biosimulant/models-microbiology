@@ -1,0 +1,50 @@
+schema_version: '2.0'
+title: Gardner2000 - genetic toggle switch in E.coli Lab
+description: Curated microbiology lab for Gardner2000 - genetic toggle switch in E.coli.
+  The bundled SBML is executed directly through Tellurium and visualised with conservative,
+  source-traceable labels.
+models:
+- alias: gardner2000_ecoli_toggle_switch
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: gardner2000_ecoli_toggle_switch.state
+  to:
+  - visualisation.gardner2000_ecoli_toggle_switch_state
+- from: gardner2000_ecoli_toggle_switch.summary
+  to:
+  - visualisation.gardner2000_ecoli_toggle_switch_summary
+- from: gardner2000_ecoli_toggle_switch.species_labels
+  to:
+  - visualisation.gardner2000_ecoli_toggle_switch_species_labels
+- from: gardner2000_ecoli_toggle_switch.iptg_inducer
+  to:
+  - visualisation.gardner2000_ecoli_toggle_switch_iptg_inducer
+- from: gardner2000_ecoli_toggle_switch.first_toggle_repressor
+  to:
+  - visualisation.gardner2000_ecoli_toggle_switch_first_toggle_repressor
+- from: gardner2000_ecoli_toggle_switch.second_toggle_repressor
+  to:
+  - visualisation.gardner2000_ecoli_toggle_switch_second_toggle_repressor
+runtime:
+  duration: 10.0
+  communication_step: 0.01
+  initial_inputs: {}
+io:
+  inputs:
+  - name: iptg_inducer_level
+    maps_to: gardner2000_ecoli_toggle_switch.iptg_inducer_level
+  outputs:
+  - name: state
+    maps_to: gardner2000_ecoli_toggle_switch.state
+  - name: summary
+    maps_to: gardner2000_ecoli_toggle_switch.summary
+  - name: species_labels
+    maps_to: gardner2000_ecoli_toggle_switch.species_labels
+  - name: iptg_inducer
+    maps_to: gardner2000_ecoli_toggle_switch.iptg_inducer
+  - name: first_toggle_repressor
+    maps_to: gardner2000_ecoli_toggle_switch.first_toggle_repressor
+  - name: second_toggle_repressor
+    maps_to: gardner2000_ecoli_toggle_switch.second_toggle_repressor

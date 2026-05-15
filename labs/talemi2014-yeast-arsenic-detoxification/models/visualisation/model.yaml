@@ -1,0 +1,86 @@
+schema_version: '2.0'
+title: Talemi2014 - Arsenic toxicity and detoxification mechanisms in yeast Visualisation
+description: Question-and-answer visualisation for Talemi2014 - Arsenic toxicity and
+  detoxification mechanisms in yeast.
+standard: other
+tags:
+- microbiology
+- visualisation
+biosim:
+  communication_step: 1.0
+  entrypoint: src.microbiology_visualisation:MicrobiologyVisualisationModel
+  init_kwargs:
+    sources:
+    - alias: talemi2014_yeast_arsenic_detoxification
+      observables:
+      - id: species_6
+        label: AsIIIex
+      - id: species_5
+        label: Ycf1
+      - id: species_10
+        label: Hog1PP
+      - id: species_9
+        label: Hog1
+      - id: species_15
+        label: Fps1P
+      - id: species_11
+        label: Fps1
+      - id: species_14
+        label: Acr3
+      - id: species_4
+        label: VAsGS3
+      - id: species_3
+        label: AsGS3
+      - id: species_1
+        label: AsIIIin
+      - id: species_2
+        label: AsIIIProt
+      - id: species_7
+        label: GSH
+      labels:
+        species_6: AsIIIex
+        species_5: Ycf1
+        species_10: Hog1PP
+        species_9: Hog1
+        species_15: Fps1P
+        species_11: Fps1
+        species_14: Acr3
+        species_4: VAsGS3
+        species_3: AsGS3
+        species_1: AsIIIin
+        species_2: AsIIIProt
+        species_7: GSH
+      headline_outputs:
+      - port: extracellular_arsenite
+        source: species_6
+        label: AsIIIex
+      - port: ycf1_transporter
+        source: species_5
+        label: Ycf1
+      - port: phosphorylated_hog1
+        source: species_10
+        label: Hog1PP
+      - port: hog1_mapk
+        source: species_9
+        label: Hog1
+    question: Which arsenic detoxification state changes most over the simulated window?
+    scope: microbial stress response dynamics
+    caveat: The bundled SBML is the executable source of truth; labels are conservative
+      where source symbols are ambiguous.
+io:
+  inputs:
+  - name: talemi2014_yeast_arsenic_detoxification_state
+    maps_to: talemi2014_yeast_arsenic_detoxification.state
+  - name: talemi2014_yeast_arsenic_detoxification_summary
+    maps_to: talemi2014_yeast_arsenic_detoxification.summary
+  - name: talemi2014_yeast_arsenic_detoxification_species_labels
+    maps_to: talemi2014_yeast_arsenic_detoxification.species_labels
+  - name: talemi2014_yeast_arsenic_detoxification_extracellular_arsenite
+    maps_to: talemi2014_yeast_arsenic_detoxification.extracellular_arsenite
+  - name: talemi2014_yeast_arsenic_detoxification_ycf1_transporter
+    maps_to: talemi2014_yeast_arsenic_detoxification.ycf1_transporter
+  - name: talemi2014_yeast_arsenic_detoxification_phosphorylated_hog1
+    maps_to: talemi2014_yeast_arsenic_detoxification.phosphorylated_hog1
+  - name: talemi2014_yeast_arsenic_detoxification_hog1_mapk
+    maps_to: talemi2014_yeast_arsenic_detoxification.hog1_mapk
+  outputs: []

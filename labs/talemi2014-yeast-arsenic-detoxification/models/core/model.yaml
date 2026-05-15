@@ -1,0 +1,73 @@
+schema_version: '2.0'
+title: Talemi2014 - Arsenic toxicity and detoxification mechanisms in yeast
+description: Talemi2014 - Arsenic toxicity anddetoxification mechanisms in yeast The
+  model implements arsenite (AsIII)transport regulation, its distribution within main
+  cellular AsIIIpools and detoxification. It can be used to explore microbiology talemi2014
+  arsenic toxicity and detoxification dynamics and compare simulation behavior across
+  conditions.
+standard: sbml
+tags:
+- microbiology
+- sbml
+- biomodels_ebi
+- faithful
+- tellurium
+authors:
+- Biosimulant Team
+- Soheil Rastgou Talemi
+- Therese Jacobson
+- Vijay Garla
+- Clara Navarrete
+- Annemarie Wagner
+upstream:
+  id: biomodels_ebi:BIOMD0000000547
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000547
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000547
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000547?filename=BIOMD0000000547_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.talemi2014_arsenic_toxicity_and_detoxification_m_biomd0000000547_model:Talemi2014ArsenicToxicityAndDetoxificationMBiomd0000000547Model
+  init_kwargs:
+    model_path: data/BIOMD0000000547.xml
+    integration_step: 1.0
+  communication_step: 0.01
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: arsenite_shock_level
+    maps_to: parameter_6
+    label: Arsenite Shock Level
+  - name: arsenite_shock_start_time
+    maps_to: parameter_7
+    label: Arsenite Shock Start Time
+  - name: extracellular_arsenite_initial
+    maps_to: parameter_5
+    label: Extracellular Arsenite Initial
+  outputs:
+  - name: state
+    maps_to: state
+    label: Model state
+  - name: summary
+    maps_to: summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: species_labels
+    label: Observable labels
+  - name: extracellular_arsenite
+    maps_to: species_6
+    label: AsIIIex
+  - name: ycf1_transporter
+    maps_to: species_5
+    label: Ycf1
+  - name: phosphorylated_hog1
+    maps_to: species_10
+    label: Hog1PP
+  - name: hog1_mapk
+    maps_to: species_9
+    label: Hog1

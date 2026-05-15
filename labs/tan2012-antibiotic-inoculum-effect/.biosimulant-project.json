@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "3392a025-5fdf-42fb-ba12-c793245ac50a",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "337de982-41cc-4263-86fb-4e0733d0dab6",
+  "created_at": "2026-05-15T15:55:11.201178659+00:00",
+  "last_synced_at": "2026-05-15T18:53:06.266548+00:00",
+  "hub_manifest_hash": "e34ae2fcc64b3b12e71ff5ecab1622d2167f05ad0eb7116c36d3b1f93b122cee",
+  "package_name": "tan2012-antibiotic-treatment-inoculum-effect-lab"
+}

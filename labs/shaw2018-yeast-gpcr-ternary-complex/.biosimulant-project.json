@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "8f472d21-95a2-48de-b6a1-e8e040b94dfa",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "e7e43466-fd3b-443a-b2ea-14f5c6d0fd5a",
+  "created_at": "2026-05-15T15:44:27.501230832+00:00",
+  "last_synced_at": "2026-05-15T18:49:31.429973+00:00",
+  "hub_manifest_hash": "e27420ffc76459f1e7cf6a37d75eda0db1d8b2efd928b04b54f23075e4b1f272",
+  "package_name": "shaw-2018-yeast-gpcr-ternary-complex-model-lab"
+}

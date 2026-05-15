@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "b0768734-80dc-47ce-8f78-7f2ea8f8e32a",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "63fe7277-4c36-4116-b025-e735082b8abf",
+  "created_at": "2026-05-15T15:55:10.970875875+00:00",
+  "last_synced_at": "2026-05-15T18:47:47.103878+00:00",
+  "hub_manifest_hash": "986de0ba9a3c1e24d3b3f8b162317ca45aa710efbca1eb6dd8fb3675b7885744",
+  "package_name": "nishio2008-design-of-the-phosphotransferase-system-for-enhanced"
+}

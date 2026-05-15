@@ -1,0 +1,68 @@
+schema_version: '2.0'
+title: Heldt2018 - Budding yeast size control by titration of nuclear sites
+description: This model is decribed in the article:Dilution and titration of cell-cycle
+  regulators may control cell size in budding yeastFrank S. It can be used to explore
+  microbiology heldt2018 budding yeast size control dynamics and compare simulation
+  behavior across conditions.
+standard: sbml
+tags:
+- microbiology
+- sbml
+- biomodels_ebi
+- faithful
+- tellurium
+authors:
+- Biosimulant Team
+- Frank Stefan Heldt
+- Reece Lunstone
+- Tyson JJ
+- Bela Novak
+upstream:
+  id: biomodels_ebi:MODEL1803220002
+  source_db: biomodels_ebi
+  source_id: MODEL1803220002
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1803220002
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1803220002?filename=Heldt2018_YeastSizeControl_TitrationOfNuclearSites.xml
+  license: CC0
+biosim:
+  entrypoint: src.heldt2018_budding_yeast_size_control_by_titratio_model1803220002_model:Heldt2018BuddingYeastSizeControlByTitratioModel1803220002Model
+  init_kwargs:
+    model_path: data/MODEL1803220002.xml
+    integration_step: 1.0
+  communication_step: 0.01
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: total_cln3
+    maps_to: CLN3t
+    label: Total Cln3
+  - name: total_whi5
+    maps_to: WHIt
+    label: Total Whi5
+  outputs:
+  - name: state
+    maps_to: state
+    label: Model state
+  - name: summary
+    maps_to: summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: species_labels
+    label: Observable labels
+  - name: titration_module_state
+    maps_to: TM
+    label: TM
+  - name: growth_initiation_state
+    maps_to: GI
+    label: GI
+  - name: growth_division_state
+    maps_to: GD
+    label: GD
+  - name: growth_initiation_titration_complex
+    maps_to: GITM
+    label: GITM

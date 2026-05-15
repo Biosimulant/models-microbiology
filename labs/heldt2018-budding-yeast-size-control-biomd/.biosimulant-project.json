@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "a1e44314-06c8-4b22-ad87-560135256e08",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "755ef87c-d34d-42ae-b3f0-80c7b0eef1d4",
+  "created_at": "2026-05-15T15:52:54.732941414+00:00",
+  "last_synced_at": "2026-05-15T18:43:11.123902+00:00",
+  "hub_manifest_hash": "b4af2504da418622aa5aa60ee1ca14c8a7e4ea1429f7d903c45f0219e921ddd2",
+  "package_name": "budding-yeast-size-control-by-titration-of-nuclear-sites-lab"
+}

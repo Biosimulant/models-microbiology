@@ -1,0 +1,57 @@
+schema_version: '2.0'
+title: Heldt2018 - Budding yeast size control by titration of nuclear sites Lab
+description: Curated microbiology lab for Heldt2018 - Budding yeast size control by
+  titration of nuclear sites. The bundled SBML is executed directly through Tellurium
+  and visualised with conservative, source-traceable labels.
+models:
+- alias: heldt2018_budding_yeast_size_control
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: heldt2018_budding_yeast_size_control.state
+  to:
+  - visualisation.heldt2018_budding_yeast_size_control_state
+- from: heldt2018_budding_yeast_size_control.summary
+  to:
+  - visualisation.heldt2018_budding_yeast_size_control_summary
+- from: heldt2018_budding_yeast_size_control.species_labels
+  to:
+  - visualisation.heldt2018_budding_yeast_size_control_species_labels
+- from: heldt2018_budding_yeast_size_control.titration_module_state
+  to:
+  - visualisation.heldt2018_budding_yeast_size_control_titration_module_state
+- from: heldt2018_budding_yeast_size_control.growth_initiation_state
+  to:
+  - visualisation.heldt2018_budding_yeast_size_control_growth_initiation_state
+- from: heldt2018_budding_yeast_size_control.growth_division_state
+  to:
+  - visualisation.heldt2018_budding_yeast_size_control_growth_division_state
+- from: heldt2018_budding_yeast_size_control.growth_initiation_titration_complex
+  to:
+  - visualisation.heldt2018_budding_yeast_size_control_growth_initiation_titration_complex
+runtime:
+  duration: 10.0
+  communication_step: 0.01
+  initial_inputs: {}
+io:
+  inputs:
+  - name: total_cln3
+    maps_to: heldt2018_budding_yeast_size_control.total_cln3
+  - name: total_whi5
+    maps_to: heldt2018_budding_yeast_size_control.total_whi5
+  outputs:
+  - name: state
+    maps_to: heldt2018_budding_yeast_size_control.state
+  - name: summary
+    maps_to: heldt2018_budding_yeast_size_control.summary
+  - name: species_labels
+    maps_to: heldt2018_budding_yeast_size_control.species_labels
+  - name: titration_module_state
+    maps_to: heldt2018_budding_yeast_size_control.titration_module_state
+  - name: growth_initiation_state
+    maps_to: heldt2018_budding_yeast_size_control.growth_initiation_state
+  - name: growth_division_state
+    maps_to: heldt2018_budding_yeast_size_control.growth_division_state
+  - name: growth_initiation_titration_complex
+    maps_to: heldt2018_budding_yeast_size_control.growth_initiation_titration_complex

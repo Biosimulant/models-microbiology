@@ -1,0 +1,69 @@
+schema_version: '2.0'
+title: Millard2020 - Kinetic model of Glucose and Acetate metabolisms in E. coli Visualisation
+description: Question-and-answer visualisation for Millard2020 - Kinetic model of
+  Glucose and Acetate metabolisms in E. coli.
+standard: other
+tags:
+- microbiology
+- visualisation
+biosim:
+  communication_step: 1.0
+  entrypoint: src.microbiology_visualisation:MicrobiologyVisualisationModel
+  init_kwargs:
+    sources:
+    - alias: millard2020_ecoli_glucose_acetate
+      observables:
+      - id: Glc
+        label: Glc
+      - id: AcP
+        label: AcP
+      - id: Ace
+        label: Ace
+      - id: AcCoA
+        label: AcCoA
+      - id: X
+        label: X
+      - id: Ace_out
+        label: Ace out
+      labels:
+        Glc: Glc
+        AcP: AcP
+        Ace: Ace
+        AcCoA: AcCoA
+        X: X
+        Ace_out: Ace out
+      headline_outputs:
+      - port: glucose
+        source: Glc
+        label: Glc
+      - port: acetate
+        source: Ace
+        label: Ace
+      - port: extracellular_acetate
+        source: Ace_out
+        label: Ace out
+      - port: input_regulator
+        source: X
+        label: X
+    question: How do glucose, acetate, and biomass-proxy states evolve in the E. coli
+      metabolism model?
+    scope: metabolic pathway dynamics
+    caveat: The bundled SBML is the executable source of truth; labels are conservative
+      where source symbols are ambiguous.
+io:
+  inputs:
+  - name: millard2020_ecoli_glucose_acetate_state
+    maps_to: millard2020_ecoli_glucose_acetate.state
+  - name: millard2020_ecoli_glucose_acetate_summary
+    maps_to: millard2020_ecoli_glucose_acetate.summary
+  - name: millard2020_ecoli_glucose_acetate_species_labels
+    maps_to: millard2020_ecoli_glucose_acetate.species_labels
+  - name: millard2020_ecoli_glucose_acetate_glucose
+    maps_to: millard2020_ecoli_glucose_acetate.glucose
+  - name: millard2020_ecoli_glucose_acetate_acetate
+    maps_to: millard2020_ecoli_glucose_acetate.acetate
+  - name: millard2020_ecoli_glucose_acetate_extracellular_acetate
+    maps_to: millard2020_ecoli_glucose_acetate.extracellular_acetate
+  - name: millard2020_ecoli_glucose_acetate_input_regulator
+    maps_to: millard2020_ecoli_glucose_acetate.input_regulator
+  outputs: []

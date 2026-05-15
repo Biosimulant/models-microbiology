@@ -1,0 +1,62 @@
+schema_version: '2.0'
+title: Voit2003 - Trehalose Cycle
+description: 'Voit2003 - Trehalose Cycle This model is described in the article: Biochemical
+  and genomic regulation of the trehalose cycle in yeast: review of observations and
+  canonical model analysis. It can be used to explore microbiology voit2003 trehalose
+  cycle BioModels0000000266 dynamics and compare simulation behavior across conditions.'
+standard: sbml
+tags:
+- microbiology
+- sbml
+- biomodels_ebi
+- faithful
+- tellurium
+authors:
+- Biosimulant Team
+- Eberhard O Voit
+upstream:
+  id: biomodels_ebi:BIOMD0000000266
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000266
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000266
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000266?filename=BIOMD0000000266_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.voit2003_trehalose_cycle_biomd0000000266_model:Voit2003TrehaloseCycleBiomd0000000266Model
+  init_kwargs:
+    model_path: data/BIOMD0000000266.xml
+    integration_step: 1.0
+  communication_step: 0.01
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: heat_shock
+    maps_to: heat_shock
+    label: Heat Shock
+  outputs:
+  - name: state
+    maps_to: state
+    label: Model state
+  - name: summary
+    maps_to: summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: species_labels
+    label: Observable labels
+  - name: glucose
+    maps_to: X0
+    label: Glucose
+  - name: glucose_pool_2
+    maps_to: X1
+    label: Glucose
+  - name: glucose_6_phosphate
+    maps_to: X2
+    label: G6P
+  - name: glucose_1_phosphate
+    maps_to: X3
+    label: G1P

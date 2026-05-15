@@ -1,0 +1,145 @@
+schema_version: '2.0'
+title: Vinod2011_MitoticExit Visualisation
+description: Question-and-answer visualisation for Vinod2011_MitoticExit.
+standard: other
+tags:
+- microbiology
+- visualisation
+biosim:
+  communication_step: 1.0
+  entrypoint: src.microbiology_visualisation:MicrobiologyVisualisationModel
+  init_kwargs:
+    sources:
+    - alias: vinod2011_budding_yeast_mitotic_exit
+      observables:
+      - id: Clb2T_1
+        label: Clb2T
+      - id: Clb5T_1
+        label: Clb5T
+      - id: Cln_1
+        label: Cln
+      - id: Cdc20_1
+        label: Cdc20
+      - id: Cdh1_1
+        label: Cdh1
+      - id: Sic1T_1
+        label: Sic1T
+      - id: Trim2_1
+        label: Trim2
+      - id: Trim5_1
+        label: Trim5
+      - id: Swi5_1
+        label: Swi5
+      - id: Mcm_1
+        label: Mcm
+      - id: MBF_1
+        label: MBF
+      - id: Pds1T_1
+        label: Pds1T
+      - id: Esp1T_1
+        label: Esp1T
+      - id: PoloT_1
+        label: PoloT
+      - id: Polo_1
+        label: Polo
+      - id: Net1dep_1
+        label: Net1dep
+      - id: Net1pp_1
+        label: Net1pp
+      - id: RENT_1
+        label: RENT
+      - id: RENTp_1
+        label: RENTp
+      - id: Cdc14n_1
+        label: Cdc14n
+      - id: Tem1_1
+        label: Tem1
+      - id: Cdc15_1
+        label: Cdc15
+      - id: MEN_1
+        label: MEN
+      - id: Clb2_2
+        label: Clb2
+      - id: Clb5_1
+        label: Clb5
+      - id: Sic1_1
+        label: Sic1
+      - id: Pds1_1
+        label: Pds1
+      - id: Esp1b_1
+        label: Esp1b
+      - id: Esp1_1
+        label: Esp1
+      - id: Net1p_1
+        label: Net1p
+      - id: Net1_2
+        label: Net1
+      - id: Cdc14c_1
+        label: Cdc14c
+      labels:
+        Clb2T_1: Clb2T
+        Clb5T_1: Clb5T
+        Cln_1: Cln
+        Cdc20_1: Cdc20
+        Cdh1_1: Cdh1
+        Sic1T_1: Sic1T
+        Trim2_1: Trim2
+        Trim5_1: Trim5
+        Swi5_1: Swi5
+        Mcm_1: Mcm
+        MBF_1: MBF
+        Pds1T_1: Pds1T
+        Esp1T_1: Esp1T
+        PoloT_1: PoloT
+        Polo_1: Polo
+        Net1dep_1: Net1dep
+        Net1pp_1: Net1pp
+        RENT_1: RENT
+        RENTp_1: RENTp
+        Cdc14n_1: Cdc14n
+        Tem1_1: Tem1
+        Cdc15_1: Cdc15
+        MEN_1: MEN
+        Clb2_2: Clb2
+        Clb5_1: Clb5
+        Sic1_1: Sic1
+        Pds1_1: Pds1
+        Esp1b_1: Esp1b
+        Esp1_1: Esp1
+        Net1p_1: Net1p
+        Net1_2: Net1
+        Cdc14c_1: Cdc14c
+      headline_outputs:
+      - port: total_clb2_cyclin
+        source: Clb2T_1
+        label: Clb2T
+      - port: total_clb5_cyclin
+        source: Clb5T_1
+        label: Clb5T
+      - port: cln_cyclin
+        source: Cln_1
+        label: Cln
+      - port: cdc20_activator
+        source: Cdc20_1
+        label: Cdc20
+    question: Which mitotic-exit regulator changes most over the simulated window?
+    scope: yeast cell-cycle state dynamics
+    caveat: The bundled SBML is the executable source of truth; labels are conservative
+      where source symbols are ambiguous.
+io:
+  inputs:
+  - name: vinod2011_budding_yeast_mitotic_exit_state
+    maps_to: vinod2011_budding_yeast_mitotic_exit.state
+  - name: vinod2011_budding_yeast_mitotic_exit_summary
+    maps_to: vinod2011_budding_yeast_mitotic_exit.summary
+  - name: vinod2011_budding_yeast_mitotic_exit_species_labels
+    maps_to: vinod2011_budding_yeast_mitotic_exit.species_labels
+  - name: vinod2011_budding_yeast_mitotic_exit_total_clb2_cyclin
+    maps_to: vinod2011_budding_yeast_mitotic_exit.total_clb2_cyclin
+  - name: vinod2011_budding_yeast_mitotic_exit_total_clb5_cyclin
+    maps_to: vinod2011_budding_yeast_mitotic_exit.total_clb5_cyclin
+  - name: vinod2011_budding_yeast_mitotic_exit_cln_cyclin
+    maps_to: vinod2011_budding_yeast_mitotic_exit.cln_cyclin
+  - name: vinod2011_budding_yeast_mitotic_exit_cdc20_activator
+    maps_to: vinod2011_budding_yeast_mitotic_exit.cdc20_activator
+  outputs: []

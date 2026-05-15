@@ -1,0 +1,57 @@
+schema_version: '2.0'
+title: Shaw 2018 - Yeast GPCR Ternary Complex Model Lab
+description: Curated microbiology lab for Shaw 2018 - Yeast GPCR Ternary Complex Model.
+  The bundled SBML is executed directly through Tellurium and visualised with conservative,
+  source-traceable labels.
+models:
+- alias: shaw2018_yeast_gpcr_ternary_complex
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: shaw2018_yeast_gpcr_ternary_complex.state
+  to:
+  - visualisation.shaw2018_yeast_gpcr_ternary_complex_state
+- from: shaw2018_yeast_gpcr_ternary_complex.summary
+  to:
+  - visualisation.shaw2018_yeast_gpcr_ternary_complex_summary
+- from: shaw2018_yeast_gpcr_ternary_complex.species_labels
+  to:
+  - visualisation.shaw2018_yeast_gpcr_ternary_complex_species_labels
+- from: shaw2018_yeast_gpcr_ternary_complex.receptor_state
+  to:
+  - visualisation.shaw2018_yeast_gpcr_ternary_complex_receptor_state
+- from: shaw2018_yeast_gpcr_ternary_complex.ligand_bound_receptor
+  to:
+  - visualisation.shaw2018_yeast_gpcr_ternary_complex_ligand_bound_receptor
+- from: shaw2018_yeast_gpcr_ternary_complex.active_receptor
+  to:
+  - visualisation.shaw2018_yeast_gpcr_ternary_complex_active_receptor
+- from: shaw2018_yeast_gpcr_ternary_complex.active_ligand_bound_receptor
+  to:
+  - visualisation.shaw2018_yeast_gpcr_ternary_complex_active_ligand_bound_receptor
+runtime:
+  duration: 10.0
+  communication_step: 0.01
+  initial_inputs: {}
+io:
+  inputs:
+  - name: initial_ligand_level
+    maps_to: shaw2018_yeast_gpcr_ternary_complex.initial_ligand_level
+  - name: initial_receptor_level
+    maps_to: shaw2018_yeast_gpcr_ternary_complex.initial_receptor_level
+  outputs:
+  - name: state
+    maps_to: shaw2018_yeast_gpcr_ternary_complex.state
+  - name: summary
+    maps_to: shaw2018_yeast_gpcr_ternary_complex.summary
+  - name: species_labels
+    maps_to: shaw2018_yeast_gpcr_ternary_complex.species_labels
+  - name: receptor_state
+    maps_to: shaw2018_yeast_gpcr_ternary_complex.receptor_state
+  - name: ligand_bound_receptor
+    maps_to: shaw2018_yeast_gpcr_ternary_complex.ligand_bound_receptor
+  - name: active_receptor
+    maps_to: shaw2018_yeast_gpcr_ternary_complex.active_receptor
+  - name: active_ligand_bound_receptor
+    maps_to: shaw2018_yeast_gpcr_ternary_complex.active_ligand_bound_receptor

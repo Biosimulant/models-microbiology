@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "51892fdc-fd71-40e5-8709-25cdaf0eccb1",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "793d3656-e0cb-4c81-b532-a82a0ad54aad",
+  "created_at": "2026-05-15T15:55:10.792262892+00:00",
+  "last_synced_at": "2026-05-15T18:43:36.219522+00:00",
+  "hub_manifest_hash": "4b54e006d89ab4e5f4686c0e6434c99cd8c5a1047aced2d7cf459155d2cadb5f",
+  "package_name": "houser2012-pheromone-ste12-lab"
+}

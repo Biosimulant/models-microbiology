@@ -1,0 +1,132 @@
+schema_version: '2.0'
+title: Queralt2006 - Initiation of mitotic exit by downregulation of PP2A in budding
+  yeast Visualisation
+description: Question-and-answer visualisation for Queralt2006 - Initiation of mitotic
+  exit by downregulation of PP2A in budding yeast.
+standard: other
+tags:
+- microbiology
+- visualisation
+biosim:
+  communication_step: 1.0
+  entrypoint: src.microbiology_visualisation:MicrobiologyVisualisationModel
+  init_kwargs:
+    sources:
+    - alias: queralt2006_pp2a_mitotic_exit
+      observables:
+      - id: clb2
+        label: Clb2
+      - id: cdc20
+        label: Cdc20
+      - id: cdh1
+        label: Cdh1
+      - id: securin_total
+        label: Securin total
+      - id: separase_total
+        label: Separase total
+      - id: securin_separase
+        label: Securin separase
+      - id: net1
+        label: Net1
+      - id: net1p
+        label: Net1p
+      - id: cdc14
+        label: Cdc14
+      - id: net1cdc14
+        label: Net1cdc14
+      - id: polo_total
+        label: Polo total
+      - id: cdk
+        label: Cdk
+      - id: pp2a
+        label: Pp2a
+      - id: men
+        label: Men
+      - id: polo
+        label: Polo
+      - id: tem1
+        label: Tem1
+      - id: cdc15
+        label: Cdc15
+      - id: pp2a_total
+        label: Pp2a total
+      - id: cdh1_total
+        label: Cdh1 total
+      - id: net1_total
+        label: Net1 total
+      - id: tem1_total
+        label: Tem1 total
+      - id: cdc15_total
+        label: Cdc15 total
+      - id: securin
+        label: Securin
+      - id: separase
+        label: Separase
+      - id: Inh
+        label: Inh
+      - id: cdc14_total
+        label: Cdc14 total
+      - id: Cdc14x2
+        label: Cdc14x2
+      labels:
+        clb2: Clb2
+        cdc20: Cdc20
+        cdh1: Cdh1
+        securin_total: Securin total
+        separase_total: Separase total
+        securin_separase: Securin separase
+        net1: Net1
+        net1p: Net1p
+        cdc14: Cdc14
+        net1cdc14: Net1cdc14
+        polo_total: Polo total
+        cdk: Cdk
+        pp2a: Pp2a
+        men: Men
+        polo: Polo
+        tem1: Tem1
+        cdc15: Cdc15
+        pp2a_total: Pp2a total
+        cdh1_total: Cdh1 total
+        net1_total: Net1 total
+        tem1_total: Tem1 total
+        cdc15_total: Cdc15 total
+        securin: Securin
+        separase: Separase
+        Inh: Inh
+        cdc14_total: Cdc14 total
+        Cdc14x2: Cdc14x2
+      headline_outputs:
+      - port: clb2_cyclin_level
+        source: clb2
+        label: Clb2
+      - port: cdc20_level
+        source: cdc20
+        label: Cdc20
+      - port: cdh1_level
+        source: cdh1
+        label: Cdh1
+      - port: securin_total
+        source: securin_total
+        label: Securin total
+    question: Which mitotic-exit regulator changes most over the simulated window?
+    scope: yeast cell-cycle state dynamics
+    caveat: The bundled SBML is the executable source of truth; labels are conservative
+      where source symbols are ambiguous.
+io:
+  inputs:
+  - name: queralt2006_pp2a_mitotic_exit_state
+    maps_to: queralt2006_pp2a_mitotic_exit.state
+  - name: queralt2006_pp2a_mitotic_exit_summary
+    maps_to: queralt2006_pp2a_mitotic_exit.summary
+  - name: queralt2006_pp2a_mitotic_exit_species_labels
+    maps_to: queralt2006_pp2a_mitotic_exit.species_labels
+  - name: queralt2006_pp2a_mitotic_exit_clb2_cyclin_level
+    maps_to: queralt2006_pp2a_mitotic_exit.clb2_cyclin_level
+  - name: queralt2006_pp2a_mitotic_exit_cdc20_level
+    maps_to: queralt2006_pp2a_mitotic_exit.cdc20_level
+  - name: queralt2006_pp2a_mitotic_exit_cdh1_level
+    maps_to: queralt2006_pp2a_mitotic_exit.cdh1_level
+  - name: queralt2006_pp2a_mitotic_exit_securin_total
+    maps_to: queralt2006_pp2a_mitotic_exit.securin_total
+  outputs: []

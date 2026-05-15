@@ -1,0 +1,121 @@
+schema_version: '2.0'
+title: Queralt2006_MitoticExit_Cdc55DownregulationBySeparase Visualisation
+description: Question-and-answer visualisation for Queralt2006_MitoticExit_Cdc55DownregulationBySeparase.
+standard: other
+tags:
+- microbiology
+- visualisation
+biosim:
+  communication_step: 1.0
+  entrypoint: src.microbiology_visualisation:MicrobiologyVisualisationModel
+  init_kwargs:
+    sources:
+    - alias: queralt2006_cdc55_separase_mitotic_exit
+      observables:
+      - id: AA
+        label: AA
+      - id: Clb2
+        label: Clb2
+      - id: degr
+        label: Degr
+      - id: Cdc20
+        label: Cdc20
+      - id: Cdh1
+        label: Cdh1
+      - id: Cdh1_i
+        label: Inactive Cdh1
+      - id: securinT
+        label: SecurinT
+      - id: securin
+        label: Securin
+      - id: separaseT
+        label: SeparaseT
+      - id: separase
+        label: Separase
+      - id: securinseparase
+        label: Securin:separase
+      - id: Net1
+        label: Net1
+      - id: Net1Cdc14
+        label: Net1Cdc14
+      - id: PoloT
+        label: PoloT
+      - id: Polo
+        label: Polo
+      - id: Polo_i
+        label: Inactive Polo
+      - id: Tem1
+        label: Tem1
+      - id: Tem1_i
+        label: Inactive Tem1
+      - id: Cdc15
+        label: Cdc15
+      - id: Cdc15_i
+        label: Inactive Cdc15
+      - id: MEN
+        label: MEN
+      - id: PP2A
+        label: PP2A
+      - id: Net1P
+        label: Net1P
+      - id: Cdc14
+        label: Cdc14
+      labels:
+        AA: AA
+        Clb2: Clb2
+        degr: Degr
+        Cdc20: Cdc20
+        Cdh1: Cdh1
+        Cdh1_i: Inactive Cdh1
+        securinT: SecurinT
+        securin: Securin
+        separaseT: SeparaseT
+        separase: Separase
+        securinseparase: Securin:separase
+        Net1: Net1
+        Net1Cdc14: Net1Cdc14
+        PoloT: PoloT
+        Polo: Polo
+        Polo_i: Inactive Polo
+        Tem1: Tem1
+        Tem1_i: Inactive Tem1
+        Cdc15: Cdc15
+        Cdc15_i: Inactive Cdc15
+        MEN: MEN
+        PP2A: PP2A
+        Net1P: Net1P
+        Cdc14: Cdc14
+      headline_outputs:
+      - port: amino_acid_pool
+        source: AA
+        label: AA
+      - port: clb2_cyclin_level
+        source: Clb2
+        label: Clb2
+      - port: degradation_signal
+        source: degr
+        label: Degr
+      - port: cdc20_level
+        source: Cdc20
+        label: Cdc20
+    question: Which mitotic-exit regulator changes most over the simulated window?
+    scope: yeast cell-cycle state dynamics
+    caveat: The bundled SBML is the executable source of truth; labels are conservative
+      where source symbols are ambiguous.
+io:
+  inputs:
+  - name: queralt2006_cdc55_separase_mitotic_exit_state
+    maps_to: queralt2006_cdc55_separase_mitotic_exit.state
+  - name: queralt2006_cdc55_separase_mitotic_exit_summary
+    maps_to: queralt2006_cdc55_separase_mitotic_exit.summary
+  - name: queralt2006_cdc55_separase_mitotic_exit_species_labels
+    maps_to: queralt2006_cdc55_separase_mitotic_exit.species_labels
+  - name: queralt2006_cdc55_separase_mitotic_exit_amino_acid_pool
+    maps_to: queralt2006_cdc55_separase_mitotic_exit.amino_acid_pool
+  - name: queralt2006_cdc55_separase_mitotic_exit_clb2_cyclin_level
+    maps_to: queralt2006_cdc55_separase_mitotic_exit.clb2_cyclin_level
+  - name: queralt2006_cdc55_separase_mitotic_exit_degradation_signal
+    maps_to: queralt2006_cdc55_separase_mitotic_exit.degradation_signal
+  - name: queralt2006_cdc55_separase_mitotic_exit_cdc20_level
+    maps_to: queralt2006_cdc55_separase_mitotic_exit.cdc20_level
+  outputs: []

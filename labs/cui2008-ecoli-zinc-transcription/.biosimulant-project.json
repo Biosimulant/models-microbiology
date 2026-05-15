@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "3d2e777e-39d1-4c72-bea1-57f9cbb3d757",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "40a56a74-e365-4f87-8b6e-ced64b496dc0",
+  "created_at": "2026-05-15T15:44:27.167428985+00:00",
+  "last_synced_at": "2026-05-15T18:40:56.231144+00:00",
+  "hub_manifest_hash": "8285e0ab658e520e9e164e5000b727177cdf5f73d94fe450e2c366a7e00afbab",
+  "package_name": "cui2008-in-vitro-transcriptional-response-of-zinc-homeostasis-sy"
+}

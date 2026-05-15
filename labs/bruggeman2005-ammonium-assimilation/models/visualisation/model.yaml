@@ -1,0 +1,116 @@
+schema_version: '2.0'
+title: Bruggeman2005_AmmoniumAssimilation Visualisation
+description: Question-and-answer visualisation for Bruggeman2005_AmmoniumAssimilation.
+standard: other
+tags:
+- microbiology
+- visualisation
+biosim:
+  communication_step: 1.0
+  entrypoint: src.microbiology_visualisation:MicrobiologyVisualisationModel
+  init_kwargs:
+    sources:
+    - alias: bruggeman2005_ammonium_assimilation
+      observables:
+      - id: PII
+        label: PII
+      - id: UTP
+        label: UTP
+      - id: PIIUMP
+        label: PIIUMP
+      - id: PPi
+        label: PPi
+      - id: GLN
+        label: GLN
+      - id: PIIUMP2
+        label: PIIUMP2
+      - id: PIIUMP3
+        label: PIIUMP3
+      - id: UMP
+        label: UMP
+      - id: GS
+        label: GS
+      - id: AMP
+        label: AMP
+      - id: NH4
+        label: NH4
+      - id: KG
+        label: KG
+      - id: NADPH
+        label: NADPH
+      - id: GLU
+        label: GLU
+      - id: NADP
+        label: NADP
+      - id: AZGLU
+        label: AZGLU
+      - id: ATP
+        label: ATP
+      - id: ADP
+        label: ADP
+      - id: AZglu
+        label: AZglu
+      - id: AZGLN
+        label: AZGLN
+      - id: AZgln
+        label: AZgln
+      - id: P_i
+        label: P i
+      labels:
+        PII: PII
+        UTP: UTP
+        PIIUMP: PIIUMP
+        PPi: PPi
+        GLN: GLN
+        PIIUMP2: PIIUMP2
+        PIIUMP3: PIIUMP3
+        UMP: UMP
+        GS: GS
+        AMP: AMP
+        NH4: NH4
+        KG: KG
+        NADPH: NADPH
+        GLU: GLU
+        NADP: NADP
+        AZGLU: AZGLU
+        ATP: ATP
+        ADP: ADP
+        AZglu: AZglu
+        AZGLN: AZGLN
+        AZgln: AZgln
+        P_i: P i
+      headline_outputs:
+      - port: pii_regulatory_protein
+        source: PII
+        label: PII
+      - port: uridine_triphosphate
+        source: UTP
+        label: UTP
+      - port: uridylylated_pii_protein
+        source: PIIUMP
+        label: PIIUMP
+      - port: inorganic_pyrophosphate
+        source: PPi
+        label: PPi
+    question: How does the nitrogen assimilation network redistribute its tracked
+      molecular states?
+    scope: microbiology model dynamics
+    caveat: The bundled SBML is the executable source of truth; labels are conservative
+      where source symbols are ambiguous.
+io:
+  inputs:
+  - name: bruggeman2005_ammonium_assimilation_state
+    maps_to: bruggeman2005_ammonium_assimilation.state
+  - name: bruggeman2005_ammonium_assimilation_summary
+    maps_to: bruggeman2005_ammonium_assimilation.summary
+  - name: bruggeman2005_ammonium_assimilation_species_labels
+    maps_to: bruggeman2005_ammonium_assimilation.species_labels
+  - name: bruggeman2005_ammonium_assimilation_pii_regulatory_protein
+    maps_to: bruggeman2005_ammonium_assimilation.pii_regulatory_protein
+  - name: bruggeman2005_ammonium_assimilation_uridine_triphosphate
+    maps_to: bruggeman2005_ammonium_assimilation.uridine_triphosphate
+  - name: bruggeman2005_ammonium_assimilation_uridylylated_pii_protein
+    maps_to: bruggeman2005_ammonium_assimilation.uridylylated_pii_protein
+  - name: bruggeman2005_ammonium_assimilation_inorganic_pyrophosphate
+    maps_to: bruggeman2005_ammonium_assimilation.inorganic_pyrophosphate
+  outputs: []

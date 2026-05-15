@@ -1,0 +1,56 @@
+schema_version: '2.0'
+title: Kaiser2014 - Salmonella persistence after ciprofloxacin treatment
+description: Kaiser2014 - Salmonella persistence after ciprofloxacin treatment The
+  model describes the bacterial tolerance to antibiotics. Using a mouse model for
+  Salmonella diarrhea , the authors have found that.
+standard: sbml
+tags:
+- microbiology
+- sbml
+- biomodels_ebi
+- faithful
+- tellurium
+authors:
+- Biosimulant Team
+- Patrick Kaiser
+- Roland R Regoes
+- Tamas Dolowschiak
+- Sandra Y Wotzka
+- Jette Lengefeld
+upstream:
+  id: biomodels_ebi:BIOMD0000000527
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000527
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000527
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000527?filename=BIOMD0000000527_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.kaiser2014_salmonella_persistence_after_ciproflo_biomd0000000527_model:Kaiser2014SalmonellaPersistenceAfterCiprofloBiomd0000000527Model
+  init_kwargs:
+    model_path: data/BIOMD0000000527.xml
+    integration_step: 1.0
+  communication_step: 0.01
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_persistent_salmonella_load
+    maps_to: L
+    label: Initial Persistent Salmonella Load
+  outputs:
+  - name: state
+    maps_to: state
+    label: Model state
+  - name: summary
+    maps_to: summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: species_labels
+    label: Observable labels
+  - name: persistent_salmonella_load
+    maps_to: L
+    label: L

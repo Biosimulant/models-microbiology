@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "ac32d492-af05-4b0f-9a1d-740f4ff5933b",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "42c1b644-7581-4208-a6ac-3fd5a7ff9a55",
+  "created_at": "2026-05-15T15:55:10.591396616+00:00",
+  "last_synced_at": "2026-05-15T18:38:37.009365+00:00",
+  "hub_manifest_hash": "c8b2703f79cdd73843319464bd04a314c4c89708dc0614391f4a19c58f477b50",
+  "package_name": "bruggeman2005-ammoniumassimilation-lab"
+}

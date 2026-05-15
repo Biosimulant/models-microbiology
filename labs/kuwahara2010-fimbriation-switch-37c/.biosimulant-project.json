@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "8f879a9e-b8dd-45a5-9281-13789a75cd71",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "21528f39-fa71-4f1a-8e1b-33a80757fd1e",
+  "created_at": "2026-05-15T15:44:27.286500224+00:00",
+  "last_synced_at": "2026-05-15T18:44:55.485457+00:00",
+  "hub_manifest_hash": "bc6d5b72ba3b074563f55d276758a5251440c6fbb818bfd88a0935ec817cb945",
+  "package_name": "kuwahara2010-fimbriation-switch-37c-lab"
+}

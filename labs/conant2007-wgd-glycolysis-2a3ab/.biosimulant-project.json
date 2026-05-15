@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "dcaa6a7d-fc2a-4fc3-b733-a1158ff70a0c",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "b81365ac-dc46-405b-9611-ad9c62c1aa58",
+  "created_at": "2026-05-15T15:44:27.142020848+00:00",
+  "last_synced_at": "2026-05-15T18:40:04.678193+00:00",
+  "hub_manifest_hash": "e212ec1f98e961d9e389ddd57fa8f68943be0ab9662ec9beab1ed756c2c2ca54",
+  "package_name": "conant2007-wgd-glycolysis-2a3ab-lab"
+}

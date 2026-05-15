@@ -1,0 +1,51 @@
+schema_version: '2.0'
+title: Gulbudak2019.2 - Heterogeneous viral strategies promote coexistence in virus-microbe
+  systems (Chronic) Lab
+description: Curated microbiology lab for Gulbudak2019.2 - Heterogeneous viral strategies
+  promote coexistence in virus-microbe systems (Chronic). The bundled SBML is executed
+  directly through Tellurium and visualised with conservative, source-traceable labels.
+models:
+- alias: gulbudak2019_viral_strategy_c
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: gulbudak2019_viral_strategy_c.state
+  to:
+  - visualisation.gulbudak2019_viral_strategy_c_state
+- from: gulbudak2019_viral_strategy_c.summary
+  to:
+  - visualisation.gulbudak2019_viral_strategy_c_summary
+- from: gulbudak2019_viral_strategy_c.species_labels
+  to:
+  - visualisation.gulbudak2019_viral_strategy_c_species_labels
+- from: gulbudak2019_viral_strategy_c.susceptible_hosts
+  to:
+  - visualisation.gulbudak2019_viral_strategy_c_susceptible_hosts
+- from: gulbudak2019_viral_strategy_c.carrier_hosts
+  to:
+  - visualisation.gulbudak2019_viral_strategy_c_carrier_hosts
+- from: gulbudak2019_viral_strategy_c.free_chronic_virus
+  to:
+  - visualisation.gulbudak2019_viral_strategy_c_free_chronic_virus
+runtime:
+  duration: 10.0
+  communication_step: 0.01
+  initial_inputs: {}
+io:
+  inputs:
+  - name: infection_rate
+    maps_to: gulbudak2019_viral_strategy_c.infection_rate
+  outputs:
+  - name: state
+    maps_to: gulbudak2019_viral_strategy_c.state
+  - name: summary
+    maps_to: gulbudak2019_viral_strategy_c.summary
+  - name: species_labels
+    maps_to: gulbudak2019_viral_strategy_c.species_labels
+  - name: susceptible_hosts
+    maps_to: gulbudak2019_viral_strategy_c.susceptible_hosts
+  - name: carrier_hosts
+    maps_to: gulbudak2019_viral_strategy_c.carrier_hosts
+  - name: free_chronic_virus
+    maps_to: gulbudak2019_viral_strategy_c.free_chronic_virus

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "6938f922-a4fc-48c3-8999-1dc3365de61f",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "15f6ac74-c285-46d1-bf44-94f2d6959abf",
+  "created_at": "2026-05-15T15:52:54.676306799+00:00",
+  "last_synced_at": "2026-05-15T18:40:34.582346+00:00",
+  "hub_manifest_hash": "4fa1c8a1d574d7372b52f95bb7d805187b64788171cd1bdd9c778a91647448a0",
+  "package_name": "cui2006-calciumhomeostasis-lab"
+}

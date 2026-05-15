@@ -1,0 +1,55 @@
+schema_version: '2.0'
+title: Shen-Orr2002_Single_Input_Module Lab
+description: Curated microbiology lab for Shen-Orr2002_Single_Input_Module. The bundled
+  SBML is executed directly through Tellurium and visualised with conservative, source-traceable
+  labels.
+models:
+- alias: shenorr2002_single_input_module
+  path: models/core
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: shenorr2002_single_input_module.state
+  to:
+  - visualisation.shenorr2002_single_input_module_state
+- from: shenorr2002_single_input_module.summary
+  to:
+  - visualisation.shenorr2002_single_input_module_summary
+- from: shenorr2002_single_input_module.species_labels
+  to:
+  - visualisation.shenorr2002_single_input_module_species_labels
+- from: shenorr2002_single_input_module.input_regulator
+  to:
+  - visualisation.shenorr2002_single_input_module_input_regulator
+- from: shenorr2002_single_input_module.target_gene_1
+  to:
+  - visualisation.shenorr2002_single_input_module_target_gene_1
+- from: shenorr2002_single_input_module.target_gene_2
+  to:
+  - visualisation.shenorr2002_single_input_module_target_gene_2
+- from: shenorr2002_single_input_module.target_gene_3
+  to:
+  - visualisation.shenorr2002_single_input_module_target_gene_3
+runtime:
+  duration: 10.0
+  communication_step: 0.01
+  initial_inputs: {}
+io:
+  inputs:
+  - name: input_regulator_level
+    maps_to: shenorr2002_single_input_module.input_regulator_level
+  outputs:
+  - name: state
+    maps_to: shenorr2002_single_input_module.state
+  - name: summary
+    maps_to: shenorr2002_single_input_module.summary
+  - name: species_labels
+    maps_to: shenorr2002_single_input_module.species_labels
+  - name: input_regulator
+    maps_to: shenorr2002_single_input_module.input_regulator
+  - name: target_gene_1
+    maps_to: shenorr2002_single_input_module.target_gene_1
+  - name: target_gene_2
+    maps_to: shenorr2002_single_input_module.target_gene_2
+  - name: target_gene_3
+    maps_to: shenorr2002_single_input_module.target_gene_3

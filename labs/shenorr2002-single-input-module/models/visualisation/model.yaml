@@ -1,0 +1,61 @@
+schema_version: '2.0'
+title: Shen-Orr2002_Single_Input_Module Visualisation
+description: Question-and-answer visualisation for Shen-Orr2002_Single_Input_Module.
+standard: other
+tags:
+- microbiology
+- visualisation
+biosim:
+  communication_step: 1.0
+  entrypoint: src.microbiology_visualisation:MicrobiologyVisualisationModel
+  init_kwargs:
+    sources:
+    - alias: shenorr2002_single_input_module
+      observables:
+      - id: X
+        label: X
+      - id: Z1
+        label: Z1
+      - id: Z2
+        label: Z2
+      - id: Z3
+        label: Z3
+      labels:
+        X: X
+        Z1: Z1
+        Z2: Z2
+        Z3: Z3
+      headline_outputs:
+      - port: input_regulator
+        source: X
+        label: X
+      - port: target_gene_1
+        source: Z1
+        label: Z1
+      - port: target_gene_2
+        source: Z2
+        label: Z2
+      - port: target_gene_3
+        source: Z3
+        label: Z3
+    question: How do the single-input-module targets compare in the bundled response?
+    scope: microbial gene-regulatory switching
+    caveat: The bundled SBML is the executable source of truth; labels are conservative
+      where source symbols are ambiguous.
+io:
+  inputs:
+  - name: shenorr2002_single_input_module_state
+    maps_to: shenorr2002_single_input_module.state
+  - name: shenorr2002_single_input_module_summary
+    maps_to: shenorr2002_single_input_module.summary
+  - name: shenorr2002_single_input_module_species_labels
+    maps_to: shenorr2002_single_input_module.species_labels
+  - name: shenorr2002_single_input_module_input_regulator
+    maps_to: shenorr2002_single_input_module.input_regulator
+  - name: shenorr2002_single_input_module_target_gene_1
+    maps_to: shenorr2002_single_input_module.target_gene_1
+  - name: shenorr2002_single_input_module_target_gene_2
+    maps_to: shenorr2002_single_input_module.target_gene_2
+  - name: shenorr2002_single_input_module_target_gene_3
+    maps_to: shenorr2002_single_input_module.target_gene_3
+  outputs: []

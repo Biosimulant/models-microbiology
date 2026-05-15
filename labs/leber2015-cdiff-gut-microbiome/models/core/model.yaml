@@ -1,0 +1,66 @@
+schema_version: '2.0'
+title: Leber2015 - Mucosal immunity and gut microbiome interaction during C. difficile
+  infection
+description: 'Leber2015 - Mucosal immunity and gutmicrobiome interaction during C.
+  difficile infection This model is described in the article: Systems Modeling of
+  Interactions between Mucosal Immunity and the Gut M.'
+standard: sbml
+tags:
+- microbiology
+- sbml
+- biomodels_ebi
+- faithful
+- tellurium
+authors:
+- Biosimulant Team
+- Andrew Leber
+- Monica Viladomiu
+- Raquel Hontecillas
+- Vida Abedi
+- Casandra Philipson
+upstream:
+  id: biomodels_ebi:BIOMD0000000583
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000583
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000583
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000583?filename=BIOMD0000000583_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.leber2015_mucosal_immunity_and_gut_microbiome_in_biomd0000000583_model:Leber2015MucosalImmunityAndGutMicrobiomeInBiomd0000000583Model
+  init_kwargs:
+    model_path: data/BIOMD0000000583.xml
+    integration_step: 1.0
+  communication_step: 0.01
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_clostridioides_difficile
+    maps_to: Cdiff
+    label: Initial Clostridioides Difficile
+  - name: initial_beneficial_commensals
+    maps_to: Commensal_Beneficial
+    label: Initial Beneficial Commensals
+  outputs:
+  - name: state
+    maps_to: state
+    label: Model state
+  - name: summary
+    maps_to: summary
+    label: Simulation summary
+  - name: species_labels
+    maps_to: species_labels
+    label: Observable labels
+  - name: clostridioides_difficile
+    maps_to: Cdiff
+    label: Cdiff
+  - name: beneficial_commensals
+    maps_to: Commensal_Beneficial
+    label: Commensal Beneficial
+  - name: harmful_commensals
+    maps_to: Commensal_Harmful
+    label: Commensal Harmful
