@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: conant2007-wgd-glycolysis-2a3ab
+version: 1.0.0
 title: Conant2007_WGD_glycolysis_2A3AB Lab
 description: Curated microbiology lab for Conant2007_WGD_glycolysis_2A3AB. The bundled
   SBML is executed directly through Tellurium and visualised with conservative, source-traceable

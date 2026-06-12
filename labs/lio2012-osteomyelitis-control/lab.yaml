@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: lio2012-osteomyelitis-control
+version: 1.0.0
 title: Liò2012_Modelling osteomyelitis_Control Model Lab
 description: Curated microbiology lab for Liò2012_Modelling osteomyelitis_Control
   Model. The bundled SBML is executed directly through Tellurium and visualised with

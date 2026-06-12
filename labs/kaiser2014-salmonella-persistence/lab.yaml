@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: kaiser2014-salmonella-persistence
+version: 1.0.0
 title: Kaiser2014 - Salmonella persistence after ciprofloxacin treatment Lab
 description: Curated microbiology lab for Kaiser2014 - Salmonella persistence after
   ciprofloxacin treatment. The bundled SBML is executed directly through Tellurium

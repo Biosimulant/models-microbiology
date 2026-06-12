@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: queralt2006-pp2a-mitotic-exit
+version: 1.0.0
 title: Queralt2006 - Initiation of mitotic exit by downregulation of PP2A in budding
   yeast Lab
 description: Curated microbiology lab for Queralt2006 - Initiation of mitotic exit

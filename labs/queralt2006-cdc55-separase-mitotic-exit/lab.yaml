@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: queralt2006-cdc55-separase-mitotic-exit
+version: 1.0.0
 title: Queralt2006_MitoticExit_Cdc55DownregulationBySeparase Lab
 description: Curated microbiology lab for Queralt2006_MitoticExit_Cdc55DownregulationBySeparase.
   The bundled SBML is executed directly through Tellurium and visualised with conservative,

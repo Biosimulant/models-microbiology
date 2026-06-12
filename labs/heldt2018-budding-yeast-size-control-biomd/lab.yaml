@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: heldt2018-budding-yeast-size-control-biomd
+version: 1.0.0
 title: Budding yeast size control by titration of nuclear sites Lab
 description: Curated microbiology lab for Budding yeast size control by titration
   of nuclear sites. The bundled SBML is executed directly through Tellurium and visualised

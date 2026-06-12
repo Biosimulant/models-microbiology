@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: tan2012-antibiotic-inoculum-effect
+version: 1.0.0
 title: Tan2012 - Antibiotic Treatment, Inoculum Effect Lab
 description: Curated microbiology lab for Tan2012 - Antibiotic Treatment, Inoculum
   Effect. The bundled SBML is executed directly through Tellurium and visualised with

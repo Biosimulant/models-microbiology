@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: conant2007-glycolysis-2a
+version: 1.0.0
 title: MODEL2426780967_url.xml Lab
 description: Curated microbiology lab for MODEL2426780967_url.xml. The bundled SBML
   is executed directly through Tellurium and visualised with conservative, source-traceable

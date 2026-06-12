@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: millard2020-ecoli-glucose-acetate
+version: 1.0.0
 title: Millard2020 - Kinetic model of Glucose and Acetate metabolisms in E. coli Lab
 description: Curated microbiology lab for Millard2020 - Kinetic model of Glucose and
   Acetate metabolisms in E. coli. The bundled SBML is executed directly through Tellurium

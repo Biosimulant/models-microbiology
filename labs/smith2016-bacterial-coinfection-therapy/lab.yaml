@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: smith2016-bacterial-coinfection-therapy
+version: 1.0.0
 title: Smith2016-Combination therapy to prevent bacterial coinfection during influenza.
   Lab
 description: Curated microbiology lab for Smith2016-Combination therapy to prevent

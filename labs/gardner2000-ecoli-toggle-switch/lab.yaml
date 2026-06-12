@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: gardner2000-ecoli-toggle-switch
+version: 1.0.0
 title: Gardner2000 - genetic toggle switch in E.coli Lab
 description: Curated microbiology lab for Gardner2000 - genetic toggle switch in E.coli.
   The bundled SBML is executed directly through Tellurium and visualised with conservative,

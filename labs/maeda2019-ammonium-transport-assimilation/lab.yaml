@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: maeda2019-ammonium-transport-assimilation
+version: 1.0.0
 title: Maeda2019_AmmoniumTransportAssimilation Lab
 description: Curated microbiology lab for Maeda2019_AmmoniumTransportAssimilation.
   The bundled SBML is executed directly through Tellurium and visualised with conservative,

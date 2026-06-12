@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: leber2015-cdiff-gut-microbiome
+version: 1.0.0
 title: Leber2015 - Mucosal immunity and gut microbiome interaction during C. difficile
   infection Lab
 description: Curated microbiology lab for Leber2015 - Mucosal immunity and gut microbiome

@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: balagadde2008-ecoli-predator-prey
+version: 1.0.0
 title: Balagaddé2008_E_coli_Predator_Prey Lab
 description: Curated microbiology lab for Balagaddé2008_E_coli_Predator_Prey. The
   bundled SBML is executed directly through Tellurium and visualised with conservative,

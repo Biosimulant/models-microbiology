@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: veening2008-bsubtilis-degu-regulation
+version: 1.0.0
 title: Veening2008_DegU_Regulation Lab
 description: Curated microbiology lab for Veening2008_DegU_Regulation. The bundled
   SBML is executed directly through Tellurium and visualised with conservative, source-traceable

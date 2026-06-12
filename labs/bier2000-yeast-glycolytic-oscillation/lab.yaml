@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: bier2000-yeast-glycolytic-oscillation
+version: 1.0.0
 title: Bier2000_GlycolyticOscillation Lab
 description: Curated microbiology lab for Bier2000_GlycolyticOscillation. The bundled
   SBML is executed directly through Tellurium and visualised with conservative, source-traceable

@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: vinod2011-budding-yeast-mitotic-exit
+version: 1.0.0
 title: Vinod2011_MitoticExit Lab
 description: Curated microbiology lab for Vinod2011_MitoticExit. The bundled SBML
   is executed directly through Tellurium and visualised with conservative, source-traceable

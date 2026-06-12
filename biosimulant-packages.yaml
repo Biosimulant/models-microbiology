@@ -1,0 +1,244 @@
+schema_version: "1"
+namespace: demi
+default_visibility: public
+packages:
+  - id: balagadde2008-ecoli-predator-prey-lab
+    package: balagadde2008-ecoli-predator-prey
+    version: 1.0.0
+    type: lab
+    path: labs/balagadde2008-ecoli-predator-prey
+    visibility: public
+  - id: bier2000-yeast-glycolytic-oscillation-lab
+    package: bier2000-yeast-glycolytic-oscillation
+    version: 1.0.0
+    type: lab
+    path: labs/bier2000-yeast-glycolytic-oscillation
+    visibility: public
+  - id: bruggeman2005-ammonium-assimilation-lab
+    package: bruggeman2005-ammonium-assimilation
+    version: 1.0.0
+    type: lab
+    path: labs/bruggeman2005-ammonium-assimilation
+    visibility: public
+  - id: conant2007-glycolysis-2a-lab
+    package: conant2007-glycolysis-2a
+    version: 1.0.0
+    type: lab
+    path: labs/conant2007-glycolysis-2a
+    visibility: public
+  - id: conant2007-glycolysis-2c-lab
+    package: conant2007-glycolysis-2c
+    version: 1.0.0
+    type: lab
+    path: labs/conant2007-glycolysis-2c
+    visibility: public
+  - id: conant2007-glycolysis-3a-lab
+    package: conant2007-glycolysis-3a
+    version: 1.0.0
+    type: lab
+    path: labs/conant2007-glycolysis-3a
+    visibility: public
+  - id: conant2007-wgd-glycolysis-2a3ab-lab
+    package: conant2007-wgd-glycolysis-2a3ab
+    version: 1.0.0
+    type: lab
+    path: labs/conant2007-wgd-glycolysis-2a3ab
+    visibility: public
+  - id: cui2006-calcium-homeostasis-lab
+    package: cui2006-calcium-homeostasis
+    version: 1.0.0
+    type: lab
+    path: labs/cui2006-calcium-homeostasis
+    visibility: public
+  - id: cui2008-ecoli-zinc-transcription-lab
+    package: cui2008-ecoli-zinc-transcription
+    version: 1.0.0
+    type: lab
+    path: labs/cui2008-ecoli-zinc-transcription
+    visibility: public
+  - id: gardner2000-ecoli-toggle-switch-lab
+    package: gardner2000-ecoli-toggle-switch
+    version: 1.0.0
+    type: lab
+    path: labs/gardner2000-ecoli-toggle-switch
+    visibility: public
+  - id: gulbudak2019-viral-strategy-c-lab
+    package: gulbudak2019-viral-strategy-c
+    version: 1.0.0
+    type: lab
+    path: labs/gulbudak2019-viral-strategy-c
+    visibility: public
+  - id: gulbudak2019-viral-strategy-l-lab
+    package: gulbudak2019-viral-strategy-l
+    version: 1.0.0
+    type: lab
+    path: labs/gulbudak2019-viral-strategy-l
+    visibility: public
+  - id: heldt2018-budding-yeast-size-control-lab
+    package: heldt2018-budding-yeast-size-control
+    version: 1.0.0
+    type: lab
+    path: labs/heldt2018-budding-yeast-size-control
+    visibility: public
+  - id: heldt2018-budding-yeast-size-control-biomd-lab
+    package: heldt2018-budding-yeast-size-control-biomd
+    version: 1.0.0
+    type: lab
+    path: labs/heldt2018-budding-yeast-size-control-biomd
+    visibility: public
+  - id: houser2012-yeast-pheromone-ste12-lab
+    package: houser2012-yeast-pheromone-ste12
+    version: 1.0.0
+    type: lab
+    path: labs/houser2012-yeast-pheromone-ste12
+    visibility: public
+  - id: kaiser2014-salmonella-persistence-lab
+    package: kaiser2014-salmonella-persistence
+    version: 1.0.0
+    type: lab
+    path: labs/kaiser2014-salmonella-persistence
+    visibility: public
+  - id: kuwahara2010-fimbriation-switch-28c-lab
+    package: kuwahara2010-fimbriation-switch-28c
+    version: 1.0.0
+    type: lab
+    path: labs/kuwahara2010-fimbriation-switch-28c
+    visibility: public
+  - id: kuwahara2010-fimbriation-switch-37c-lab
+    package: kuwahara2010-fimbriation-switch-37c
+    version: 1.0.0
+    type: lab
+    path: labs/kuwahara2010-fimbriation-switch-37c
+    visibility: public
+  - id: kuwahara2010-fimbriation-switch-42c-lab
+    package: kuwahara2010-fimbriation-switch-42c
+    version: 1.0.0
+    type: lab
+    path: labs/kuwahara2010-fimbriation-switch-42c
+    visibility: public
+  - id: leber2015-cdiff-gut-microbiome-lab
+    package: leber2015-cdiff-gut-microbiome
+    version: 1.0.0
+    type: lab
+    path: labs/leber2015-cdiff-gut-microbiome
+    visibility: public
+  - id: lio2012-osteomyelitis-control-lab
+    package: lio2012-osteomyelitis-control
+    version: 1.0.0
+    type: lab
+    path: labs/lio2012-osteomyelitis-control
+    visibility: public
+  - id: maeda2019-ammonium-transport-assimilation-lab
+    package: maeda2019-ammonium-transport-assimilation
+    version: 1.0.0
+    type: lab
+    path: labs/maeda2019-ammonium-transport-assimilation
+    visibility: public
+  - id: millard2020-ecoli-glucose-acetate-lab
+    package: millard2020-ecoli-glucose-acetate
+    version: 1.0.0
+    type: lab
+    path: labs/millard2020-ecoli-glucose-acetate
+    visibility: public
+  - id: moriya2011-fission-yeast-cell-cycle-lab
+    package: moriya2011-fission-yeast-cell-cycle
+    version: 1.0.0
+    type: lab
+    path: labs/moriya2011-fission-yeast-cell-cycle
+    visibility: public
+  - id: nishio2008-ecoli-phosphotransferase-system-lab
+    package: nishio2008-ecoli-phosphotransferase-system
+    version: 1.0.0
+    type: lab
+    path: labs/nishio2008-ecoli-phosphotransferase-system
+    visibility: public
+  - id: pritchard2014-plant-microbe-interaction-lab
+    package: pritchard2014-plant-microbe-interaction
+    version: 1.0.0
+    type: lab
+    path: labs/pritchard2014-plant-microbe-interaction
+    visibility: public
+  - id: queralt2006-cdc55-separase-mitotic-exit-lab
+    package: queralt2006-cdc55-separase-mitotic-exit
+    version: 1.0.0
+    type: lab
+    path: labs/queralt2006-cdc55-separase-mitotic-exit
+    visibility: public
+  - id: queralt2006-pp2a-mitotic-exit-lab
+    package: queralt2006-pp2a-mitotic-exit
+    version: 1.0.0
+    type: lab
+    path: labs/queralt2006-pp2a-mitotic-exit
+    visibility: public
+  - id: salcedosora2016-microbial-folate-biosynthesis-lab
+    package: salcedosora2016-microbial-folate-biosynthesis
+    version: 1.0.0
+    type: lab
+    path: labs/salcedosora2016-microbial-folate-biosynthesis
+    visibility: public
+  - id: shaw2018-yeast-gpcr-ternary-complex-lab
+    package: shaw2018-yeast-gpcr-ternary-complex
+    version: 1.0.0
+    type: lab
+    path: labs/shaw2018-yeast-gpcr-ternary-complex
+    visibility: public
+  - id: shaw2019-yeast-digital-biosensor-lab
+    package: shaw2019-yeast-digital-biosensor
+    version: 1.0.0
+    type: lab
+    path: labs/shaw2019-yeast-digital-biosensor
+    visibility: public
+  - id: shenorr2002-single-input-module-lab
+    package: shenorr2002-single-input-module
+    version: 1.0.0
+    type: lab
+    path: labs/shenorr2002-single-input-module
+    visibility: public
+  - id: smith2016-bacterial-coinfection-therapy-lab
+    package: smith2016-bacterial-coinfection-therapy
+    version: 1.0.0
+    type: lab
+    path: labs/smith2016-bacterial-coinfection-therapy
+    visibility: public
+  - id: takahashi2015-ecoli-zinc-regulation-lab
+    package: takahashi2015-ecoli-zinc-regulation
+    version: 1.0.0
+    type: lab
+    path: labs/takahashi2015-ecoli-zinc-regulation
+    visibility: public
+  - id: talemi2014-yeast-arsenic-detoxification-lab
+    package: talemi2014-yeast-arsenic-detoxification
+    version: 1.0.0
+    type: lab
+    path: labs/talemi2014-yeast-arsenic-detoxification
+    visibility: public
+  - id: talemi2016-yeast-osmohomeostasis-lab
+    package: talemi2016-yeast-osmohomeostasis
+    version: 1.0.0
+    type: lab
+    path: labs/talemi2016-yeast-osmohomeostasis
+    visibility: public
+  - id: tan2012-antibiotic-inoculum-effect-lab
+    package: tan2012-antibiotic-inoculum-effect
+    version: 1.0.0
+    type: lab
+    path: labs/tan2012-antibiotic-inoculum-effect
+    visibility: public
+  - id: veening2008-bsubtilis-degu-regulation-lab
+    package: veening2008-bsubtilis-degu-regulation
+    version: 1.0.0
+    type: lab
+    path: labs/veening2008-bsubtilis-degu-regulation
+    visibility: public
+  - id: vinod2011-budding-yeast-mitotic-exit-lab
+    package: vinod2011-budding-yeast-mitotic-exit
+    version: 1.0.0
+    type: lab
+    path: labs/vinod2011-budding-yeast-mitotic-exit
+    visibility: public
+  - id: voit2003-yeast-trehalose-cycle-lab
+    package: voit2003-yeast-trehalose-cycle
+    version: 1.0.0
+    type: lab
+    path: labs/voit2003-yeast-trehalose-cycle
+    visibility: public

@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: heldt2018-budding-yeast-size-control
+version: 1.0.0
 title: Heldt2018 - Budding yeast size control by titration of nuclear sites Lab
 description: Curated microbiology lab for Heldt2018 - Budding yeast size control by
   titration of nuclear sites. The bundled SBML is executed directly through Tellurium

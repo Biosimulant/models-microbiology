@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: bruggeman2005-ammonium-assimilation
+version: 1.0.0
 title: Bruggeman2005_AmmoniumAssimilation Lab
 description: Curated microbiology lab for Bruggeman2005_AmmoniumAssimilation. The
   bundled SBML is executed directly through Tellurium and visualised with conservative,

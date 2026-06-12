@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: moriya2011-fission-yeast-cell-cycle
+version: 1.0.0
 title: Moriya2011_CellCycle_FissionYeast Lab
 description: Curated microbiology lab for Moriya2011_CellCycle_FissionYeast. The bundled
   SBML is executed directly through Tellurium and visualised with conservative, source-traceable

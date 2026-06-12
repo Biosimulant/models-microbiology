@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: nishio2008-ecoli-phosphotransferase-system
+version: 1.0.0
 title: Nishio2008 - Design of the phosphotransferase system for enhanced glucose uptake
   in E. coli. Lab
 description: Curated microbiology lab for Nishio2008 - Design of the phosphotransferase

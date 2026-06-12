@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: salcedosora2016-microbial-folate-biosynthesis
+version: 1.0.0
 title: Salcedo-Sora2016 - Microbial folate biosynthesis and utilisation Lab
 description: Curated microbiology lab for Salcedo-Sora2016 - Microbial folate biosynthesis
   and utilisation. The bundled SBML is executed directly through Tellurium and visualised

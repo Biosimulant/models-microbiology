@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: takahashi2015-ecoli-zinc-regulation
+version: 1.0.0
 title: Takahashi2015 - Zinc regulation E.coli Lab
 description: Curated microbiology lab for Takahashi2015 - Zinc regulation E.coli.
   The bundled SBML is executed directly through Tellurium and visualised with conservative,

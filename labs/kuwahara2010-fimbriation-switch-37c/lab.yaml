@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: kuwahara2010-fimbriation-switch-37c
+version: 1.0.0
 title: Kuwahara2010_Fimbriation_Switch_37C Lab
 description: Curated microbiology lab for Kuwahara2010_Fimbriation_Switch_37C. The
   bundled SBML is executed directly through Tellurium and visualised with conservative,

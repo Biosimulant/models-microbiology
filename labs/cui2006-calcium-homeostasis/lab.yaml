@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: cui2006-calcium-homeostasis
+version: 1.0.0
 title: Cui2006_CalciumHomeostasis Lab
 description: Curated microbiology lab for Cui2006_CalciumHomeostasis. The bundled
   SBML is executed directly through Tellurium and visualised with conservative, source-traceable
